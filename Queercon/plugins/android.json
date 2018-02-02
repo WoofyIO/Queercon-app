@@ -1,43 +1,30 @@
 {
-  "prepare_queue": {
-    "installed": [],
-    "uninstalled": []
-  },
-  "config_munge": {
-    "files": {}
-  },
-  "installed_plugins": {
-    "ionic-plugin-keyboard": {
-      "PACKAGE_NAME": "io.cordova.myapp803bda"
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
     },
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "io.cordova.myapp803bda"
+    "config_munge": {
+        "files": {}
     },
-    "cordova-plugin-console": {
-      "PACKAGE_NAME": "io.cordova.myapp803bda"
+    "installed_plugins": {
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "io.cordova.myapp803bda"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.cordova.myapp803bda"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "io.cordova.myapp803bda"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "io.cordova.myapp803bda"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "io.cordova.myapp803bda"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "io.cordova.myapp803bda"
+        }
     },
-    "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "io.cordova.myapp803bda"
-    },
-    "cordova-plugin-device": {
-      "PACKAGE_NAME": "io.cordova.myapp803bda"
-    },
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "io.cordova.myapp803bda"
-    },
-    "cordova-plugin-appcenter-analytics": {
-      "PACKAGE_NAME": "io.cordova.myapp803bda"
-    },
-    "cordova-plugin-appcenter-crashes": {
-      "PACKAGE_NAME": "io.cordova.myapp803bda"
-    },
-    "cordova-plugin-appcenter-push": {
-      "PACKAGE_NAME": "io.cordova.myapp803bda"
-    }
-  },
-  "dependent_plugins": {
-    "cordova-plugin-appcenter-shared": {
-      "PACKAGE_NAME": "io.cordova.myapp803bda"
-    }
-  }
+    "dependent_plugins": {}
 }

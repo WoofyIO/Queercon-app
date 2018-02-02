@@ -61,16 +61,6 @@
     <preference name="FadeSplashScreenDuration" value="300" />
     <preference name="windows-target-version" value="10.0" />
     <preference name="SplashShowOnlyFirstTime" value="false" />
-    <feature name="AppCenterAnalytics">
-        <param name="onload" value="true" />
-        <param name="android-package" value="com.microsoft.azure.mobile.cordova.AppCenterAnalyticsPlugin" />
-    </feature>
-    <feature name="AppCenterCrashes">
-        <param name="onload" value="true" />
-        <param name="android-package" value="com.microsoft.azure.mobile.cordova.AppCenterCrashesPlugin" />
-    </feature>
-    <feature name="AppCenterPush">
-        <param name="onload" value="true" />
-        <param name="android-package" value="com.microsoft.azure.mobile.cordova.AppCenterPushPlugin" />
-    </feature>
+    <preference name="APP_SECRET" value="3871ed8a-bacd-4a06-bc9b-8d7a58598af4" />
+    <preference name="APPCENTER_APP_SECRET" value="3871ed8a-bacd-4a06-bc9b-8d7a58598af4" />
 </widget>
