@@ -21,6 +21,10 @@
     "@angular/platform-browser-dynamic": "2.2.1",
     "@angular/platform-server": "2.2.1",
     "@ionic/storage": "1.1.7",
+    "cordova-plugin-appcenter-analytics": "^0.1.3",
+    "cordova-plugin-appcenter-crashes": "^0.1.3",
+    "cordova-plugin-appcenter-push": "^0.1.3",
+    "cordova-plugin-appcenter-shared": "^0.1.3",
     "ionic-angular": "2.0.1",
     "ionic-native": "2.4.1",
     "ionicons": "3.0.0",
@@ -43,6 +47,15 @@
   ],
   "cordovaPlatforms": [],
   "-vs-binding": {
-    "BeforeBuild": [ "ionic:build" ]
+    "BeforeBuild": [
+      "ionic:build"
+    ]
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-appcenter-analytics": {},
+      "cordova-plugin-appcenter-crashes": {},
+      "cordova-plugin-appcenter-push": {}
+    }
   }
 }
