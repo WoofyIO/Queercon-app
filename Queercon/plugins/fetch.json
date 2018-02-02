@@ -70,5 +70,13 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-appcenter-push": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-appcenter-push"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

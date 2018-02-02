@@ -48,6 +48,14 @@ module.exports = [
         "clobbers": [
             "AppCenter.Crashes"
         ]
+    },
+    {
+        "id": "cordova-plugin-appcenter-push.Push",
+        "file": "plugins/cordova-plugin-appcenter-push/www/Push.js",
+        "pluginId": "cordova-plugin-appcenter-push",
+        "clobbers": [
+            "AppCenter.Push"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -61,7 +69,8 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "4.0.3",
     "cordova-plugin-appcenter-shared": "0.1.3",
     "cordova-plugin-appcenter-analytics": "0.1.3",
-    "cordova-plugin-appcenter-crashes": "0.1.3"
+    "cordova-plugin-appcenter-crashes": "0.1.3",
+    "cordova-plugin-appcenter-push": "0.1.3"
 };
 // BOTTOM OF METADATA
 });

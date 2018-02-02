@@ -30,6 +30,9 @@
         },
         "cordova-plugin-appcenter-crashes": {
             "PACKAGE_NAME": "io.cordova.myapp803bda"
+        },
+        "cordova-plugin-appcenter-push": {
+            "PACKAGE_NAME": "io.cordova.myapp803bda"
         }
     },
     "dependent_plugins": {
