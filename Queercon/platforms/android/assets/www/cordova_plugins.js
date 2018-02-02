@@ -72,6 +72,14 @@ module.exports = [
         "merges": [
             "navigator.notification"
         ]
+    },
+    {
+        "id": "cordova-plugin-appcenter-push.Push",
+        "file": "plugins/cordova-plugin-appcenter-push/www/Push.js",
+        "pluginId": "cordova-plugin-appcenter-push",
+        "clobbers": [
+            "AppCenter.Push"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -87,7 +95,8 @@ module.exports.metadata =
     "cordova-plugin-appcenter-analytics": "0.1.3",
     "cordova-plugin-appcenter-crashes": "0.1.3",
     "code-push": "2.0.5",
-    "cordova-plugin-dialogs": "2.0.1"
+    "cordova-plugin-dialogs": "2.0.1",
+    "cordova-plugin-appcenter-push": "0.1.3"
 };
 // BOTTOM OF METADATA
 });
