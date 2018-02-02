@@ -3,7 +3,7 @@
 
 
 platforms/
-
+plugins/
 
 # User-specific files
 *.suo

@@ -24,7 +24,17 @@
         },
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "io.cordova.myapp803bda"
+        },
+        "cordova-plugin-appcenter-analytics": {
+            "PACKAGE_NAME": "io.cordova.myapp803bda"
+        },
+        "cordova-plugin-appcenter-crashes": {
+            "PACKAGE_NAME": "io.cordova.myapp803bda"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-appcenter-shared": {
+            "PACKAGE_NAME": "io.cordova.myapp803bda"
+        }
+    }
 }
