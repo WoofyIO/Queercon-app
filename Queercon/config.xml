@@ -35,6 +35,11 @@
     <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
     <preference name="APP_SECRET" value="3871ed8a-bacd-4a06-bc9b-8d7a58598af4" />
     <preference name="APPCENTER_APP_SECRET" value="3871ed8a-bacd-4a06-bc9b-8d7a58598af4" />
+    <!-- Staging -->
+    <preference name="CodePushDeploymentKey" value="qLWMZpKH2vSiODwb1-qHLte__0tyHJLmdPT4M" />
+    <!-- Production -->
+    <!-- <preference name="CodePushDeploymentKey" value="ek1YEsrSrNY6MMroICfOL-k_yA7Cry87dPT4G" /> -->
+    
   </platform>
   <platform name="ios">
     <allow-intent href="itms:*" />
@@ -69,6 +74,10 @@
     <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320" />
     <preference name="APP_SECRET" value="f6e72d5a-91ec-4386-854d-13f73fdf5faa" />
     <preference name="APPCENTER_APP_SECRET" value="f6e72d5a-91ec-4386-854d-13f73fdf5faa" />
+    <!-- Staging -->
+    <preference name="CodePushDeploymentKey" value="Vfe7GWkriXItBozGs16cj3OAk_MYryWNgXzIz" />
+    <!-- Production -->
+    <!-- <preference name="CodePushDeploymentKey" value="TIpaV2ZUghgyX250gk_zZ3hTo5KKH1Z4xmz8G" /> -->
   </platform>
   <platform name="windows">
     <preference name="SplashScreenBackgroundColor" value="#ffffff" />
@@ -104,4 +113,5 @@
   <engine name="windows" spec="4.4.2" />
   <plugin name="cordova-plugin-appcenter-analytics" spec="~0.1.3" />
   <plugin name="cordova-plugin-appcenter-crashes" spec="~0.1.3" />
+  <plugin name="cordova-plugin-code-push" spec="~1.11.3" />
 </widget>

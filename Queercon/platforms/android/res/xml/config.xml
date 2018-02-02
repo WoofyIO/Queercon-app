@@ -27,6 +27,9 @@
         <param name="onload" value="true" />
         <param name="android-package" value="com.microsoft.azure.mobile.cordova.AppCenterCrashesPlugin" />
     </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
     <name>Queercon</name>
     <description>An Ionic Framework and Cordova project for Visual Studio</description>
     <author email="vscordovatools@microsoft.com" href="http://taco.visualstudio.com">Visual Studio JS Mobile Tooling</author>
@@ -71,4 +74,5 @@
     <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="APP_SECRET" value="3871ed8a-bacd-4a06-bc9b-8d7a58598af4" />
     <preference name="APPCENTER_APP_SECRET" value="3871ed8a-bacd-4a06-bc9b-8d7a58598af4" />
+    <preference name="CodePushDeploymentKey" value="qLWMZpKH2vSiODwb1-qHLte__0tyHJLmdPT4M" />
 </widget>

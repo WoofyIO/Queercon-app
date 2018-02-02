@@ -48,6 +48,30 @@ module.exports = [
         "clobbers": [
             "AppCenter.Crashes"
         ]
+    },
+    {
+        "id": "code-push.AcquisitionManager",
+        "file": "plugins/code-push/script/acquisition-sdk.js",
+        "pluginId": "code-push",
+        "merges": [
+            "window"
+        ]
+    },
+    {
+        "id": "cordova-plugin-dialogs.notification",
+        "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+        "pluginId": "cordova-plugin-dialogs",
+        "merges": [
+            "navigator.notification"
+        ]
+    },
+    {
+        "id": "cordova-plugin-dialogs.notification_android",
+        "file": "plugins/cordova-plugin-dialogs/www/android/notification.js",
+        "pluginId": "cordova-plugin-dialogs",
+        "merges": [
+            "navigator.notification"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -61,7 +85,9 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "4.0.3",
     "cordova-plugin-appcenter-shared": "0.1.3",
     "cordova-plugin-appcenter-analytics": "0.1.3",
-    "cordova-plugin-appcenter-crashes": "0.1.3"
+    "cordova-plugin-appcenter-crashes": "0.1.3",
+    "code-push": "2.0.5",
+    "cordova-plugin-dialogs": "2.0.1"
 };
 // BOTTOM OF METADATA
 });

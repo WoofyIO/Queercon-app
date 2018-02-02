@@ -35,6 +35,12 @@
     "dependent_plugins": {
         "cordova-plugin-appcenter-shared": {
             "PACKAGE_NAME": "io.cordova.myapp803bda"
+        },
+        "code-push": {
+            "PACKAGE_NAME": "io.cordova.myapp803bda"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "io.cordova.myapp803bda"
         }
     }
 }
