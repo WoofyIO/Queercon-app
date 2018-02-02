@@ -1,4 +1,4 @@
-# Queercon-ionic-app
+# Queercon ionic app
 The NG app, linked to appcenter.ms
 
 
