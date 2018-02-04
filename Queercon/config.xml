@@ -20,8 +20,6 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
     <platform name="android">
-        <resource-file src="google-services.json" target="google-services.json" />
-        <preference name="FIREBASE_SENDER_ID" value="278964097998" />
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
@@ -44,6 +42,8 @@
         <preference name="APP_SECRET" value="3871ed8a-bacd-4a06-bc9b-8d7a58598af4" />
         <preference name="APPCENTER_APP_SECRET" value="3871ed8a-bacd-4a06-bc9b-8d7a58598af4" />
         <preference name="CodePushDeploymentKey" value="qLWMZpKH2vSiODwb1-qHLte__0tyHJLmdPT4M" />
+        <preference name="FIREBASE_SENDER_ID" value="278964097998" />
+        <resource-file src="google-services.json" target="google-services.json" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
