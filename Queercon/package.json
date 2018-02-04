@@ -30,6 +30,7 @@
     "cordova-ios": "4.5.4",
     "cordova-plugin-appcenter-analytics": "^0.1.3",
     "cordova-plugin-appcenter-crashes": "^0.1.3",
+    "cordova-plugin-appcenter-push": "^0.1.3",
     "cordova-plugin-appcenter-shared": "^0.1.3",
     "cordova-plugin-code-push": "^1.11.3",
     "cordova-plugin-device": "^2.0.1",
@@ -63,7 +64,8 @@
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-file-transfer": {},
       "cordova-plugin-zip": {},
-      "cordova-plugin-code-push": {}
+      "cordova-plugin-code-push": {},
+      "cordova-plugin-appcenter-push": {}
     },
     "platforms": [
       "android",
