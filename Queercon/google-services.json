@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "278964097998",
+    "firebase_url": "https://queercon-app.firebaseio.com",
+    "project_id": "queercon-app",
+    "storage_bucket": "queercon-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278964097998:android:0e76aeb9b4874542",
+        "android_client_info": {
+          "package_name": "org.queercon.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278964097998-rbf0m7vif2r1vaph6089h26tr64mokmf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzOEPV-_MiDreGpzV1LK2te1RkobVbXFA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
