@@ -1,8 +1,0 @@
-{
-  "name": "io.cordova.myapp803bda",
-  "app_id": "",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
-}
