@@ -7,6 +7,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 declare const codePush: any
 declare const InstallMode: any
+declare const Analytics: any
 
 @Component({
   templateUrl: 'app.html'
@@ -20,6 +21,8 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
+
+      Analytics.trackEvent("Platform Ready");
 
       codePush.sync(null, {
         updateDialog: {

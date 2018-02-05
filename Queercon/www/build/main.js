@@ -101,7 +101,7 @@ var CalendarPage = (function () {
     }
     CalendarPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-calendar',template:/*ion-inline-start:"C:\Users\visse\source\repos\Queercon-ionic-app\Queercon\src\pages\calendar\calendar.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n\n      Calendar\n\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <h1>Calendar</h1>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\visse\source\repos\Queercon-ionic-app\Queercon\src\pages\calendar\calendar.html"*/
+            selector: 'page-calendar',template:/*ion-inline-start:"C:\Users\visse\source\repos\Queercon-ionic-app\Queercon\src\pages\calendar\calendar.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n\n      Calendar\n\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <h1>Calendar 1</h1>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\visse\source\repos\Queercon-ionic-app\Queercon\src\pages\calendar\calendar.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], CalendarPage);
@@ -338,6 +338,7 @@ var MyApp = (function () {
             // Here you can do any higher level native things you might need.
             statusBar.styleDefault();
             splashScreen.hide();
+            Analytics.trackEvent("Platform Ready");
             codePush.sync(null, {
                 updateDialog: {
                     appendReleaseDescription: true,
