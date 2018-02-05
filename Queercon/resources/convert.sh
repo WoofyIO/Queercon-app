@@ -38,4 +38,6 @@ convert app_logo_ios.png -resize 50x50 ios/icon/icon-50.png
 convert app_logo_ios.png -resize 100x100 ios/icon/icon-50@2x.png
 convert app_logo_ios.png -resize 167x167 ios/icon/icon-83.5@2x.png
 convert app_logo_ios.png -resize 87x87 ios/icon/icon-small@3x.png
+convert app_logo_ios.png -resize 1024x1024 ios/icon/icon-1024.png
+convert app_logo_ios.png -resize 120x120 ios/icon/icon-40@3x.png
 
