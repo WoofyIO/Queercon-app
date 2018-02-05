@@ -5,6 +5,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { TabsPage } from '../pages/tabs/tabs';
 
+declare const codePush: any
+
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -17,6 +20,12 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
+      codePush.sync();
+
+      platform.resume.subscribe(() =>
+
+        codePush.sync());
+
     });
   }
 }
