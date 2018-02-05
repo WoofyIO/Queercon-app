@@ -6,7 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { TabsPage } from '../pages/tabs/tabs';
 
 declare const codePush: any
-
+declare const InstallMode: any
 
 @Component({
   templateUrl: 'app.html'
@@ -21,13 +21,15 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
 
-
-      codePush.sync();
-
-      platform.resume.subscribe(() =>
-
-        codePush.sync()
-      );
+      codePush.sync(null, {
+        updateDialog: {
+          appendReleaseDescription: true,
+          mandatoryUpdateMessage: "An important content update has been installed",
+          optionalUpdateMessage: "A content update is avalible. Install now?",
+          descriptionPrefix: "\n\nChange log:\n"
+        },
+        installMode: InstallMode.IMMEDIATE
+      });
 
     });
   }
