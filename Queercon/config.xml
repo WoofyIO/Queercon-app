@@ -35,10 +35,6 @@
         <splash density="port-ldpi" src="resources/android/splash/splash-port-ldpi.png" />
         <splash density="port-mdpi" src="resources/android/splash/splash-port-mdpi.png" />
         <splash density="port-xhdpi" src="resources/android/splash/splash-port-xhdpi.png" />
-        <splash density="land-xxhdpi" src="resources/android/splash/drawable-land-xxhdpi-screen.png" />
-        <splash density="land-xxxhdpi" src="resources/android/splash/drawable-land-xxxhdpi-screen.png" />
-        <splash density="port-xxhdpi" src="resources/android/splash/drawable-port-xxhdpi-screen.png" />
-        <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
         <preference name="APP_SECRET" value="3871ed8a-bacd-4a06-bc9b-8d7a58598af4" />
         <preference name="APPCENTER_APP_SECRET" value="3871ed8a-bacd-4a06-bc9b-8d7a58598af4" />
         <preference name="CodePushDeploymentKey" value="qLWMZpKH2vSiODwb1-qHLte__0tyHJLmdPT4M" />
@@ -72,14 +68,11 @@
         <splash height="2208" src="resources/ios/splash/Default-736h.png" width="1242" />
         <splash height="1242" src="resources/ios/splash/Default-Landscape-736h.png" width="2208" />
         <splash height="1536" src="resources/ios/splash/Default-Landscape@2x~ipad.png" width="2048" />
-        <splash height="2048" src="resources/ios/splash/Default-Landscape@~ipadpro.png" width="2732" />
         <splash height="768" src="resources/ios/splash/Default-Landscape~ipad.png" width="1024" />
         <splash height="2048" src="resources/ios/splash/Default-Portrait@2x~ipad.png" width="1536" />
-        <splash height="2732" src="resources/ios/splash/Default-Portrait@~ipadpro.png" width="2048" />
         <splash height="1024" src="resources/ios/splash/Default-Portrait~ipad.png" width="768" />
         <splash height="960" src="resources/ios/splash/Default@2x~iphone.png" width="640" />
         <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320" />
-        <splash height="2732" src="resources/ios/splash/Default@2x~universal~anyany.png" width="2732" />
         <preference name="APP_SECRET" value="f6e72d5a-91ec-4386-854d-13f73fdf5faa" />
         <preference name="APPCENTER_APP_SECRET" value="f6e72d5a-91ec-4386-854d-13f73fdf5faa" />
         <preference name="CodePushDeploymentKey" value="Vfe7GWkriXItBozGs16cj3OAk_MYryWNgXzIz" />
