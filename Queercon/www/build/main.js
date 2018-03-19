@@ -338,7 +338,13 @@ var MyApp = (function () {
             // Here you can do any higher level native things you might need.
             statusBar.styleDefault();
             splashScreen.hide();
-            Analytics.trackEvent("Platform Ready");
+            var success = function () {
+                console.log("Event tracked");
+            };
+            var error = function (error) {
+                console.error(error);
+            };
+            AppCenter.Analytics.trackEvent('Platform Ready', success, error);
             codePush.sync(null, {
                 updateDialog: {
                     appendReleaseDescription: true,

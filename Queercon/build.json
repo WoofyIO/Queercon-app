@@ -1,0 +1,57 @@
+{
+
+    "android": {
+
+        "debug": {
+
+            "keystore": "builds/android-release-key.keystore",
+
+            "storePassword": "Somethingcool1",
+
+            "alias": "queerconapp",
+
+            "password" : "Somethingcool1",
+
+            "keystoreType": "JKS"
+
+        },
+
+        "release": {
+
+            "keystore": "builds/android-release-key.keystore",
+
+            "storePassword": "Somethingcool1",
+
+            "alias": "queerconapp",
+
+            "password" : "Somethingcool1",
+
+            "keystoreType": "JKS"
+
+        }
+
+    },
+
+    
+
+    "ios": {
+
+        "debug": {
+
+            "codeSignIdentity": "iPhone Developer: appdev@queercon.org (27FTE4EWWM)",
+
+            "provisioningProfile": "c7e645be-3733-4abe-854e-19691b107a25"
+
+        },
+
+        "release": {
+
+            "codeSignIdentity": "iPhone Distribution: Queercon, Inc (YSP3NTS66E)",
+
+            "provisioningProfile": "627419f8-b6f0-404e-b228-cd16380a74d8"
+
+        }
+
+    }
+
+}
