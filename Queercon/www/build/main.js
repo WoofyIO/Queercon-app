@@ -171,7 +171,7 @@ var ContactPage = (function () {
     }
     ContactPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-contact',template:/*ion-inline-start:"C:\Users\visse\source\repos\Queercon-ionic-app\Queercon\src\pages\contact\contact.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n      Contact\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list>\n\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n\n    <ion-item>\n\n      <ion-icon name="ionic" item-start></ion-icon>\n\n      @ionicframework\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\visse\source\repos\Queercon-ionic-app\Queercon\src\pages\contact\contact.html"*/
+            selector: 'page-contact',template:/*ion-inline-start:"C:\Users\visse\source\repos\Queercon-ionic-app\Queercon\src\pages\contact\contact.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n      Contact Us and Stay in Touch\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list>\n\n    <ion-item text-wrap>\n\n      <ion-icon name="logo-twitter" item-start></ion-icon>\n\n      <h2 onclick="window.open(\'https://www.twitter.com/queercon\', \'_system\', \'location=yes\');">@queercon</h2>\n\n	  <h3>Follow us on Twitter.</h3>\n\n	  <p>We will tweet schedule changes, badge releases, contest information.</p>\n\n    </ion-item>\n\n	\n\n    <ion-item text-wrap>\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/telegram.png">\n\n      </ion-avatar>\n\n      <h2>Queercon Telegram Channel</h2>\n\n      <p>This is our primary, moderated social chat channel</p>\n\n    </ion-item>\n\n\n\n	</ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\visse\source\repos\Queercon-ionic-app\Queercon\src\pages\contact\contact.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], ContactPage);
@@ -349,7 +349,7 @@ var MyApp = (function () {
                 updateDialog: {
                     appendReleaseDescription: true,
                     mandatoryUpdateMessage: "An important content update has been installed",
-                    optionalUpdateMessage: "A content update is avalible. Install now?",
+                    optionalUpdateMessage: "A content update is available. Install now?",
                     descriptionPrefix: "\n\nChange log:\n"
                 },
                 installMode: InstallMode.IMMEDIATE
