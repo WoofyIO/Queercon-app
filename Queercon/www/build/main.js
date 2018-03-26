@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 109:
+/***/ 110:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -13,11 +13,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 109;
+webpackEmptyAsyncContext.id = 110;
 
 /***/ }),
 
-/***/ 150:
+/***/ 151:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -30,7 +30,7 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 150;
+webpackEmptyAsyncContext.id = 151;
 
 /***/ }),
 
@@ -101,7 +101,7 @@ var EventsPage = (function () {
     }
     EventsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-events',template:/*ion-inline-start:"C:\Users\visse\source\repos\Queercon-ionic-app\Queercon\src\pages\events\events.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n      Events\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <h1>Calendar 1</h1>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\visse\source\repos\Queercon-ionic-app\Queercon\src\pages\events\events.html"*/
+            selector: 'page-events',template:/*ion-inline-start:"C:\Users\visse\source\repos\Queercon-ionic-app\Queercon\src\pages\events\events.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n      Events\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n<ion-list>\n\n  \n\n  <ion-list-header><h1>Queercon, Inc</h1></ion-list-header>\n\n  \n\n          <ion-item text-wrap>\n\n	<ion-card>\n\n		<ion-card-header>\n\n			My Event cool prod\n\n		</ion-card-header>\n\n		<ion-card-content>\n\n			<p>The most awesome party</p>\n\n		</ion-card-content>\n\n		<ion-row class="cardfooter">\n\n		<ion-col>\n\n            <p>Start: 2/15/20 2015</p>\n\n			<p>End: 2/15/20 2015</p>\n\n		</ion-col>\n\n    </ion-row>\n\n	</ion-card>\n\n    </ion-item>\n\n	\n\n	<ion-list-header><h1>Queercon Locals</h1></ion-list-header>\n\n	\n\n	<ion-list-header><h2>QC New York City</h2></ion-list-header>\n\n	\n\n	<ion-list-header><h2>QC Seattle</h2></ion-list-header>\n\n	\n\n	<ion-list-header><h2>QC DC</h2></ion-list-header>\n\n\n\n	\n\n	<ion-list-header><h2>QC San Francisco</h2></ion-list-header>\n\n	\n\n	\n\n	<ion-list-header><h2>QC Denver</h2></ion-list-header>\n\n	\n\n   	\n\n	</ion-list>\n\n\n\n\n\n\n\n\n\n</ion-content>\n\n\n\n\n\n'/*ion-inline-end:"C:\Users\visse\source\repos\Queercon-ionic-app\Queercon\src\pages\events\events.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], EventsPage);
@@ -206,7 +206,7 @@ var HomePage = (function () {
     }
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\visse\source\repos\Queercon-ionic-app\Queercon\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Home</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n	\n\n<ion-content padding>\n\n<img src="assets/imgs/full_name_band.png">\n\n    <p>\n\n      Welcome to the new QC App. Please check back reguarly as we continue to enhance it and populate it with content.\n\n  </p>\n\n  <p>\n\n    Queercon 14 is over, and Queercon 15 is a few months away, but planning is in full swing. We also have a very active communitly with many events hosted around the US (and the world). Please check out "Stay in Touch", to connect with local groups.\n\n  </p>\n\n    <p>\n\n    Interested in running a Queercon event in your home town? or starting a locals group? please reach out to us!\n\n  </p>\n\n\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\visse\source\repos\Queercon-ionic-app\Queercon\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\visse\source\repos\Queercon-ionic-app\Queercon\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Home</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n	\n\n<ion-content padding>\n\n<img src="assets/imgs/full_name_band.png">\n\n	<ion-card>\n\n		<ion-card-header>\n\n			<h2>Welcome to the new QC App</h2>\n\n		</ion-card-header>\n\n		<ion-card-content>\n\n			<p>Please check back regularly as we continue to enhance it and populate it with content.</p>\n\n		</ion-card-content>\n\n	</ion-card>\n\n\n\n  	<ion-card>\n\n		<ion-card-header>\n\n			<h2>QC14 is Over, Ready for QC15?</h2>\n\n		</ion-card-header>\n\n		<ion-card-content>\n\n			<p>Queercon 14 is over, and Queercon 15 is a few months away, but planning is in full swing. We also have a very active community with many events hosted around the US (and the world). Please check out "Stay in Touch", to connect with local groups.</p>\n\n		</ion-card-content>\n\n	</ion-card>\n\n	\n\n	 <ion-card>\n\n		<ion-card-header>\n\n			<h2>QC Locals</h2>\n\n		</ion-card-header>\n\n		<ion-card-content>\n\n			<p>Interested in running a Queercon event in your home town? or starting a locals group? please reach out to us!</p>\n\n		</ion-card-content>\n\n	</ion-card>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\visse\source\repos\Queercon-ionic-app\Queercon\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], HomePage);
@@ -245,14 +245,16 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_contact_contact__ = __webpack_require__(197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_tabs_tabs__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__ = __webpack_require__(191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_calendar__ = __webpack_require__(275);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -295,7 +297,8 @@ var AppModule = (function () {
             providers: [
                 __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__["a" /* SplashScreen */],
-                { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] }
+                { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] },
+                __WEBPACK_IMPORTED_MODULE_11__ionic_native_calendar__["a" /* Calendar */]
             ]
         })
     ], AppModule);
@@ -313,7 +316,7 @@ var AppModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(193);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(194);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {

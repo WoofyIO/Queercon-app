@@ -10,5 +10,8 @@ export class EventsPage {
   constructor(public navCtrl: NavController) {
 
   }
+  
+
+
 
 }

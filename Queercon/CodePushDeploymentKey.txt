@@ -1,0 +1,8 @@
+Android Staging
+<preference name="CodePushDeploymentKey" value="qLWMZpKH2vSiODwb1-qHLte__0tyHJLmdPT4M" />
+Android Production
+<preference name="CodePushDeploymentKey" value="ek1YEsrSrNY6MMroICfOL-k_yA7Cry87dPT4G" />
+iOS Staging
+<preference name="CodePushDeploymentKey" value="Vfe7GWkriXItBozGs16cj3OAk_MYryWNgXzIz" />
+iOS Production
+<preference name="CodePushDeploymentKey" value="TIpaV2ZUghgyX250gk_zZ3hTo5KKH1Z4xmz8G" />
