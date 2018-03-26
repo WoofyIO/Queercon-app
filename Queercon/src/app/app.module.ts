@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
+import { Qc15Page } from '../pages/qc15/qc15';
 import { EventsPage } from '../pages/events/events';
 import { SupportersPage } from '../pages/supporters/supporters';
 import { ContactPage } from '../pages/contact/contact';
@@ -17,6 +18,7 @@ import { Calendar } from '@ionic-native/calendar';
   declarations: [
     MyApp,
     SupportersPage,
+    Qc15Page,
     EventsPage,
     ContactPage,
     HomePage
@@ -29,6 +31,7 @@ import { Calendar } from '@ionic-native/calendar';
   entryComponents: [
     MyApp,
     SupportersPage,
+    Qc15Page,
     EventsPage,
     ContactPage,
     HomePage

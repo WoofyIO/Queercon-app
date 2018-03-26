@@ -4,6 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+import { Qc15Page } from '../pages/qc15/qc15';
 import { EventsPage } from '../pages/events/events';
 import { ContactPage } from '../pages/contact/contact';
 import { SupportersPage } from '../pages/supporters/supporters';
@@ -30,6 +31,7 @@ export class MyApp {
 	
 	this.pages = [
       { title: 'Home', component: HomePage },
+	  { title: 'Queercon 15 @ Defcon', component: Qc15Page },
 	  { title: 'Events', component: EventsPage },
 	  { title: 'Contact', component: ContactPage },
 	  { title: 'Supporters', component: SupportersPage }

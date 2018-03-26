@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import { EventsPage } from '../events/events';
+import { Qc15Page } from '../qc15/qc15';
 
 @Component({
   selector: 'page-home',
@@ -14,7 +14,7 @@ export class HomePage {
 
   }
 
-	goToEventsPage(){
-		this.navCtrl.setRoot(EventsPage);
+	goToQc15Page(destination){
+		this.navCtrl.setRoot(Qc15Page);
 	}
 }
