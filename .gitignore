@@ -4,6 +4,8 @@
 
 Queercon/platforms/
 Queercon/plugins/
+Queercon/.sourcemaps/
+Queercon/www/build/
 
 # User-specific files
 *.suo
@@ -96,6 +98,7 @@ ipch/
 
 # TFS 2012 Local Workspace
 $tf/
+
 
 # Guidance Automation Toolkit
 *.gpState
