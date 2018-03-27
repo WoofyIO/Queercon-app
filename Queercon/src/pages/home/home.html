@@ -3,23 +3,38 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Queercon</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content class="card-background-page"> 
 
-  <ion-card>
-    <img src="assets/imgs/full_name_band.png"/>
+  <ion-card (click)="goToQcRsaPage()"> 
+    <img src="assets/imgs/rsa.jpg"/>
+    <div class="card-title">Queercon is @RSA!</div>
+    <div class="card-subtitle">April 16- 20, San Francisco</div>
   </ion-card>
 
   <ion-card (click)="goToQc15Page()"> 
     <img src="assets/imgs/rsa.jpg"/>
-    <div class="card-title">Queercon is @RSA</div>
-    <div class="card-subtitle">April 16- 20, San Francisco</div>
+    <div class="card-title">Queercon 15 in Las Vegas</div>
+    <div class="card-subtitle">Planning underway for biggest year ever</div>
   </ion-card>
 
+  <ion-card>
+	  <button ion-item>
+	    <ion-icon name="cart" item-start></ion-icon>
+	    Shopping
+	  </button>
+
+	  <button ion-item>
+	    <ion-icon name="medical" item-start></ion-icon>
+	    Hospital
+	  </button>
+	</ion-card>
+
 </ion-content>
+
 
 <!--
 <ion-content padding>

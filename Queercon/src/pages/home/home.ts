@@ -17,4 +17,9 @@ export class HomePage {
 	goToQc15Page(destination){
 		this.navCtrl.setRoot(Qc15Page);
 	}
+
+	goToQcRsaPage(destination){
+		this.navCtrl.setRoot(QcRsa2018Page);
+	}
+
 }
