@@ -75,7 +75,30 @@ export class MyApp {
 			descriptionPrefix: "\n\nChange log:\n"
 		},
 		installMode: InstallMode.IMMEDIATE
-	  });
+		});
+		
+
+		var onNotificationReceived = function(pushNotification) {
+			var message = pushNotification.message;
+			var title = pushNotification.title;
+
+			if (message === null || message === undefined) {
+					// Android messages received in the background don't include a message. On Android, that fact can be used to
+					// check if the message was received in the background or foreground. For iOS the message is always present.
+					title = 'Android background';
+					message = '<empty>';
+			}
+
+			// Custom name/value pairs set in the App Center web portal are in customProperties
+			if (pushNotification.customProperties && Object.keys(pushNotification.customProperties).length > 0) {
+					message += '\nCustom properties:\n' + JSON.stringify(pushNotification.customProperties);
+			}
+
+			console.log(title, message);
+	}
+
+	  AppCenter.Push.addEventListener('notificationReceived', onNotificationReceived);   
+
 	  
     });
   }
