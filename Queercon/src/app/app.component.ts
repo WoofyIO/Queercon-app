@@ -58,16 +58,17 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashScreen.hide();
-	  
-	  var success = function() {
-		console.log("Event tracked");
+	  console.log("Queercon Ready");
+	 
+		var success = function() {
+		console.log("Queercon Event tracked");
 	  }
 
 	  var error = function(error) {
 		console.error(error);
 	  }
 	  
-	  AppCenter.Analytics.trackEvent('Platform Ready', success, error);
+	  AppCenter.Analytics.trackEvent('Queercon Platform Ready', success, error);
 	  codePush.sync(null, {
 		updateDialog: {
 			appendReleaseDescription: true,
@@ -95,11 +96,26 @@ export class MyApp {
 					message += '\nCustom properties:\n' + JSON.stringify(pushNotification.customProperties);
 			}
 
-			console.log(title, message);
+			console.log("Queercon Push Got", title, message);
 	}
 
 	  AppCenter.Push.addEventListener('notificationReceived', onNotificationReceived);   
 
+		var successPushEnable = function(result) {
+			console.log("Queercon push notifications " + (result) ? "enabled" : "disabled");
+	}
+	
+	var errorPushEnable = function(error) {
+			console.error(error);
+	}
+	
+	AppCenter.Push.isEnabled(successPushEnable, errorPushEnable);
+
+	var enableSuccess = function() {
+    console.log("Queercon push notifications enabled");
+}
+
+AppCenter.Push.setEnabled(true, enableSuccess, error); // Re-enable it
 	  
     });
   }
