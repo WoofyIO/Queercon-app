@@ -5,7 +5,12 @@
 Queercon/platforms/
 Queercon/plugins/
 Queercon/.sourcemaps/
-Queercon/www/build/
+Queercon/www/
+
+
+.DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate
 
 # User-specific files
 *.suo
