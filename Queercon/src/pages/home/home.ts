@@ -19,8 +19,10 @@ import { NewsPage } from '../news/news';
 
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+	private webWiew: any = window;
 
+  constructor(public navCtrl: NavController) {
+		this.webWiew.AppCenter.Analytics.trackEvent('Home Loaded');
   }
 
 	goToNewsPage(){ this.navCtrl.setRoot(NewsPage); }
