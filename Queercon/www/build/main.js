@@ -1,6 +1,6 @@
 webpackJsonp([7],{
 
-/***/ 101:
+/***/ 102:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -45,7 +45,7 @@ var AboutPage = (function () {
 
 /***/ }),
 
-/***/ 102:
+/***/ 103:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -90,7 +90,7 @@ var ChatPage = (function () {
 
 /***/ }),
 
-/***/ 103:
+/***/ 104:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -135,7 +135,7 @@ var LocalPage = (function () {
 
 /***/ }),
 
-/***/ 104:
+/***/ 105:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -177,51 +177,6 @@ var NewsPage = (function () {
 }());
 
 //# sourceMappingURL=news.js.map
-
-/***/ }),
-
-/***/ 105:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QcRsa2018Page; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/*
- * Generated class for the QcRsa2018Page page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var QcRsa2018Page = (function () {
-    function QcRsa2018Page(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    QcRsa2018Page.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad QcRsa2018Page');
-    };
-    QcRsa2018Page = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-qc-rsa2018',template:/*ion-inline-start:"C:\Queercon-ionic-app\Queercon\src\pages\qc-rsa2018\qc-rsa2018.html"*/'<!--\n  Generated template for the QcRsa2018Page page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>qc_rsa2018</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Queercon-ionic-app\Queercon\src\pages\qc-rsa2018\qc-rsa2018.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-    ], QcRsa2018Page);
-    return QcRsa2018Page;
-}());
-
-//# sourceMappingURL=qc-rsa2018.js.map
 
 /***/ }),
 
@@ -300,15 +255,15 @@ var map = {
 		5
 	],
 	"../pages/local/local.module": [
-		284,
+		285,
 		4
 	],
 	"../pages/news/news.module": [
-		285,
+		286,
 		3
 	],
 	"../pages/qc-rsa2018/qc-rsa2018.module": [
-		286,
+		284,
 		2
 	],
 	"../pages/qc15/qc15.module": [
@@ -343,8 +298,8 @@ module.exports = webpackAsyncContext;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__qc15_qc15__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__qc_rsa2018_qc_rsa2018__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__qc15_qc15__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__qc_rsa2018_qc_rsa2018__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -372,10 +327,9 @@ var HomePage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-home',template:/*ion-inline-start:"C:\Queercon-ionic-app\Queercon\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Queercon</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="card-background-page" style=\'background-color: #e0e0e0\'>\n\n\n\n  <ion-card (click)="goToQcRsaPage()"> \n\n    <img src="assets/imgs/rsa.jpg"/>\n\n    <div class="card-title">Queercon is @RSA!</div>\n\n    <div class="card-subtitle">April 16- 20, San Francisco</div>\n\n  </ion-card>\n\n\n\n  <ion-card (click)="goToQc15Page()"> \n\n    <img src="assets/imgs/rsa.jpg"/>\n\n    <div class="card-title">Queercon 15 in Las Vegas</div>\n\n    <div class="card-subtitle">Planning underway for biggest year ever</div>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n	  <button ion-item>\n\n	    <ion-icon name="cart" item-start></ion-icon>\n\n	    Latest developments\n\n	  </button>\n\n\n\n	  <button ion-item>\n\n	    <ion-icon name="medical" item-start></ion-icon>\n\n	    Events calendar\n\n	  </button>\n\n\n\n	  <button ion-item>\n\n	    <ion-icon name="medical" item-start></ion-icon>\n\n	    Queercon chat room\n\n	  </button>\n\n\n\n	  <button ion-item>\n\n	    <ion-icon name="medical" item-start></ion-icon>\n\n	    Show your support\n\n	  </button>\n\n\n\n	  <button ion-item>\n\n	    <ion-icon name="medical" item-start></ion-icon>\n\n	    Volunteer!\n\n	  </button>\n\n\n\n	  <button ion-item>\n\n	    <ion-icon name="medical" item-start></ion-icon>\n\n	    About Queercon\n\n	  </button>\n\n\n\n	</ion-card>\n\n\n\n</ion-content>\n\n\n\n\n\n<!--\n\n<ion-content padding>\n\n<img src="assets/imgs/full_name_band.png">\n\n	<ion-card>\n\n		<ion-card-header>\n\n			<h2>Welcome to the new QC App</h2>\n\n		</ion-card-header>\n\n		<ion-card-content>\n\n			<p>Please check back regularly as we continue to enhance it and populate it with content.</p>\n\n		</ion-card-content>\n\n	</ion-card>\n\n\n\n  	<ion-card>\n\n		<ion-card-header>\n\n			<h2>QC14 is Over, Ready for QC15?</h2>\n\n		</ion-card-header>\n\n		<ion-card-content>\n\n			<p>Queercon 14 is over, and Queercon 15 is a few months away, but planning is in full swing. We also have a very active community with many events hosted around the US (and the world). Please check out "Stay in Touch", to connect with local groups.</p>\n\n		</ion-card-content>\n\n	</ion-card>\n\n	\n\n	 <ion-card>\n\n		<ion-card-header>\n\n			<h2>QC Locals</h2>\n\n		</ion-card-header>\n\n		<ion-card-content>\n\n			<p>Interested in running a Queercon event in your home town? or starting a locals group? please reach out to us!</p>\n\n		</ion-card-content>\n\n	</ion-card>\n\n</ion-content>\n\n-->\n\n\n\n'/*ion-inline-end:"C:\Queercon-ionic-app\Queercon\src\pages\home\home.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
     ], HomePage);
     return HomePage;
-    var _a;
 }());
 
 //# sourceMappingURL=home.js.map
@@ -421,6 +375,41 @@ var EventsPage = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ContactPage = (function () {
+    function ContactPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    ContactPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-contact',template:/*ion-inline-start:"C:\Queercon-ionic-app\Queercon\src\pages\contact\contact.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>\n\n      Stay in Touch\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list>\n\n  \n\n  <ion-list-header><h1>Queercon, Inc</h1></ion-list-header>\n\n  \n\n    <ion-item text-wrap onclick="window.open(\'https://www.queercon.org\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/thumbsquare.png">\n\n      </ion-avatar>\n\n      <h2>Queercon Website</h2>\n\n	  <p>Stay up to date with whats going on, and read recent posts.</p>\n\n    </ion-item>\n\n   \n\n   <ion-item text-wrap onclick="window.open(\'https://www.twitter.com/queercon\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/twitter.png">\n\n      </ion-avatar>\n\n      <h2>@queercon</h2>\n\n	  <h3>Follow us on Twitter.</h3>\n\n	  <p>We will tweet schedule changes, badge releases, contest information.</p>\n\n    </ion-item>\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://www.facebook.com/groups/126504813280/\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/facebook.png">\n\n      </ion-avatar>\n\n      <h2>Facebook</h2>\n\n	  <p>The Facebook group of the LOTS and LOTS of members of Queercon. Join Us.</p>\n\n    </ion-item>	\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://t.me/joinchat/GYnq3kbjrYjhs035_bvU_g\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/telegram.png">\n\n      </ion-avatar>\n\n      <h2>Queercon Telegram Channel</h2>\n\n      <p>This is our primary, moderated social chat channel</p>\n\n    </ion-item>\n\n	\n\n   <ion-item text-wrap onclick="window.open(\'mailto:help@queercon.org\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/email.png">\n\n      </ion-avatar>\n\n      <h2>help@queercon.org</h2>\n\n	  <h3>Email Us</h3>\n\n	  <p>Need to go "old school" and email us? Use this.</p>\n\n    </ion-item>\n\n	\n\n	<ion-list-header><h1>Queercon Locals</h1></ion-list-header>\n\n	\n\n	<ion-list-header><h2>QC New York City</h2></ion-list-header>\n\n	\n\n	<ion-item text-wrap onclick="window.open(\'https://queercon.nyc\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/thumbsquare.png">\n\n      </ion-avatar>\n\n      <h2>QC NYC Website</h2>\n\n	  <p>The QC NYC Website - come check it out for the latest info.</p>\n\n    </ion-item>\n\n   \n\n   <ion-item text-wrap onclick="window.open(\'https://twitter.com/QueerconNYC\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/twitter.png">\n\n      </ion-avatar>\n\n      <h2>@QueerconNYC</h2>\n\n	  <p>Follow QC NYC on Twitter.</p>\n\n    </ion-item>\n\n\n\n    <ion-item text-wrap onclick="window.open(\'https://www.facebook.com/groups/QueerconNYC/\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/facebook.png">\n\n      </ion-avatar>\n\n      <h2>Facebook</h2>\n\n	  <p>The Facebook group for QC NYC</p>\n\n    </ion-item>	\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://t.me/joinchat/FQg75kUQMv-iOD3Bcc7IPQ\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/telegram.png">\n\n      </ion-avatar>\n\n      <h2>Queercon NYC Telegram Channel</h2>\n\n      <p>This is a moderated chat channel for NYC</p>\n\n    </ion-item>\n\n	\n\n	<ion-list-header><h2>QC Seattle</h2></ion-list-header>\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://www.facebook.com/groups/queerconsea/\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/facebook.png">\n\n      </ion-avatar>\n\n      <h2>Facebook</h2>\n\n	  <p>The Facebook group for QC SEA</p>\n\n    </ion-item>	\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://t.me/joinchat/GYnq3kWpuJwOaor9jEmQ1A\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/telegram.png">\n\n      </ion-avatar>\n\n      <h2>Queercon SEA Telegram Channel</h2>\n\n      <p>This is a moderated chat channel for SEA</p>\n\n    </ion-item>\n\n	\n\n	<ion-list-header><h2>QC DC</h2></ion-list-header>\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://www.facebook.com/groups/144929456097653/\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/facebook.png">\n\n      </ion-avatar>\n\n      <h2>Facebook</h2>\n\n	  <p>The Facebook group for QC DC</p>\n\n    </ion-item>	\n\n	\n\n	<ion-item text-wrap onclick="window.open(\'https://twitter.com/QueerconDC\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/twitter.png">\n\n      </ion-avatar>\n\n      <h2>@QueerconDC</h2>\n\n	  <p>Follow QC DC on Twitter.</p>\n\n    </ion-item>\n\n\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://t.me/joinchat/GYnq3lKb5LOv5LG_YIe3ag\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/telegram.png">\n\n      </ion-avatar>\n\n      <h2>Queercon DC Telegram Channel</h2>\n\n      <p>This is a moderated chat channel for DC</p>\n\n    </ion-item>\n\n	\n\n	<ion-list-header><h2>QC San Francisco</h2></ion-list-header>\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://www.facebook.com/groups/QueerconSF/\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/facebook.png">\n\n      </ion-avatar>\n\n      <h2>Facebook</h2>\n\n	  <p>The Facebook group for QC SF</p>\n\n    </ion-item>	\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://t.me/joinchat/GYnq3hDrvpP20bRqhPmd_A\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/telegram.png">\n\n      </ion-avatar>\n\n      <h2>Queercon SF Telegram Channel</h2>\n\n      <p>This is a moderated chat channel for SF</p>\n\n    </ion-item>	\n\n	\n\n	<ion-list-header><h2>QC Denver</h2></ion-list-header>\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://www.facebook.com/groups/QueerconDenver/\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/facebook.png">\n\n      </ion-avatar>\n\n      <h2>Facebook</h2>\n\n	  <p>The Facebook group for QC DEN</p>\n\n    </ion-item>	\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://t.me/joinchat/GYnq3kS0vxvOQSnYnw6gvA\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/telegram.png">\n\n      </ion-avatar>\n\n      <h2>Queercon DEN Telegram Channel</h2>\n\n      <p>This is a moderated chat channel for DEN</p>\n\n    </ion-item>	\n\n	\n\n	</ion-list>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Queercon-ionic-app\Queercon\src\pages\contact\contact.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
+    ], ContactPage);
+    return ContactPage;
+}());
+
+//# sourceMappingURL=contact.js.map
+
+/***/ }),
+
+/***/ 204:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SupportersPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
@@ -452,13 +441,13 @@ var SupportersPage = (function () {
 
 /***/ }),
 
-/***/ 204:
+/***/ 205:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(228);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(229);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -466,7 +455,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 228:
+/***/ 229:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -474,18 +463,18 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(272);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_qc15_qc15__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_chat_chat__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_local_local__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_qc_rsa2018_qc_rsa2018__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_qc15_qc15__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_chat_chat__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_local_local__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_qc_rsa2018_qc_rsa2018__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_volunteer_volunteer__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_events_events__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_contact_contact__ = __webpack_require__(280);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_supporters_supporters__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_about_about__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_news_news__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_contact_contact__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_supporters_supporters__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_about_about__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_news_news__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_status_bar__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_splash_screen__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_calendar__ = __webpack_require__(281);
@@ -538,9 +527,9 @@ var AppModule = (function () {
                     links: [
                         { loadChildren: '../pages/about/about.module#AboutPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/chat/chat.module#ChatPageModule', name: 'ChatPage', segment: 'chat', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/qc-rsa2018/qc-rsa2018.module#QcRsa2018PageModule', name: 'QcRsa2018Page', segment: 'qc-rsa2018', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/local/local.module#LocalPageModule', name: 'LocalPage', segment: 'local', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/news/news.module#NewsPageModule', name: 'NewsPage', segment: 'news', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/qc-rsa2018/qc-rsa2018.module#QcRsa2018PageModule', name: 'QcRsa2018Page', segment: 'qc-rsa2018', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/qc15/qc15.module#Qc15PageModule', name: 'Qc15Page', segment: 'qc15', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/volunteer/volunteer.module#VolunteerPageModule', name: 'VolunteerPage', segment: 'volunteer', priority: 'low', defaultHistory: [] }
                     ]
@@ -576,7 +565,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 271:
+/***/ 272:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -586,15 +575,16 @@ var AppModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_qc15_qc15__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_chat_chat__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_local_local__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_qc_rsa2018_qc_rsa2018__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_qc15_qc15__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_chat_chat__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_local_local__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_qc_rsa2018_qc_rsa2018__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_volunteer_volunteer__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_events_events__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_supporters_supporters__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_about_about__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_news_news__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_contact_contact__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_supporters_supporters__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_about_about__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_news_news__ = __webpack_require__(105);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -618,6 +608,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var MyApp = (function () {
     function MyApp(platform, statusBar, splashScreen) {
         this.platform = platform;
@@ -627,16 +618,17 @@ var MyApp = (function () {
         this.initializeApp();
         this.pages = [
             { title: 'Home', component: __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */] },
-            { title: 'Latest News', component: __WEBPACK_IMPORTED_MODULE_13__pages_news_news__["a" /* NewsPage */] },
+            { title: 'Latest News', component: __WEBPACK_IMPORTED_MODULE_14__pages_news_news__["a" /* NewsPage */] },
             { title: 'Queercon 15 @ Defcon', component: __WEBPACK_IMPORTED_MODULE_5__pages_qc15_qc15__["a" /* Qc15Page */] },
             { title: 'Queercon @ RSA', component: __WEBPACK_IMPORTED_MODULE_8__pages_qc_rsa2018_qc_rsa2018__["a" /* QcRsa2018Page */] },
             { title: 'Events Calendar', component: __WEBPACK_IMPORTED_MODULE_10__pages_events_events__["a" /* EventsPage */] },
             { title: 'Queercon Locals', component: __WEBPACK_IMPORTED_MODULE_7__pages_local_local__["a" /* LocalPage */] },
             { title: 'Chat Room', component: __WEBPACK_IMPORTED_MODULE_6__pages_chat_chat__["a" /* ChatPage */] },
             { title: 'Events', component: __WEBPACK_IMPORTED_MODULE_10__pages_events_events__["a" /* EventsPage */] },
-            { title: 'Support Us', component: __WEBPACK_IMPORTED_MODULE_11__pages_supporters_supporters__["a" /* SupportersPage */] },
+            { title: 'Support Us', component: __WEBPACK_IMPORTED_MODULE_12__pages_supporters_supporters__["a" /* SupportersPage */] },
             { title: 'Volunteer', component: __WEBPACK_IMPORTED_MODULE_9__pages_volunteer_volunteer__["a" /* VolunteerPage */] },
-            { title: 'About Queercon', component: __WEBPACK_IMPORTED_MODULE_12__pages_about_about__["a" /* AboutPage */] }
+            { title: 'Contact', component: __WEBPACK_IMPORTED_MODULE_11__pages_contact_contact__["a" /* ContactPage */] },
+            { title: 'About Queercon', component: __WEBPACK_IMPORTED_MODULE_13__pages_about_about__["a" /* AboutPage */] }
         ];
     }
     MyApp.prototype.initializeApp = function () {
@@ -687,26 +679,25 @@ var MyApp = (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Queercon-ionic-app\Queercon\src\app\app.html"*/'<!--<ion-nav [root]="rootPage"></ion-nav>-->\n\n\n\n<ion-menu [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar>\n\n      <ion-title>Menu</ion-title>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content>\n\n    <ion-list>\n\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n\n        {{p.title}}\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n'/*ion-inline-end:"C:\Queercon-ionic-app\Queercon\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
-    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
 
-/***/ 280:
+/***/ 50:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QcRsa2018Page; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -720,24 +711,34 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var ContactPage = (function () {
-    function ContactPage(navCtrl) {
+/*
+ * Generated class for the QcRsa2018Page page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var QcRsa2018Page = (function () {
+    function QcRsa2018Page(navCtrl, navParams) {
         this.navCtrl = navCtrl;
+        this.navParams = navParams;
     }
-    ContactPage = __decorate([
+    QcRsa2018Page.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad QcRsa2018Page');
+    };
+    QcRsa2018Page = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-contact',template:/*ion-inline-start:"C:\Queercon-ionic-app\Queercon\src\pages\contact\contact.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>\n\n      Stay in Touch\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list>\n\n  \n\n  <ion-list-header><h1>Queercon, Inc</h1></ion-list-header>\n\n  \n\n    <ion-item text-wrap onclick="window.open(\'https://www.queercon.org\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/thumbsquare.png">\n\n      </ion-avatar>\n\n      <h2>Queercon Website</h2>\n\n	  <p>Stay up to date with whats going on, and read recent posts.</p>\n\n    </ion-item>\n\n   \n\n   <ion-item text-wrap onclick="window.open(\'https://www.twitter.com/queercon\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/twitter.png">\n\n      </ion-avatar>\n\n      <h2>@queercon</h2>\n\n	  <h3>Follow us on Twitter.</h3>\n\n	  <p>We will tweet schedule changes, badge releases, contest information.</p>\n\n    </ion-item>\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://www.facebook.com/groups/126504813280/\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/facebook.png">\n\n      </ion-avatar>\n\n      <h2>Facebook</h2>\n\n	  <p>The Facebook group of the LOTS and LOTS of members of Queercon. Join Us.</p>\n\n    </ion-item>	\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://t.me/joinchat/GYnq3kbjrYjhs035_bvU_g\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/telegram.png">\n\n      </ion-avatar>\n\n      <h2>Queercon Telegram Channel</h2>\n\n      <p>This is our primary, moderated social chat channel</p>\n\n    </ion-item>\n\n	\n\n   <ion-item text-wrap onclick="window.open(\'mailto:help@queercon.org\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/email.png">\n\n      </ion-avatar>\n\n      <h2>help@queercon.org</h2>\n\n	  <h3>Email Us</h3>\n\n	  <p>Need to go "old school" and email us? Use this.</p>\n\n    </ion-item>\n\n	\n\n	<ion-list-header><h1>Queercon Locals</h1></ion-list-header>\n\n	\n\n	<ion-list-header><h2>QC New York City</h2></ion-list-header>\n\n	\n\n	<ion-item text-wrap onclick="window.open(\'https://queercon.nyc\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/thumbsquare.png">\n\n      </ion-avatar>\n\n      <h2>QC NYC Website</h2>\n\n	  <p>The QC NYC Website - come check it out for the latest info.</p>\n\n    </ion-item>\n\n   \n\n   <ion-item text-wrap onclick="window.open(\'https://twitter.com/QueerconNYC\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/twitter.png">\n\n      </ion-avatar>\n\n      <h2>@QueerconNYC</h2>\n\n	  <p>Follow QC NYC on Twitter.</p>\n\n    </ion-item>\n\n\n\n    <ion-item text-wrap onclick="window.open(\'https://www.facebook.com/groups/QueerconNYC/\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/facebook.png">\n\n      </ion-avatar>\n\n      <h2>Facebook</h2>\n\n	  <p>The Facebook group for QC NYC</p>\n\n    </ion-item>	\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://t.me/joinchat/FQg75kUQMv-iOD3Bcc7IPQ\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/telegram.png">\n\n      </ion-avatar>\n\n      <h2>Queercon NYC Telegram Channel</h2>\n\n      <p>This is a moderated chat channel for NYC</p>\n\n    </ion-item>\n\n	\n\n	<ion-list-header><h2>QC Seattle</h2></ion-list-header>\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://www.facebook.com/groups/queerconsea/\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/facebook.png">\n\n      </ion-avatar>\n\n      <h2>Facebook</h2>\n\n	  <p>The Facebook group for QC SEA</p>\n\n    </ion-item>	\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://t.me/joinchat/GYnq3kWpuJwOaor9jEmQ1A\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/telegram.png">\n\n      </ion-avatar>\n\n      <h2>Queercon SEA Telegram Channel</h2>\n\n      <p>This is a moderated chat channel for SEA</p>\n\n    </ion-item>\n\n	\n\n	<ion-list-header><h2>QC DC</h2></ion-list-header>\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://www.facebook.com/groups/144929456097653/\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/facebook.png">\n\n      </ion-avatar>\n\n      <h2>Facebook</h2>\n\n	  <p>The Facebook group for QC DC</p>\n\n    </ion-item>	\n\n	\n\n	<ion-item text-wrap onclick="window.open(\'https://twitter.com/QueerconDC\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/twitter.png">\n\n      </ion-avatar>\n\n      <h2>@QueerconDC</h2>\n\n	  <p>Follow QC DC on Twitter.</p>\n\n    </ion-item>\n\n\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://t.me/joinchat/GYnq3lKb5LOv5LG_YIe3ag\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/telegram.png">\n\n      </ion-avatar>\n\n      <h2>Queercon DC Telegram Channel</h2>\n\n      <p>This is a moderated chat channel for DC</p>\n\n    </ion-item>\n\n	\n\n	<ion-list-header><h2>QC San Francisco</h2></ion-list-header>\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://www.facebook.com/groups/QueerconSF/\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/facebook.png">\n\n      </ion-avatar>\n\n      <h2>Facebook</h2>\n\n	  <p>The Facebook group for QC SF</p>\n\n    </ion-item>	\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://t.me/joinchat/GYnq3hDrvpP20bRqhPmd_A\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/telegram.png">\n\n      </ion-avatar>\n\n      <h2>Queercon SF Telegram Channel</h2>\n\n      <p>This is a moderated chat channel for SF</p>\n\n    </ion-item>	\n\n	\n\n	<ion-list-header><h2>QC Denver</h2></ion-list-header>\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://www.facebook.com/groups/QueerconDenver/\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/facebook.png">\n\n      </ion-avatar>\n\n      <h2>Facebook</h2>\n\n	  <p>The Facebook group for QC DEN</p>\n\n    </ion-item>	\n\n	\n\n    <ion-item text-wrap onclick="window.open(\'https://t.me/joinchat/GYnq3kS0vxvOQSnYnw6gvA\', \'_system\', \'location=yes\');">\n\n      <ion-avatar item-start>\n\n        <img src="assets/imgs/telegram.png">\n\n      </ion-avatar>\n\n      <h2>Queercon DEN Telegram Channel</h2>\n\n      <p>This is a moderated chat channel for DEN</p>\n\n    </ion-item>	\n\n	\n\n	</ion-list>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Queercon-ionic-app\Queercon\src\pages\contact\contact.html"*/
+            selector: 'page-qc-rsa2018',template:/*ion-inline-start:"C:\Queercon-ionic-app\Queercon\src\pages\qc-rsa2018\qc-rsa2018.html"*/'<!--\n  Generated template for the QcRsa2018Page page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>qc_rsa2018</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Queercon-ionic-app\Queercon\src\pages\qc-rsa2018\qc-rsa2018.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
-    ], ContactPage);
-    return ContactPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    ], QcRsa2018Page);
+    return QcRsa2018Page;
 }());
 
-//# sourceMappingURL=contact.js.map
+//# sourceMappingURL=qc-rsa2018.js.map
 
 /***/ }),
 
-/***/ 50:
+/***/ 51:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -782,5 +783,5 @@ var Qc15Page = (function () {
 
 /***/ })
 
-},[204]);
+},[205]);
 //# sourceMappingURL=main.js.map

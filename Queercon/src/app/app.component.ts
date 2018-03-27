@@ -46,6 +46,7 @@ export class MyApp {
 	  { title: 'Events', component: EventsPage },
 	  { title: 'Support Us', component: SupportersPage },
 	  { title: 'Volunteer', component: VolunteerPage },
+ 	  { title: 'Contact', component: ContactPage },
 	  { title: 'About Queercon', component: AboutPage }
     ];
 
