@@ -15,7 +15,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class NewsPage {
 
+  private webWiew: any = window;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.webWiew.AppCenter.Analytics.trackEvent('News Loaded');
   }
 
   ionViewDidLoad() {

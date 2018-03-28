@@ -7,7 +7,10 @@ import { NavController } from 'ionic-angular';
 })
 export class EventsPage {
 
+  private webWiew: any = window;
+
   constructor(public navCtrl: NavController) {
+    this.webWiew.AppCenter.Analytics.trackEvent('Events Loaded');
 
   }
   
