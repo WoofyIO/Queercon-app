@@ -46,33 +46,6 @@ export class EventsPage {
     localData.subscribe(data => {
       this.events = data;
     })
-
-    /* this.items = [
-      {
-        'title': 'Event 1',
-        'summary': '1111111111',
-        'description': 'Blah Blah Blah',
-        'host': 'QC'
-      },
-      {
-        'title': 'Event 2',
-        'summary': '1111111111',
-        'description': 'Blah Blah Blah',
-        'host': 'QC'
-      },
-      {
-        'title': 'Event 3',
-        'summary': '1111111111',
-        'description': 'Blah Blah Blah',
-        'host': 'SEA'
-      },
-      {
-        'title': 'Event 4',
-        'summary': '1111111111',
-        'description': 'Blah Blah Blah',
-        'host': 'DC'
-      },
-    ] */
   }
 
   openEventDetailsPage(item) {
