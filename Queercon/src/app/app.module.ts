@@ -9,7 +9,7 @@ import { ChatPage } from '../pages/chat/chat';
 import { LocalPage } from '../pages/local/local';
 import { QcRsa2018Page } from '../pages/qc-rsa2018/qc-rsa2018';
 import { VolunteerPage } from '../pages/volunteer/volunteer';
-import { EventsPage } from '../pages/events/events';
+import { EventsPage as EventsPage, EventsDetailsPage} from '../pages/events/events';
 import { ContactPage } from '../pages/contact/contact';
 import { SupportersPage } from '../pages/supporters/supporters';
 import { AboutPage } from '../pages/about/about';
@@ -20,8 +20,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { Calendar } from '@ionic-native/calendar';
 
+
 @NgModule({
   declarations: [
+    
+    EventsPage,
+
+    EventsDetailsPage,
+
     MyApp,
     NewsPage,
     SupportersPage,
@@ -30,17 +36,40 @@ import { Calendar } from '@ionic-native/calendar';
     LocalPage,
     QcRsa2018Page,
     VolunteerPage,
-    EventsPage,
     AboutPage,
     ContactPage,
     HomePage
   ],
+  
   imports: [
+
     BrowserModule,
-    IonicModule.forRoot(MyApp)
-  ],
+
+    IonicModule.forRoot(MyApp, {
+
+      statusbarPadding: false,
+
+     },
+
+     {
+
+       links: [
+      { component: EventsPage, name: 'EventsPage', segment: 'navigation-basic' },
+
+      { component: EventsDetailsPage, name: 'NavigationDetailsPage', segment: 'navigation-details' },
+
+    ]
+
+  })
+
+],
   bootstrap: [IonicApp],
   entryComponents: [
+    
+    EventsPage,
+
+    EventsDetailsPage,
+
     MyApp,
     NewsPage,
     SupportersPage,
@@ -49,7 +78,6 @@ import { Calendar } from '@ionic-native/calendar';
     LocalPage,
     QcRsa2018Page,
     VolunteerPage,
-    EventsPage,
     AboutPage,
     ContactPage,
     HomePage
