@@ -6,13 +6,17 @@ import 'rxjs/add/operator/map';
 @Component({
   templateUrl: 'events-details.html',
 })
+
 export class EventsDetailsPage {
   item;
-
+  private webWiew: any = window;
   constructor(params: NavParams) {
+    this.webWiew.AppCenter.Analytics.trackEvent('EventsPage Detail Loaded');
     this.item = params.data.item;
   }
 }
+
+    
 
 @Component({
   template: `
@@ -40,8 +44,10 @@ export class EventsDetailsPage {
 `
 })
 export class EventsPage {
+  private webWiew: any = window;
   events: any[];
   constructor(public nav: NavController, http: Http) {
+    this.webWiew.AppCenter.Analytics.trackEvent('EventsPage Loaded');
     let localData = http.get('assets/events.json').map(res => res.json().items);
     localData.subscribe(data => {
       this.events = data;

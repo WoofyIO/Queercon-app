@@ -15,7 +15,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class VolunteerPage {
 
+  private webWiew: any = window;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.webWiew.AppCenter.Analytics.trackEvent('Volunteer Loaded');
   }
 
   ionViewDidLoad() {
