@@ -16,20 +16,42 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class='graybg'>
 
 	<ion-card>
+		<img src="../../assets/imgs/rsa.jpg">
 	  <ion-card-header>
 	    Come Socialize in San Francisco
 	  </ion-card-header>
 	  <ion-card-content>
-	    Placeholder! There should be information here about our presence at RSA. It won't be pretty but it'll get the job done. Ideally we'd get some images in here, maybe a map, other fun stuff. But right now priorities are elsewhere.
+	    Attending RSA this year? Come join some of your Queercon brethren for a socializing & networking event at Hamburger Marys, after the event wraps up. 
 	  </ion-card-content>
+  </ion-card>
+
+  <ion-card>
 	  <ion-row no-padding>
       <ion-col>
         <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='clock'></ion-icon>
+          Thur, April 19 at 7:30 PM - 10:30 PM
+        </button>
+      </ion-col>
+    </ion-row>
+
+	  <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="danger" icon-start onclick="window.open('https://www.facebook.com/events/559613291078428/', '_system', 'location=yes');">
           <ion-icon name='bookmark'></ion-icon>
           RSVP ON FACEBOOK
+        </button>
+      </ion-col>
+    </ion-row>
+
+	  <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="danger" icon-start onclick="window.open('https://goo.gl/maps/EknU1Wg7P7A2', '_system', 'location=yes');">
+          <ion-icon name='compass'></ion-icon>
+          MAP IT
         </button>
       </ion-col>
     </ion-row>
