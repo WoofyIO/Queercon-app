@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-
+import { Http } from '@angular/http';
 import { NavController, NavParams } from 'ionic-angular';
-
+import 'rxjs/add/operator/map';
 
 @Component({
   templateUrl: 'events-details.html',
@@ -27,12 +27,12 @@ export class EventsDetailsPage {
 
 <ion-content>
   <ion-list>
-    <ion-card *ngFor="let item of items" (click)="openEventDetailsPage(item)">
+    <ion-card *ngFor="let event of events" (click)="openEventDetailsPage(item)">
       <ion-card-header>
-        {{ item.title }}
+        {{ event.title }}
       </ion-card-header>
       <ion-card-content>
-      {{ item.summary }}
+      {{ event.summary }}
       </ion-card-content>
     </ion-card>
   </ion-list>
@@ -40,10 +40,14 @@ export class EventsDetailsPage {
 `
 })
 export class EventsPage {
-  items = [];
+  events: any[];
+  constructor(public nav: NavController, http: Http) {
+    let localData = http.get('assets/events.json').map(res => res.json().items);
+    localData.subscribe(data => {
+      this.events = data;
+    })
 
-  constructor(public nav: NavController) {
-    this.items = [
+    /* this.items = [
       {
         'title': 'Event 1',
         'summary': '1111111111',
@@ -68,7 +72,7 @@ export class EventsPage {
         'description': 'Blah Blah Blah',
         'host': 'DC'
       },
-    ]
+    ] */
   }
 
   openEventDetailsPage(item) {

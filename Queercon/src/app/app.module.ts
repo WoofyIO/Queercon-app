@@ -1,4 +1,5 @@
 import { NgModule, ErrorHandler } from '@angular/core';
+import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
@@ -21,13 +22,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { Calendar } from '@ionic-native/calendar';
 
 
+
 @NgModule({
   declarations: [
-    
     EventsPage,
-
     EventsDetailsPage,
-
     MyApp,
     NewsPage,
     SupportersPage,
@@ -40,36 +39,23 @@ import { Calendar } from '@ionic-native/calendar';
     ContactPage,
     HomePage
   ],
-  
   imports: [
-
     BrowserModule,
-
+    HttpModule,
     IonicModule.forRoot(MyApp, {
-
-      statusbarPadding: false,
-
+       statusbarPadding: false,
      },
-
      {
-
        links: [
       { component: EventsPage, name: 'EventsPage', segment: 'navigation-basic' },
-
       { component: EventsDetailsPage, name: 'NavigationDetailsPage', segment: 'navigation-details' },
-
     ]
-
   })
-
 ],
   bootstrap: [IonicApp],
   entryComponents: [
-    
     EventsPage,
-
     EventsDetailsPage,
-
     MyApp,
     NewsPage,
     SupportersPage,
