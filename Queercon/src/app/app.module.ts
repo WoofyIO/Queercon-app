@@ -21,6 +21,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { Calendar } from '@ionic-native/calendar';
 
+import {OneSignal} from '@ionic-native/onesignal';
+
 
 
 @NgModule({
@@ -72,7 +74,8 @@ import { Calendar } from '@ionic-native/calendar';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-	Calendar
+    Calendar,
+    OneSignal
   ]
 })
 export class AppModule {}

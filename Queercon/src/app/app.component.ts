@@ -15,8 +15,8 @@ import { SupportersPage } from '../pages/supporters/supporters';
 import { AboutPage } from '../pages/about/about';
 import { NewsPage } from '../pages/news/news';
 
-declare const codePush: any
-declare const InstallMode: any
+/* Remove in staging *///declare const codePush: any
+/* Remove in staging *///declare const InstallMode: any
 
 
 @Component({
@@ -56,28 +56,54 @@ export class MyApp {
 
 
 			/* Remove in staging *///
-/*  			codePush.sync(null, {
-				updateDialog: {
-					appendReleaseDescription: true,
-					mandatoryUpdateMessage: "An important content update has been installed",
-					optionalUpdateMessage: "A content update is available. Install now?",
-					descriptionPrefix: "\n\nChange log:\n"
-				},
-				installMode: InstallMode.IMMEDIATE
-				});  */
+			/*  			codePush.sync(null, {
+			updateDialog: {
+			appendReleaseDescription: true,
+			mandatoryUpdateMessage: "An important content update has been installed",
+			optionalUpdateMessage: "A content update is available. Install now?",
+			descriptionPrefix: "\n\nChange log:\n"
+			},
+			installMode: InstallMode.IMMEDIATE
+			});  */
 
 
-      statusBar.styleDefault();
+			statusBar.styleDefault();
 
-      splashScreen.hide();
+			splashScreen.hide();
 
-    });
 
-  }
+			// Optional OneSignal code for iOS to prompt users later
+			// Set your iOS Settings
+			var iosSettings = {};
+			iosSettings["kOSSettingsKeyAutoPrompt"] = false; // will not prompt users when start app 1st time
+			iosSettings["kOSSettingsKeyInAppLaunchURL"] = false; // false opens safari with Launch URL
+
+			var notificationOpenedCallback = function(jsonData) {
+				console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+				if (jsonData.notification.payload.additionalData != null) {
+					console.log("Here we access addtional data");
+					if (jsonData.notification.payload.additionalData.openURL != null) {
+						console.log("Here we access the openURL sent in the notification data");
+					}
+				}
+			};
+
+			window["plugins"].OneSignal
+        	.startInit('d149d10e-71d8-4243-8827-f45a72d2d2ac','278964097998')
+	        .iOSSettings(iosSettings) // only needed if added Optional OneSignal code for iOS above
+	        .inFocusDisplaying(window["plugins"].OneSignal.OSInFocusDisplayOption.Notification)
+	        .handleNotificationOpened(notificationOpenedCallback)
+	        .endInit();
+
+		});
+
+
+		
+
+	}
 	
 
-  openPage(page) {
-
-    this.nav.setRoot(page.component);
-  }
+	openPage(page) {
+		this.nav.setRoot(page.component);
+	}
 }
