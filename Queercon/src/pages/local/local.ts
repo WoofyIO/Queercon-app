@@ -15,10 +15,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class LocalPage {
 
-  private webWiew: any = window;
+  /* Remove in staging *///private webWiew: any = window;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.webWiew.AppCenter.Analytics.trackEvent('Locals Loaded');
+    /* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('Locals Loaded');
   }
 
   ionViewDidLoad() {

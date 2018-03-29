@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Events</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-list>
+      <ion-card *ngFor="let event of events" (click)="openEventDetailsPage(item)">
+        <ion-card-header>
+          {{ event.title }}
+        </ion-card-header>
+        <ion-card-content>
+        {{ event.summary }}
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+  </ion-content>

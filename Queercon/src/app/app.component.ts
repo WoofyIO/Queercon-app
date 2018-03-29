@@ -17,7 +17,6 @@ import { NewsPage } from '../pages/news/news';
 
 declare const codePush: any
 declare const InstallMode: any
-//declare const AppCenter: any
 
 
 @Component({
@@ -27,7 +26,7 @@ declare const InstallMode: any
 export class MyApp {
 	@ViewChild(Nav) nav: Nav;
 	
-	private webWiew: any = window;
+	/* Remove in staging *///private webWiew: any = window;
 
 	rootPage:any = HomePage;
 	
@@ -35,7 +34,7 @@ export class MyApp {
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
 		
-		this.webWiew.AppCenter.Analytics.trackEvent('App loaded');
+		/* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('App loaded');
 		
 		this.pages = [
 			{ title: 'Home', component: HomePage },
@@ -53,13 +52,11 @@ export class MyApp {
 		
 		platform.ready().then(() => {
 
-			this.webWiew.AppCenter.Analytics.trackEvent('App Ready');
+			/* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('App Ready');
 
-      // Okay, so the platform is ready and our plugins are available.
 
-			// Here you can do any higher level native things you might need.
-			
- 			codePush.sync(null, {
+			/* Remove in staging *///
+/*  			codePush.sync(null, {
 				updateDialog: {
 					appendReleaseDescription: true,
 					mandatoryUpdateMessage: "An important content update has been installed",
@@ -67,7 +64,7 @@ export class MyApp {
 					descriptionPrefix: "\n\nChange log:\n"
 				},
 				installMode: InstallMode.IMMEDIATE
-				}); 
+				});  */
 
 
       statusBar.styleDefault();
@@ -80,8 +77,7 @@ export class MyApp {
 	
 
   openPage(page) {
-    // Reset the content nav to have just this page
-    // we wouldn't want the back button to show in this scenario
+
     this.nav.setRoot(page.component);
   }
 }

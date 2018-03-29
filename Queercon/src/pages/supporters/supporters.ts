@@ -7,10 +7,10 @@ import { NavController } from 'ionic-angular';
 })
 export class SupportersPage {
 
-  private webWiew: any = window;
+
 
   constructor(public navCtrl: NavController) {
-    this.webWiew.AppCenter.Analytics.trackEvent('Supporters Loaded');
+
 
   }
 
