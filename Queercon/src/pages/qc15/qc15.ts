@@ -15,9 +15,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class Qc15Page {
 
+  /* Remove in staging *///private webWiew: any = window;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-
+    /* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('QC15 Loaded');
 
   }
 

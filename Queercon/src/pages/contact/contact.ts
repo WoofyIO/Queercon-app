@@ -7,10 +7,10 @@ import { NavController } from 'ionic-angular';
 })
 export class ContactPage {
 
-
+  /* Remove in staging *///private webWiew: any = window;
 
   constructor(public navCtrl: NavController) {
-
+    /* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('Contacts Loaded');
 
   }
 
