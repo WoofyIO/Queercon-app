@@ -38,12 +38,12 @@
       	<ion-grid>
       		<ion-row align-items-center>
       			<ion-col>
-        			{{ event.date }}
+        			<span class="event-date">{{ event.date }}</span>
         		</ion-col>
         		<ion-col col-10>
         			<ion-card-content>
         			<div>
-		        		<h2>{{ event.title }}</h2>
+		        		<span class="event-title">{{ event.title }}</span>
 		        	</div>
 			        	<div>
 		          		{{ event.location }}
@@ -53,7 +53,7 @@
 		          		{{ event.icon1 }}
 		          	</div>
 		          	<div>
-					        {{ event.description }}
+					        {{ event.summary }}
 					      </div>
 					    </ion-card-content>
 				      </ion-col>

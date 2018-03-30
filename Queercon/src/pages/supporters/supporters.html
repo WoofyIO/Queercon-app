@@ -10,33 +10,68 @@
 </ion-header>
 
 <ion-content padding class='graybg'>
+
 	<ion-card>
+	  <ion-card-header>
+	  	Donate
+	  </ion-card-header>
 	  <ion-card-content>
-	    Queercon is a registered non-profit, run completely on volunteer time and donations. There are many ways you can help!
+	  	All donations to Queercon are tax-deductible and 100% goes to events & outreach. In addition to a generous cash donation, most years we offer Queercon Badges for purchase to support us, and run a store!
+	  </ion-card-content>
+	<ion-row no-padding>
+      <ion-col text-center>
+	  	<button ion-button color="danger" onclick="window.open('https://queercon.org/donate/', '_system', 'location=yes');">
+          Donate Now!
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+	<ion-card>
+	  <ion-card-header>
+	  	smile.amazon.com
+	  </ion-card-header>
+	  <ion-card-content>
+	    Looking for an easy way to help? Do your Amazon shopping from smile.amazon.com, and set Queercon as your charity of choice! There is absolutely no cost to you, and Amazon donates 1% of your purchases to the charity.
 	  </ion-card-content>
   </ion-card>
 
 	<ion-card>
+	  <ion-card-header>
+	  	Company donations
+	  </ion-card-header>
 	  <ion-card-content>
-	    Donate
+	    Does your company match donations? Or match financial donations if you donate time? (Microsoft does!) Please consider taking advantage of these perks to support the best group at Defcon each year.
 	  </ion-card-content>
   </ion-card>
 
 	<ion-card>
+	  <ion-card-header>
+	  	Donate your time
+	  </ion-card-header>
 	  <ion-card-content>
-	    smile.amazon.com
+	    Every year during Defcon we need loads of help. And the local chapters can always use help, or start a new one in your city. Anything to help connect and support the LGBT+ community.
 	  </ion-card-content>
+	  <ion-row no-padding>
+      <ion-col>
+        <button ion-button color="danger" icon-start (click)="goToVolunteerPage()">
+          <ion-icon name='bookmark'></ion-icon>
+          Volunteer
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button color="danger" icon-start (click)="goToLocalPage()">
+          <ion-icon name='chatboxes'></ion-icon>
+          Locals
+        </button>
+      </ion-col>
+    </ion-row>
+
   </ion-card>
 
 	<ion-card>
 	  <ion-card-content>
-	    Company donations
-	  </ion-card-content>
-  </ion-card>
-
-	<ion-card>
-	  <ion-card-content>
-	    Donate your time
+	    <span style='font-style: italic'> Queercon is a registered non-profit, run completely on volunteer time and donations. Thank you for supporting us!</span>
 	  </ion-card-content>
   </ion-card>
 
