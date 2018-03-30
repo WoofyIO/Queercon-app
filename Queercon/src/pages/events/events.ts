@@ -12,6 +12,7 @@ export class EventsDetailsPage {
   /* Remove in staging *///private webWiew: any = window;
   constructor(params: NavParams) {
     /* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('EventsPage Detail Loaded');
+    let localData = http.get('assets/events.json').map(res => res.json().items);
     this.item = params.data.item;
   }
 }
@@ -29,7 +30,7 @@ export class EventsPage {
     let localData = http.get('assets/events.json').map(res => res.json().items);
     localData.subscribe(data => {
       this.events = data;
-    })
+    }
   }
 
   openEventDetailsPage(item) {
