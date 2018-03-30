@@ -14,6 +14,7 @@ import { EventsPage as EventsPage, EventsDetailsPage} from '../pages/events/even
 import { SupportersPage } from '../pages/supporters/supporters';
 import { AboutPage } from '../pages/about/about';
 import { NewsPage } from '../pages/news/news';
+import { SettingsPage } from '../pages/settings/settings';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -37,7 +38,8 @@ import {OneSignal} from '@ionic-native/onesignal';
     QcRsa2018Page,
     VolunteerPage,
     AboutPage,
-    HomePage
+    HomePage,
+    SettingsPage
   ],
   imports: [
     BrowserModule,
@@ -65,7 +67,8 @@ import {OneSignal} from '@ionic-native/onesignal';
     QcRsa2018Page,
     VolunteerPage,
     AboutPage,
-    HomePage
+    HomePage,
+    SettingsPage
   ],
   providers: [
     StatusBar,
