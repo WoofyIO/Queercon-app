@@ -11,7 +11,6 @@ import { LocalPage } from '../pages/local/local';
 import { QcRsa2018Page } from '../pages/qc-rsa2018/qc-rsa2018';
 import { VolunteerPage } from '../pages/volunteer/volunteer';
 import { EventsPage as EventsPage, EventsDetailsPage} from '../pages/events/events';
-import { ContactPage } from '../pages/contact/contact';
 import { SupportersPage } from '../pages/supporters/supporters';
 import { AboutPage } from '../pages/about/about';
 import { NewsPage } from '../pages/news/news';
@@ -38,7 +37,6 @@ import {OneSignal} from '@ionic-native/onesignal';
     QcRsa2018Page,
     VolunteerPage,
     AboutPage,
-    ContactPage,
     HomePage
   ],
   imports: [
@@ -67,7 +65,6 @@ import {OneSignal} from '@ionic-native/onesignal';
     QcRsa2018Page,
     VolunteerPage,
     AboutPage,
-    ContactPage,
     HomePage
   ],
   providers: [

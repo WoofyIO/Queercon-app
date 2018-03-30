@@ -11,7 +11,6 @@ import { LocalPage } from '../pages/local/local';
 import { QcRsa2018Page } from '../pages/qc-rsa2018/qc-rsa2018';
 import { VolunteerPage } from '../pages/volunteer/volunteer';
 import { EventsPage } from '../pages/events/events';
-import { ContactPage } from '../pages/contact/contact';
 import { SupportersPage } from '../pages/supporters/supporters';
 import { AboutPage } from '../pages/about/about';
 import { NewsPage } from '../pages/news/news';
@@ -47,7 +46,6 @@ export class MyApp {
 			{ title: 'Chat Room', component: ChatPage },
 			{ title: 'Support Us', component: SupportersPage },
 			{ title: 'Volunteer', component: VolunteerPage },
-			{ title: 'Contact', component: ContactPage },
 			{ title: 'About Queercon', component: AboutPage }
 		];
 
