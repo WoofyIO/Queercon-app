@@ -7,15 +7,58 @@
     </ion-navbar>
   </ion-header>
   
-  <ion-content>
+  <ion-content class="graybg">
+  	<div padding>
+		  <ion-segment [(ngModel)]="src">
+	    <ion-segment-button value="all">
+	      All
+	    </ion-segment-button>
+	    <ion-segment-button value="core">
+	      Core
+	    </ion-segment-button>
+	    <ion-segment-button value="SEA">
+	      SEA
+	    </ion-segment-button>
+	    <ion-segment-button value="NYC">
+	      NYC
+	    </ion-segment-button>
+	    <ion-segment-button value="DEN">
+	      DEN
+	    </ion-segment-button>
+	    <ion-segment-button value="DC">
+	      DC
+	    </ion-segment-button>
+	    <ion-segment-button value="SFO">
+	      SFO
+	    </ion-segment-button>
+	  </ion-segment>
+	</div>
     <ion-list>
       <ion-card *ngFor="let event of events" (click)="openEventDetailsPage(item)">
-        <ion-card-header>
-          {{ event.title }}
-        </ion-card-header>
-        <ion-card-content>
-        {{ event.summary }}
-        </ion-card-content>
+      	<ion-grid>
+      		<ion-row align-items-center>
+      			<ion-col>
+        			{{ event.date }}
+        		</ion-col>
+        		<ion-col col-10>
+        			<ion-card-content>
+        			<div>
+		        		<h2>{{ event.title }}</h2>
+		        	</div>
+			        	<div>
+		          		{{ event.location }}
+		          	</div>
+		          	<div>
+		         		  {{ event.hours }}
+		          		{{ event.icon1 }}
+		          	</div>
+		          	<div>
+					        {{ event.description }}
+					      </div>
+					    </ion-card-content>
+				      </ion-col>
+				    </ion-row>
+				  </ion-grid>
       </ion-card>
     </ion-list>
   </ion-content>
