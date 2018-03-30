@@ -12,7 +12,6 @@ export class EventsDetailsPage {
   /* Remove in staging *///private webWiew: any = window;
   constructor(params: NavParams) {
     /* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('EventsPage Detail Loaded');
-    let localData = http.get('assets/events.json').map(res => res.json().items);
     this.item = params.data.item;
   }
 }
@@ -24,13 +23,13 @@ export class EventsDetailsPage {
 })
 export class EventsPage {
   /* Remove in staging *///private webWiew: any = window;
-  events: any[];
+  items = [];
   constructor(public nav: NavController, http: Http) {
     /* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('EventsPage Loaded');
-    let localData = http.get('assets/events.json').map(res => res.json().items);
+    let localData = http.get('assets/events.json').map(res => res.json().events);
     localData.subscribe(data => {
-      this.events = data;
-    }
+      this.items = data;
+    })
   }
 
   openEventDetailsPage(item) {

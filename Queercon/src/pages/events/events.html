@@ -34,26 +34,26 @@
 	  </ion-segment>
 	</div>
     <ion-list>
-      <ion-card *ngFor="let event of events" (click)="openEventDetailsPage(item)">
+      <ion-card *ngFor="let item of items" (click)="openEventDetailsPage(item)">
       	<ion-grid>
       		<ion-row align-items-center>
       			<ion-col>
-        			<span class="event-date">{{ event.date }}</span>
+        			<span class="event-date">{{ item.date }}</span>
         		</ion-col>
         		<ion-col col-10>
         			<ion-card-content>
         			<div>
-		        		<span class="event-title">{{ event.title }}</span>
+		        		<span class="event-title">{{ item.title }}</span>
 		        	</div>
 			        	<div>
-		          		{{ event.location }}
+		          		{{ item.location }}
 		          	</div>
 		          	<div>
-		         		  {{ event.hours }}
-		          		{{ event.icon1 }}
+		         		  {{ item.hours }}
+		          		{{ item.icon1 }}
 		          	</div>
 		          	<div>
-					        {{ event.summary }}
+					        {{ item.summary }}
 					      </div>
 					    </ion-card-content>
 				      </ion-col>

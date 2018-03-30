@@ -32,7 +32,7 @@ export class MyApp {
 	
 	pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, private AlertController: AlertController) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, AlertController: AlertController) {
 		
 		/* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('App loaded');
 		

@@ -109,7 +109,7 @@
         <variable name="CALENDAR_USAGE_DESCRIPTION" value="This app will add events to your calendar is you want it" />
     </plugin>
     <plugin name="cordova-plugin-statusbar" spec="^2.4.1" />
+    <plugin name="onesignal-cordova-plugin" spec="^2.3.3" />
     <engine name="android" spec="7.0.0" />
     <engine name="ios" spec="4.5.4" />
-    <plugin name="onesignal-cordova-plugin" spec="^2.3.3" />
 </widget>
