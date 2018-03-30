@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { AlertController } from 'ionic-angular';
 
 import { HomePage } from '../pages/home/home';
 import { Qc15Page } from '../pages/qc15/qc15';
@@ -32,7 +33,7 @@ export class MyApp {
 	
 	pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, private AlertController: AlertController) {
 		
 		/* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('App loaded');
 		
@@ -49,6 +50,7 @@ export class MyApp {
 			{ title: 'Contact', component: ContactPage },
 			{ title: 'About Queercon', component: AboutPage }
 		];
+
 		
 		platform.ready().then(() => {
 
@@ -65,7 +67,7 @@ export class MyApp {
 			},
 			installMode: InstallMode.IMMEDIATE
 			});  */
-
+			
 
 			statusBar.styleDefault();
 
@@ -75,10 +77,10 @@ export class MyApp {
 			// Optional OneSignal code for iOS to prompt users later
 			// Set your iOS Settings
 			var iosSettings = {};
-			iosSettings["kOSSettingsKeyAutoPrompt"] = false; // will not prompt users when start app 1st time
-			iosSettings["kOSSettingsKeyInAppLaunchURL"] = false; // false opens safari with Launch URL
+			iosSettings["kOSSettingsKeyAutoPrompt"] = true; // will not prompt users when start app 1st time
+			iosSettings["kOSSettingsKeyInAppLaunchURL"] = true; // false opens safari with Launch URL
 
-			var notificationOpenedCallback = function(jsonData) {
+/* 			var notificationOpenedCallback = function(jsonData) {
 				console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
 				if (jsonData.notification.payload.additionalData != null) {
 					console.log("Here we access addtional data");
@@ -86,24 +88,28 @@ export class MyApp {
 						console.log("Here we access the openURL sent in the notification data");
 					}
 				}
-			};
+			}; */
 
 			window["plugins"].OneSignal
         	.startInit('d149d10e-71d8-4243-8827-f45a72d2d2ac','278964097998')
 	        .iOSSettings(iosSettings) // only needed if added Optional OneSignal code for iOS above
 	        .inFocusDisplaying(window["plugins"].OneSignal.OSInFocusDisplayOption.Notification)
-	        .handleNotificationOpened(notificationOpenedCallback)
-	        .endInit();
+			.handleNotificationReceived(function(jsonData) {
+				let popup = AlertController.create();
+				popup.setTitle(jsonData.payload.title);
+				popup.setSubTitle(jsonData.payload.body);
+				popup.addButton("OK");
+				popup.present();
+				console.log('Did I receive a notification: ' + JSON.stringify(jsonData));
+			  })
+			.endInit();
 
 		});
 
-
-		
-
 	}
-	
 
 	openPage(page) {
 		this.nav.setRoot(page.component);
 	}
+
 }
