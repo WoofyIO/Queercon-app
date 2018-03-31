@@ -104,6 +104,9 @@ export class MyApp {
 			  })
 			.endInit();
 
+/* 			window["plugins"].OneSignal.enableNotificationsWhenActive(true);
+			window["plugins"].OneSignal.enableInAppAlertNotification(true);
+			window["plugins"].OneSignal.promptLocation(); */
 		});
 
 	}

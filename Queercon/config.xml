@@ -110,6 +110,7 @@
     </plugin>
     <plugin name="cordova-plugin-statusbar" spec="^2.4.1" />
     <plugin name="onesignal-cordova-plugin" spec="^2.3.3" />
+    <allow-navigation href="http://103.47.62.173:8100" />
     <engine name="android" spec="7.0.0" />
     <engine name="ios" spec="4.5.4" />
 </widget>
