@@ -33,24 +33,26 @@
     },
 
     
-
     "ios": {
-
         "debug": {
-
-            "codeSignIdentity": "iPhone Developer: appdev@queercon.org (27FTE4EWWM)",
-
-            "provisioningProfile": "c7e645be-3733-4abe-854e-19691b107a25"
+            "codeSignIdentity": "iPhone Developer",
+            "developmentTeam": "YSP3NTS66E",
+            "packageType": "development",
+            "buildFlag": [
+                "EMBEDDED_CONTENT_CONTAINS_SWIFT = YES",
+                "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES=NO",
+                "LD_RUNPATH_SEARCH_PATHS = \"@executable_path/Frameworks\""
+            ]
         },
-
         "release": {
-
-            "codeSignIdentity": "iPhone Distribution: Queercon, Inc (YSP3NTS66E)",
-
-            "provisioningProfile": "627419f8-b6f0-404e-b228-cd16380a74d8"
-
+            "codeSignIdentity": "iPhone Developer",
+            "developmentTeam": "YSP3NTS66E",
+            "packageType": "app-store",
+            "buildFlag": [
+                "EMBEDDED_CONTENT_CONTAINS_SWIFT = YES",
+                "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES=NO",
+                "LD_RUNPATH_SEARCH_PATHS = \"@executable_path/Frameworks\""
+            ]
         }
-
     }
-
 }
