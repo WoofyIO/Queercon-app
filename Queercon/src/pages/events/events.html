@@ -1,67 +1,67 @@
 <ion-header>
-    <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>Events</ion-title>
-    </ion-navbar>
-  </ion-header>
-  
-  <ion-content class="graybg">
-  	<div padding>
-		  <ion-segment [(ngModel)]="src">
-	    <ion-segment-button value="core">
-	      Core
-	    </ion-segment-button>
-	    <ion-segment-button value="SEA">
-	      SEA
-	    </ion-segment-button>
-	    <ion-segment-button value="NYC">
-	      NYC
-	    </ion-segment-button>
-	    <ion-segment-button value="DEN">
-	      DEN
-	    </ion-segment-button>
-	    <ion-segment-button value="DC"> 
-	      DC
-	    </ion-segment-button>
-	    <ion-segment-button value="SFO">
-	      SFO
-	    </ion-segment-button>
-	    <ion-segment-button value="SFO">
-	      SLC
-	    </ion-segment-button>
-	    <ion-segment-button value="SFO">
-	      LAX
-	    </ion-segment-button>
-	  </ion-segment>
+	<ion-navbar>
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>Events</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content class="graybg">
+	<div padding>
+		<ion-segment [(ngModel)]="src">
+			<ion-segment-button value="core">
+				Core
+			</ion-segment-button>
+			<ion-segment-button value="SEA">
+				SEA
+			</ion-segment-button>
+			<ion-segment-button value="NYC">  
+				NYC
+			</ion-segment-button>
+			<ion-segment-button value="DEN">
+				DEN
+			</ion-segment-button>
+			<ion-segment-button value="DC"> 
+				DC
+			</ion-segment-button>
+			<ion-segment-button value="SFO">
+				SFO
+			</ion-segment-button>
+			<ion-segment-button value="SLC">
+				SLC
+			</ion-segment-button>
+			<ion-segment-button value="LAX">
+				LAX
+			</ion-segment-button>
+		</ion-segment>
 	</div>
-    <ion-list>
-      <ion-card *ngFor="let item of items" (click)="openEventDetailsPage(item)">
-      	<ion-grid>
-      		<ion-row align-items-center>
-      			<ion-col>
-        			<span class="event-date">{{ item.date }}</span>
-        		</ion-col>
-        		<ion-col col-10>
-        			<ion-card-content>
-        			<div>
-		        		<span class="event-title">{{ item.title }}</span>
-		        	</div>
-			        	<div>
-		          		{{ item.location }}
-		          	</div>
-		          	<div>
-		         		  {{ item.hours }}
-		          		{{ item.icon1 }}
-		          	</div>
-		          	<div>
-					        {{ item.summary }}
-					      </div>
-					    </ion-card-content>
-				      </ion-col>
-				    </ion-row>
-				  </ion-grid>
-      </ion-card>
-    </ion-list>
-  </ion-content>
+	<ion-list>
+		<ion-card *ngFor="let item of items" (click)="openEventDetailsPage(item)">
+			<ion-grid>
+				<ion-row align-items-center>
+					<ion-col>
+						<span class="event-date">{{ item.date }}</span>
+					</ion-col>
+					<ion-col col-10>
+						<ion-card-content>
+							<div>
+								<span class="event-title">{{ item.title }}</span>
+							</div>
+							<div>
+								{{ item.location }}
+							</div>
+							<div>
+								{{ item.hours }}
+								{{ item.icon1 }}
+							</div>
+							<div>
+								{{ item.summary }}
+							</div>
+						</ion-card-content>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-card>
+	</ion-list>
+</ion-content>

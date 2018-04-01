@@ -70,7 +70,6 @@ export class MyApp {
 			
 
 			statusBar.styleDefault();
-			statusBar.overlaysWebView(false);
 
 			splashScreen.hide();
 
@@ -114,9 +113,6 @@ export class MyApp {
 
 	openPage(page) {
 		this.nav.setRoot(page.component);
-	}
-	goHome() {
-		this.nav.setRoot(HomePage);
 	}
 
 }
