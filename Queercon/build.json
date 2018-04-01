@@ -45,7 +45,7 @@
             ]
         },
         "release": {
-            "codeSignIdentity": "iPhone Developer",
+            "codeSignIdentity": "iPhone Distribution",
             "developmentTeam": "YSP3NTS66E",
             "packageType": "app-store",
             "buildFlag": [
