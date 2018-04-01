@@ -13,28 +13,28 @@ import { AboutPage } from '../about/about';
 import { NewsPage } from '../news/news';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+selector: 'page-home',
+templateUrl: 'home.html'
 })
 
 export class HomePage {
 
 
 
-  constructor(public navCtrl: NavController) {
+constructor(public navCtrl: NavController) {
 
 
-  }
+}
 
-	goToNewsPage(){ this.navCtrl.push(NewsPage); }
-	goToLocalPage(){ this.navCtrl.push(LocalPage); }
-	goToAboutPage(){ this.navCtrl.push(AboutPage); }
-	goToVolunteerPage(){ this.navCtrl.push(VolunteerPage); }
-	goToContactPage(){ this.navCtrl.push(ContactPage); }
-	goToSupportersPage(){ this.navCtrl.push(SupportersPage); }
-	goToChatPage(){ this.navCtrl.push(ChatPage); }
-	goToEventsPage(){ this.navCtrl.push(EventsPage); }
-	goToQc15Page(){ this.navCtrl.push(Qc15Page); }
-	goToQcRsaPage(){ this.navCtrl.push(QcRsa2018Page); }
+goToNewsPage(){ this.navCtrl.push(NewsPage); }
+goToLocalPage(){ this.navCtrl.push(LocalPage); }
+goToAboutPage(){ this.navCtrl.push(AboutPage); }
+goToVolunteerPage(){ this.navCtrl.push(VolunteerPage); }
+goToContactPage(){ this.navCtrl.push(ContactPage); }
+goToSupportersPage(){ this.navCtrl.push(SupportersPage); }
+goToChatPage(){ this.navCtrl.push(ChatPage); }
+goToEventsPage(){ this.navCtrl.push(EventsPage); }
+goToQc15Page(){ this.navCtrl.push(Qc15Page); }
+goToQcRsaPage(){ this.navCtrl.push(QcRsa2018Page); }
 
 }

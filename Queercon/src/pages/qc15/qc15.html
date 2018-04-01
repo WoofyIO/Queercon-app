@@ -7,12 +7,12 @@
 
 <ion-header>
 
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Queercon 15 @ Defcon</ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>Queercon 15 @ Defcon</ion-title>
+	</ion-navbar>
 
 </ion-header>
 
@@ -21,41 +21,90 @@
 
 	<ion-card>
 		<img src="assets/imgs/vegas.jpg">
-	  <ion-card-header>
-	    QUEERCON 15 @ DEFCON
-	  </ion-card-header>
-	  <ion-card-content>
-	    The main event is back for our fifteenth year! Everything you need to know  
-	  </ion-card-content>
-  </ion-card>
-
-  <ion-card>
-	  <ion-row no-padding>
-      <ion-col>
-        <button ion-button clear small color="danger" icon-start>
-          <ion-icon name='clock'></ion-icon>
-          Thur, April 19 at 7:30 PM - 10:30 PM
-        </button>
-      </ion-col>
-    </ion-row>
-
-	  <ion-row no-padding>
-      <ion-col>
-        <button ion-button clear small color="danger" icon-start onclick="window.open('https://www.facebook.com/events/559613291078428/', '_system', 'location=yes');">
-          <ion-icon name='bookmark'></ion-icon>
-          RSVP ON FACEBOOK
-        </button>
-      </ion-col>
-    </ion-row>
-
-	  <ion-row no-padding>
-      <ion-col>
-        <button ion-button clear small color="danger" icon-start onclick="window.open('https://goo.gl/maps/EknU1Wg7P7A2', '_system', 'location=yes');">
-          <ion-icon name='compass'></ion-icon>
-          MAP IT
-        </button>
-      </ion-col>
-    </ion-row>
 	</ion-card>
+
+	<ion-card>
+		<ion-card-content>
+			The main event is back for our fifteenth year! Everything you need to know is here.  
+		</ion-card-content>
+		<ion-row no-padding>
+			<ion-col>
+				<button ion-button clear small color="danger" icon-start>
+					<ion-icon name='clock'></ion-icon>
+					Wed Aug 8 - Sun Aug 12
+				</button>
+			</ion-col>
+		</ion-row>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			Where Is It?
+		</ion-card-header>
+		<ion-card-content>
+			Queercon 15 is part of Defcon 26 at Caesar's Palace in Las Vegas. Nearly all of our events are within Caesar's (and the rare exceptions usually have a shuttle from Caesar's).
+		</ion-card-content>
+		<ion-row no-padding>
+			<ion-col>
+				<button ion-button clear small color="danger" icon-start onclick="window.open('https://www.defcon.org/', '_system', 'location=yes');">
+					<ion-icon name='clock'></ion-icon>
+					Defcon Homepage
+				</button>
+			</ion-col>
+		</ion-row>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			Queercon Room Block (SOLD OUT)
+		</ion-card-header>
+		<ion-card-content>
+			Sadly we were not able to secure the same size of room block as we're all used to, and all rooms are taken.  
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			Schedule of Events
+		</ion-card-header>
+		<ion-card-content>
+			We will have social gatherings, parties (including our legendary Friday Night Pool Party), and new for this year our own closing ceremony. Most of the events are in our private hotel chillout lounge. The full schedule of events will be posted soon; check here for the earlist release of schedule!
+		</ion-card-content>
+		<ion-row no-padding>
+			<ion-col>
+				<button ion-button clear small color="danger" icon-start (click)="goToEventsPage()">
+					<ion-icon name='clock'></ion-icon>
+					Schedule of Events
+				</button>
+			</ion-col>
+		</ion-row>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			Queercon Badge
+		</ion-card-header>
+		<ion-card-content>
+			Every year, we create our own custom electronic Queercon badge (electronic badge is not required to attend events). Some badges are sold in advance to help pay for the event, but every year many of them are given away for free to attendees so everyone gets a chance to join the fun. This year's badge will be particularly awesome! 
+		</ion-card-content>
+		<ion-row no-padding>
+			<ion-col>
+				<button ion-button clear small color="danger" icon-start (click)="presentBadgeViewToast('middle')">
+					<ion-icon name='clock'></ion-icon>
+					See the Badge
+				</button>
+			</ion-col>
+		</ion-row>
+		<ion-row no-padding>
+			<ion-col>
+				<button ion-button clear small color="danger" icon-start (click)="presentBadgeReserveToast('middle')">
+					<ion-icon name='clock'></ion-icon>
+					Reserve Your Own!
+				</button>
+			</ion-col>
+		</ion-row>
+
+	</ion-card>
+
 
 </ion-content>
