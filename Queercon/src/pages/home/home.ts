@@ -26,15 +26,15 @@ export class HomePage {
 
   }
 
-	goToNewsPage(){ this.navCtrl.setRoot(NewsPage); }
-	goToLocalPage(){ this.navCtrl.setRoot(LocalPage); }
-	goToAboutPage(){ this.navCtrl.setRoot(AboutPage); }
-	goToVolunteerPage(){ this.navCtrl.setRoot(VolunteerPage); }
-	goToContactPage(){ this.navCtrl.setRoot(ContactPage); }
-	goToSupportersPage(){ this.navCtrl.setRoot(SupportersPage); }
-	goToChatPage(){ this.navCtrl.setRoot(ChatPage); }
-	goToEventsPage(){ this.navCtrl.setRoot(EventsPage); }
-	goToQc15Page(){ this.navCtrl.setRoot(Qc15Page); }
-	goToQcRsaPage(){ this.navCtrl.setRoot(QcRsa2018Page); }
+	goToNewsPage(){ this.navCtrl.push(NewsPage); }
+	goToLocalPage(){ this.navCtrl.push(LocalPage); }
+	goToAboutPage(){ this.navCtrl.push(AboutPage); }
+	goToVolunteerPage(){ this.navCtrl.push(VolunteerPage); }
+	goToContactPage(){ this.navCtrl.push(ContactPage); }
+	goToSupportersPage(){ this.navCtrl.push(SupportersPage); }
+	goToChatPage(){ this.navCtrl.push(ChatPage); }
+	goToEventsPage(){ this.navCtrl.push(EventsPage); }
+	goToQc15Page(){ this.navCtrl.push(Qc15Page); }
+	goToQcRsaPage(){ this.navCtrl.push(QcRsa2018Page); }
 
 }
