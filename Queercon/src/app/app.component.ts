@@ -70,6 +70,7 @@ export class MyApp {
 			
 
 			statusBar.styleDefault();
+			statusBar.overlaysWebView(false);
 
 			splashScreen.hide();
 
