@@ -69,6 +69,7 @@ export class MyApp {
 			
 
 			statusBar.styleDefault();
+			statusBar.overlaysWebView(false); //adding padding for iOS
 
 			splashScreen.hide();
 
