@@ -6,16 +6,66 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>About the Organization</ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>About the Organization</ion-title>
+	</ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class='graybg'>
+	<ion-card>
+		<ion-card-content>
+			<img src="assets/imgs/thumbsquare.png">
+		</ion-card-content>
+	</ion-card>
 
+	<ion-card>
+		<ion-card-content>
+			Queercon started 10 years ago as a hacker party inside of the annual Defcon hacker conference. Over the decade Queercon has grown into the largest social network of LGBT hackers from around the world. We continue to grow and now focus on outreach to the LGBT community within the IT Security and Hacker Spaces.
+		</ion-card-content>
+		<ion-row no-padding>
+			<ion-col>
+				<button ion-button clear small color="danger" icon-start onclick="window.open('https://www.queercon.org/', '_system', 'location=yes');">
+					<ion-icon name='globe'></ion-icon>
+					Website
+				</button>
+			</ion-col>
+		</ion-row>
+		<ion-row no-padding>
+			<ion-col>
+				<button ion-button clear small color="danger" icon-start onclick="window.open('https://www.facebook.com/groups/queercon/', '_system', 'location=yes');">
+					<ion-icon name='bookmark'></ion-icon>
+					Like us on Facebook
+				</button>
+			</ion-col>
+		</ion-row>
+		<ion-row no-padding>
+			<ion-col>
+				<button ion-button clear small color="danger" icon-start onclick="window.open('https://www.twitter.com/queercon', '_system', 'location=yes');">
+					<ion-icon name='text'></ion-icon>
+					Follow us on Twitter
+				</button>
+			</ion-col>
+		</ion-row>
+		<ion-row no-padding>
+			<ion-col>
+				<button ion-button clear small color="danger" icon-start onclick="window.open('mailto:help@queercon.org', '_system', 'location=yes');">
+					<ion-icon name='at'></ion-icon>
+					Email us
+				</button>
+			</ion-col>
+		</ion-row>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-content>
+			Queercon, Inc.<br/>
+			San Francisco, CA<br/>
+			Our EIN is 46-2265226
+		</ion-card-content>
+	</ion-card>
 </ion-content>

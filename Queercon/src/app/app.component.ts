@@ -46,7 +46,6 @@ export class MyApp {
 			{ title: 'Queercon Locals', component: LocalPage },
 			{ title: 'Chat Room', component: ChatPage },
 			{ title: 'Support Us', component: SupportersPage },
-			{ title: 'Volunteer', component: VolunteerPage },
 			{ title: 'About Queercon', component: AboutPage },
 			{ title: 'Settings', component: SettingsPage }
 		];
