@@ -38,21 +38,15 @@
             "codeSignIdentity": "iPhone Developer",
             "developmentTeam": "YSP3NTS66E",
             "packageType": "development",
-            "buildFlag": [
-                "EMBEDDED_CONTENT_CONTAINS_SWIFT = YES",
-                "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES=NO",
-                "LD_RUNPATH_SEARCH_PATHS = \"@executable_path/Frameworks\""
-            ]
+            "provisioningProfile": "7d053246-9337-41fd-9504-494382a4b1a4",
+            "iCloudContainerEnvironment": "Development"
         },
         "release": {
             "codeSignIdentity": "iPhone Distribution",
             "developmentTeam": "YSP3NTS66E",
             "packageType": "app-store",
-            "buildFlag": [
-                "EMBEDDED_CONTENT_CONTAINS_SWIFT = YES",
-                "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES=NO",
-                "LD_RUNPATH_SEARCH_PATHS = \"@executable_path/Frameworks\""
-            ]
+            "provisioningProfile": "9249c0a8-14e7-499a-a1d5-4d74ebef04de",
+            "iCloudContainerEnvironment": "Production"
         }
     }
 }

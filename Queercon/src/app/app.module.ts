@@ -1,8 +1,8 @@
 import { NgModule, ErrorHandler } from '@angular/core';
-import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+//import { HttpModule } from '@angular/http';
 
 import { HomePage } from '../pages/home/home';
 import { Qc15Page } from '../pages/qc15/qc15';
@@ -20,7 +20,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { Calendar } from '@ionic-native/calendar';
 
-import {OneSignal} from '@ionic-native/onesignal';
+import { OneSignal } from '@ionic-native/onesignal';
 
 
 
@@ -41,7 +41,7 @@ import {OneSignal} from '@ionic-native/onesignal';
   ],
   imports: [
     BrowserModule,
-    HttpModule,
+    //HttpModule,
     IonicModule.forRoot(MyApp, {
        statusbarPadding: false,
      },
@@ -73,6 +73,7 @@ import {OneSignal} from '@ionic-native/onesignal';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     Calendar,
     OneSignal
+    
   ]
 })
 export class AppModule {}
