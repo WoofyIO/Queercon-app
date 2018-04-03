@@ -1,0 +1,26 @@
+// NOT WORKING!
+// At this time, this CSS file doesn't link in to the app. The styles are actually
+// Just listed in the main app css file. This is a TODO to fix.
+
+page-events {
+	
+	.event-date {
+		font-weight: bold;
+		text-align: center;
+		line-height: 200%;
+	}
+
+	.event-title {
+		font-size: 13pt;
+	}
+
+	.event-icon {
+		font-weight: 900;
+		color: gray;
+	}
+
+	.event-timeline {
+		margin-bottom: 10px;
+	}
+
+}

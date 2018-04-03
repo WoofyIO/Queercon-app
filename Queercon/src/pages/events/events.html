@@ -36,24 +36,22 @@
 			</ion-segment-button>
 		</ion-segment>
 	</div>
+
 	<ion-list>
 		<ion-card *ngFor="let item of items" (click)="openEventDetailsPage(item)">
 			<ion-grid>
 				<ion-row align-items-center>
 					<ion-col>
-						<span class="event-date">{{ item.date }}</span>
+						<div class="event-date">{{ item.date }}</div>
 					</ion-col>
 					<ion-col col-10>
 						<ion-card-content>
 							<div>
-								<span class="event-title">{{ item.title }}</span>
+								<div class="event-title">{{ item.title }}</div>
 							</div>
-							<div>
-								{{ item.location }}
-							</div>
-							<div>
-								{{ item.hours }}
-								{{ item.icon1 }}
+							<div class="event-location">{{ item.location }}</div>
+							<div class="event-timeline">
+								<span class="event-time">{{ item.hours }}</span> <span class="event-icon">{{ item.icon1 }}</span>
 							</div>
 							<div>
 								{{ item.summary }}

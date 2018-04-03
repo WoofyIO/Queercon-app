@@ -33,42 +33,42 @@ export class EventsPage {
 
     this.items = [
       {
-        "title": "Queercon Mixer",
+        "title": "Queercon Mixer 1",
         "location": "Queercon Suite",
         "summary": "Join us for something awesome and this will be fun. Except not for the staff, just for attendees. For the rest of us this is nonstop miserable work.",
-        "date": "04 AUG",
+        "date": "THU 04 AUG",
         "hours": "16:00 - 20:00",
-        "icon1": "X",
+        "icon1": "[18+]",
         "description": "This is for the details page",
         "host": "QC"
       },
       {
-        "title": "Queercon Mixer",
+        "title": "Queercon Mixer 2",
         "location": "Queercon Suite",
         "summary": "Join us for something awesome and this will be fun. Except not for the staff, just for attendees. For the rest of us this is nonstop miserable work.",
-        "date": "04 AUG",
+        "date": "FRI 05 AUG",
         "hours": "16:00 - 20:00",
-        "icon1": "X",
+        "icon1": "[18+]",
         "description": "This is for the details page",
         "host": "QC"
       },
       {
-        "title": "Queercon Mixer",
+        "title": "Queercon Mixer 3",
         "location": "Queercon Suite",
         "summary": "Join us for something awesome and this will be fun. Except not for the staff, just for attendees. For the rest of us this is nonstop miserable work.",
-        "date": "04 AUG",
+        "date": "SAT 06 AUG",
         "hours": "16:00 - 20:00",
-        "icon1": "X",
+        "icon1": "[18+]",
         "description": "This is for the details page",
         "host": "QC"
       },
       {
-        "title": "Queercon Mixer",
+        "title": "Closing Ceremony",
         "location": "Queercon Suite",
         "summary": "Join us for something awesome and this will be fun. Except not for the staff, just for attendees. For the rest of us this is nonstop miserable work.",
-        "date": "04 AUG",
+        "date": "SUN 07 AUG",
         "hours": "16:00 - 20:00",
-        "icon1": "X",
+        "icon1": "[18+]",
         "description": "This is for the details page",
         "host": "QC"
       }
