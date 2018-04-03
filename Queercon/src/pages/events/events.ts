@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { Http } from '@angular/http';
-import 'rxjs/add/operator/map';
+/* import { Http } from '@angular/http';
+import 'rxjs/add/operator/map'; */
 
 
 @Component({
@@ -22,17 +22,16 @@ export class EventsDetailsPage {
 })
 export class EventsPage {
   /* Remove in staging *///private webWiew: any = window;
-  itemsOld = [];
   items = [];
-  constructor(public nav: NavController, public http: Http) {
+  constructor(public nav: NavController, /* public http: Http */) {
     console.log('QC Events constructor loaded');
 
-    let localData = this.http.get('../assets/json/events.json').map(res => res.json().events);
+/*     let localData = this.http.get('events.json').map(res => res.json().events);
     localData.subscribe(data => {
       this.items = data;
-    })
+    }) */
 
-    this.itemsOld = [
+    this.items = [
       {
         "title": "Queercon Mixer",
         "location": "Queercon Suite",
