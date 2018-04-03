@@ -16,7 +16,54 @@ export class EventsDetailsPage {
 }
 
 @Component({
-  templateUrl: 'events.html',
+  //templateUrl: 'events.html',
+
+  template: `
+
+  <ion-header>
+  
+    <ion-navbar>
+  
+      <button ion-button menuToggle>
+  
+        <ion-icon name="menu"></ion-icon>
+  
+      </button>
+  
+      <ion-title>Events</ion-title>
+  
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  
+  <ion-content>
+  
+    <ion-list>
+  
+      <ion-card *ngFor="let item of items" (click)="openEventDetailsPage(item)">
+  
+        <ion-card-header>
+  
+          {{ item.title }}
+  
+        </ion-card-header>
+  
+        <ion-card-content>
+  
+        {{ item.summary }}
+  
+        </ion-card-content>
+  
+      </ion-card>
+  
+    </ion-list>
+  
+  </ion-content>
+  
+  `
+  
 })
 export class EventsPage {
   /* Remove in staging *///private webWiew: any = window;
