@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { Http } from '@angular/http';
 import { NavController, NavParams } from 'ionic-angular';
-import 'rxjs/add/operator/map';
+
 
 @Component({
   templateUrl: 'events-details.html',
@@ -16,22 +15,70 @@ export class EventsDetailsPage {
   }
 }
 
-    
-
 @Component({
   templateUrl: 'events.html',
 })
 export class EventsPage {
   /* Remove in staging *///private webWiew: any = window;
   items = [];
-  constructor(public nav: NavController, http: Http) {
+  constructor(public nav: NavController) {
     console.log('QC Events constructor loaded');
+
+    this.items = [
+      {
+        "title": "Queercon Mixer",
+        "location": "Queercon Suite",
+        "summary": "Join us for something awesome and this will be fun. Except not for the staff, just for attendees. For the rest of us this is nonstop miserable work.",
+        "date": "04 AUG",
+        "hours": "16:00 - 20:00",
+        "icon1": "X",
+        "description": "This is for the details page",
+        "host": "QC"
+      },
+      {
+        "title": "Queercon Mixer",
+        "location": "Queercon Suite",
+        "summary": "Join us for something awesome and this will be fun. Except not for the staff, just for attendees. For the rest of us this is nonstop miserable work.",
+        "date": "04 AUG",
+        "hours": "16:00 - 20:00",
+        "icon1": "X",
+        "description": "This is for the details page",
+        "host": "QC"
+      },
+      {
+        "title": "Queercon Mixer",
+        "location": "Queercon Suite",
+        "summary": "Join us for something awesome and this will be fun. Except not for the staff, just for attendees. For the rest of us this is nonstop miserable work.",
+        "date": "04 AUG",
+        "hours": "16:00 - 20:00",
+        "icon1": "X",
+        "description": "This is for the details page",
+        "host": "QC"
+      },
+      {
+        "title": "Queercon Mixer",
+        "location": "Queercon Suite",
+        "summary": "Join us for something awesome and this will be fun. Except not for the staff, just for attendees. For the rest of us this is nonstop miserable work.",
+        "date": "04 AUG",
+        "hours": "16:00 - 20:00",
+        "icon1": "X",
+        "description": "This is for the details page",
+        "host": "QC"
+      }
+    ]
+
+  
+
+
     /* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('EventsPage Loaded');
-    let localData = http.get('assets/js/events.json').map(res => res.json().events);
+   
+    /* let localData = http.get('assets/js/events.json').map(res => res.json().events);
     localData.subscribe(data => {
       this.items = data;
       console.log('QC LocalData');
-    })
+    }) */
+
+    
   }
 
   openEventDetailsPage(item) {
