@@ -34,6 +34,9 @@ export class MyApp {
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, AlertController: AlertController) {
 		
+
+		this.initializeApp(AlertController);
+
 		/* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('App loaded');
 		
 		this.pages = [
@@ -49,13 +52,19 @@ export class MyApp {
 			{ title: 'Settings', component: SettingsPage }
 		];
 
-		
-		platform.ready().then(() => {
-
-			/* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('App Ready');
 
 
-			
+	}
+
+	initializeApp(AlertController) {
+
+		this.platform.ready().then(() => {
+			this.statusBar.styleDefault();
+			this.statusBar.overlaysWebView(false); //adding padding for iOS
+			this.splashScreen.hide();
+
+
+			console.log("queercon codepush next"),
 			codePush.sync(null, {
 				updateDialog: {
 					appendReleaseDescription: true,
@@ -65,13 +74,6 @@ export class MyApp {
 				},
 				installMode: InstallMode.IMMEDIATE
 			});
-			
-
-			statusBar.styleDefault();
-			statusBar.overlaysWebView(false); //adding padding for iOS
-
-			splashScreen.hide();
-
 
 			// Optional OneSignal code for iOS to prompt users later
 			// Set your iOS Settings
@@ -79,39 +81,58 @@ export class MyApp {
 			iosSettings["kOSSettingsKeyAutoPrompt"] = true; // will not prompt users when start app 1st time
 			iosSettings["kOSSettingsKeyInAppLaunchURL"] = true; // false opens safari with Launch URL
 
-/* 			var notificationOpenedCallback = function(jsonData) {
-				console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+			let alert = AlertController.create();
+			
+			// OneSignal Code start:
+			// Enable to debug issues.
+			// window["plugins"].OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
+			
+			var notificationOpenedCallback = function (jsonData) {
+				console.log('queercon notificationOpenedCallback: ' + JSON.stringify(jsonData));
+				alert.setTitle(jsonData.notification.payload.title);
+				alert.setSubTitle(jsonData.notification.payload.body);
+				alert.addButton("OK");
+				alert.present();
 				if (jsonData.notification.payload.additionalData != null) {
-					console.log("Here we access addtional data");
+					console.log("queercon Here we access addtional data");
 					if (jsonData.notification.payload.additionalData.openURL != null) {
-						console.log("Here we access the openURL sent in the notification data");
+						console.log("queercon Here we access the openURL sent in the notification data");
 					}
 				}
-			}; */
+			};
+
+			//This is a payload
+/* 			{"action":{"type":0},"notification":{"isAppInFocus":false,"shown":true,"androidNotificationId":-1795320675,"displayType":0,"p
+			ayload":{"notificationID":"979db93c-48f3-4838-8df0-6b1834d8c6c0","title":"test","body":"2","lockScreenVisibility":1,"groupMessage":"","fromProjectNumber":"278964097998","priority":5,"rawPayload":"{\"google.sent_time\":1522785572029,\"google.ttl\":259200,\"custom\":\"{\\
+			\"i\\\":\\\"979db93c-48f3-4838-8df0-6b1834d8c6c0\\\"}\",\"oth_chnl\":\"\",\"pri\":\"5\",\"vis\":\"1\",\"from\":\"278964097998\",\"alert\":\"2\",\"title\":\"test\",\"grp_msg\":\"\",\"google.message_id\":\"0:1522785572045450%5a823b91f9fd7ecd\",\"notificationId\":-17953206
+			75}"}}} */
 
 			window["plugins"].OneSignal
-        	.startInit('d149d10e-71d8-4243-8827-f45a72d2d2ac','278964097998')
-	        .iOSSettings(iosSettings) // only needed if added Optional OneSignal code for iOS above
-	        .inFocusDisplaying(window["plugins"].OneSignal.OSInFocusDisplayOption.Notification)
-			.handleNotificationReceived(function(jsonData) {
-				let popup = AlertController.create();
-				popup.setTitle(jsonData.payload.title);
-				popup.setSubTitle(jsonData.payload.body);
-				popup.addButton("OK");
-				popup.present();
-				console.log('Did I receive a notification: ' + JSON.stringify(jsonData));
-			  })
-			.endInit();
-
-/* 			window["plugins"].OneSignal.enableNotificationsWhenActive(true);
-			window["plugins"].OneSignal.enableInAppAlertNotification(true);
-			window["plugins"].OneSignal.promptLocation(); */
+				.startInit('d149d10e-71d8-4243-8827-f45a72d2d2ac','278964097998')
+				.iOSSettings(iosSettings) // only needed if added Optional OneSignal code for iOS above
+				.inFocusDisplaying(window["plugins"].OneSignal.OSInFocusDisplayOption.Notification)
+				.handleNotificationOpened(notificationOpenedCallback)
+				.handleNotificationReceived(function(jsonData) {
+					let alertInWindow = AlertController.create();
+					alertInWindow.setTitle(jsonData.payload.title);
+					alertInWindow.setSubTitle(jsonData.payload.body);
+					alertInWindow.addButton("OK");
+					alertInWindow.present();
+					console.log('queercon Did I receive a notification: ' + JSON.stringify(jsonData));
+				  })
+				.endInit();
 		});
 
 	}
+		
+
 
 	openPage(page) {
 		this.nav.setRoot(page.component);
 	}
+
+	goHome() { 
+		this.nav.setRoot(HomePage); 
+	} 
 
 }
