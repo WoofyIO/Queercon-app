@@ -26,7 +26,7 @@ export class EventsPage {
   items = [];
   constructor(public nav: NavController, http: Http) {
     /* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('EventsPage Loaded');
-    let localData = http.get('events.json').map(res => res.json().events);
+    let localData = http.get('assets/js/events.json').map(res => res.json().events);
     localData.subscribe(data => {
       this.items = data;
     })
