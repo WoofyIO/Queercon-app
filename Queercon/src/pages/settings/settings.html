@@ -27,4 +27,70 @@
 	  </ion-card-content>
   </ion-card>
 
+
+  <ion-card>
+		<ion-card-header>
+			Check for updates
+		</ion-card-header>
+		<ion-card-content>
+			Lets see if there is a hotcode update avalible for this version. If you dont get a popup, there is no update. 
+		</ion-card-content>
+		<ion-row no-padding>
+			<ion-col>
+				<button ion-button clear small color="danger" icon-start (click)="checkUpdates()">
+					<ion-icon name='cloud-download'></ion-icon>
+					Check now
+				</button>
+			</ion-col>
+		</ion-row>
+  </ion-card>
+  
+  <ion-card>
+		<ion-card-header>
+			Get Push ID
+		</ion-card-header>
+		<ion-card-content>
+			Get your Push ID for testing or debugging
+    </ion-card-content>
+    <ion-row no-padding>
+			<ion-col>
+        <ion-item>
+          <ion-input type="text" placeholder="PushID" value="{{ pushID }}"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="danger" icon-start (click)="getPushID()">
+          <ion-icon name='cloud-download'></ion-icon>
+          Get PushID
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  
+  <ion-card>
+		<ion-card-header>
+			Get Push Tags
+		</ion-card-header>
+		<ion-card-content>
+			Get your subscribed tags. Please note, this requires internet access, and you might need to click the "Get PushTags" button twise for the array to show (depending on latency and load).
+    </ion-card-content>
+    <ion-row no-padding>
+			<ion-col>
+        <ion-item>
+          <ion-input type="text" placeholder="PushTags" value="{{ pushTags }}"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="danger" icon-start (click)="getPushTags()">
+          <ion-icon name='cloud-download'></ion-icon>
+          Get PushTags
+        </button>
+      </ion-col>
+    </ion-row>
+	</ion-card>
+
 </ion-content>

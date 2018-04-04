@@ -11,6 +11,9 @@ import { SupportersPage } from '../supporters/supporters';
 import { AboutPage } from '../about/about';
 import { NewsPage } from '../news/news';
 
+
+
+
 @Component({
 selector: 'page-home',
 templateUrl: 'home.html'
