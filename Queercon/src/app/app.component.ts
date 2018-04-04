@@ -60,7 +60,8 @@ export class MyApp {
 
 		this.platform.ready().then(() => {
 			this.statusBar.styleDefault();
-			this.statusBar.overlaysWebView(false); //adding padding for iOS
+			this.statusBar.overlaysWebView(true); //adding padding for iOS
+			this.statusBar.backgroundColorByHexString('#ffffff');
 			this.splashScreen.hide();
 
 
