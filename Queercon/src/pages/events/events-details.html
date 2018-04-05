@@ -1,11 +1,41 @@
 <ion-header>
-        <ion-navbar>
-          <ion-title>
-            {{ item.title }}
-          </ion-title>
-        </ion-navbar>
-      </ion-header>
-      
-      <ion-content padding>
-        {{ item.description }}
-      </ion-content>
+	<ion-navbar>
+		<ion-title>
+			{{ item.title }}
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding class="graybg">
+	<ion-card>
+		<ion-card-content>
+			{{ item.description }}
+		</ion-card-content>
+		<ion-row no-padding>
+			<ion-col>
+				<button ion-button clear small color="danger" icon-start> 
+					<ion-icon name='clock'></ion-icon>
+					{{ item.date }}, {{ item.hours }} 
+				</button>
+			</ion-col>
+		</ion-row>
+
+		<ion-row no-padding>
+			<ion-col>
+				<button ion-button clear small icon-start color="danger" (click)="openEventReservation()"> 
+					<ion-icon name='bookmark'></ion-icon>
+					RSVP ON FACEBOOK
+				</button>
+			</ion-col>
+		</ion-row>
+
+		<ion-row no-padding>
+			<ion-col>
+				<button ion-button clear small color="danger" icon-start (click)="openEventMap()">
+					<ion-icon name='compass'></ion-icon>
+					MAP IT
+				</button>
+			</ion-col>
+		</ion-row>
+	</ion-card>
+</ion-content>

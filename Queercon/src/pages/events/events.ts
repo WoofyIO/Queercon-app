@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+
 /* import { Http } from '@angular/http';
 import 'rxjs/add/operator/map'; */
 
@@ -15,6 +16,15 @@ export class EventsDetailsPage {
     /* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('EventsPage Detail Loaded');
     this.item = params.data.item;
   }
+
+  openEventReservation() {
+    window.open(this.item.reservation, '_system', 'location=yes');
+  }
+
+  openEventMap() {
+    window.open(this.item.map, '_system', 'location=yes');
+  }
+
 }
 
 @Component({
@@ -33,43 +43,27 @@ export class EventsPage {
 
     this.items = [
       {
-        "title": "Queercon Mixer 1",
-        "location": "Queercon Suite",
-        "summary": "Join us for something awesome and this will be fun. Except not for the staff, just for attendees. For the rest of us this is nonstop miserable work.",
-        "date": "THU 04 AUG",
-        "hours": "16:00 - 20:00",
-        "icon1": "[18+]",
-        "description": "This is for the details page",
-        "host": "QC"
+        "title": "Poco Social Hour",
+        "location": "Poco Wine + Spirits, Seattle",
+        "summary": "Enjoy a cocktail and some socialization every Thursday!",
+        "date": "EVERY THUR",
+        "hours": "19:30 - 22:00",
+        "icon1": "[21+]",
+        "description": "Every Thursday, many Seattle QC attendees gather for drinks and socializing before wandering home or out to the bars. Please know, Poco is a 21+ venue, sorry... Watch for other special events for everyone!",
+        "map": "https://goo.gl/maps/WvmC2ejHhem",
+        "reservation": "https://www.facebook.com/groups/queerconsea/",
+        "host": "SEA"
       },
       {
-        "title": "Queercon Mixer 2",
-        "location": "Queercon Suite",
-        "summary": "Join us for something awesome and this will be fun. Except not for the staff, just for attendees. For the rest of us this is nonstop miserable work.",
-        "date": "FRI 05 AUG",
-        "hours": "16:00 - 20:00",
-        "icon1": "[18+]",
-        "description": "This is for the details page",
-        "host": "QC"
-      },
-      {
-        "title": "Queercon Mixer 3",
-        "location": "Queercon Suite",
-        "summary": "Join us for something awesome and this will be fun. Except not for the staff, just for attendees. For the rest of us this is nonstop miserable work.",
-        "date": "SAT 06 AUG",
-        "hours": "16:00 - 20:00",
-        "icon1": "[18+]",
-        "description": "This is for the details page",
-        "host": "QC"
-      },
-      {
-        "title": "Closing Ceremony",
-        "location": "Queercon Suite",
-        "summary": "Join us for something awesome and this will be fun. Except not for the staff, just for attendees. For the rest of us this is nonstop miserable work.",
-        "date": "SUN 07 AUG",
-        "hours": "16:00 - 20:00",
-        "icon1": "[18+]",
-        "description": "This is for the details page",
+        "title": "Queercon RSA Mixer",
+        "location": "Hamburger Mary's San Francisco",
+        "summary": "Come join us for a low key evening at the new Hamburger Mary’s in the Castro at the end of RSA this year.",
+        "date": "THU 19 APR",
+        "hours": "19:30 - 23:00",
+        "icon1": "",
+        "description": "Come join us for a low key evening at the new Hamburger Mary’s in the Castro at the end of RSA this year.",
+        "map": "https://goo.gl/maps/EknU1Wg7P7A2",
+        "reservation": "https://www.facebook.com/events/189231201695228/",
         "host": "QC"
       }
     ]
