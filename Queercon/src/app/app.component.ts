@@ -26,7 +26,7 @@ declare const InstallMode: any
 export class MyApp {
 	@ViewChild(Nav) nav: Nav;
 	
-	private webWiew: any = window;
+	//private webWiew: any = window;
 
 	rootPage:any = HomePage;
 	
@@ -84,7 +84,7 @@ export class MyApp {
 
 			console.log("queercon codepush next");
 			if (!this.platform.is('mobileweb')) {
-				console.log("queercon aaccaa loading not mobileweb");
+				console.log("queercon aaccaa loading not mobileweb, codepush");
 				codePush.sync(null, {
 					updateDialog: {
 						appendReleaseDescription: true,
@@ -129,7 +129,7 @@ export class MyApp {
 			75}"}}} */
 
 			if (!this.platform.is('mobileweb')) {
-				console.log("queercon aaccaa loading not mobileweb");
+				console.log("queercon aaccaa loading not mobileweb, onesignal");
 				window["plugins"].OneSignal
 				.startInit('d149d10e-71d8-4243-8827-f45a72d2d2ac','278964097998')
 				.iOSSettings(iosSettings) // only needed if added Optional OneSignal code for iOS above
