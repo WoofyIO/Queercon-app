@@ -34,6 +34,7 @@ export class MyApp {
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, AlertController: AlertController) {
 
+		console.log("queercon Starting..");
 
 		if (!this.platform.is('mobileweb')) {
 			console.log("queercon aaccaa loading not mobileweb");
