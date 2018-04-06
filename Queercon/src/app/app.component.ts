@@ -26,7 +26,7 @@ declare const InstallMode: any
 export class MyApp {
 	@ViewChild(Nav) nav: Nav;
 	
-	/* Remove in staging *///private webWiew: any = window;
+	private webWiew: any = window;
 
 	rootPage:any = HomePage;
 	
@@ -37,7 +37,10 @@ export class MyApp {
 
 		this.initializeApp(AlertController);
 
-		/* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('App loaded');
+		if (this.platform.is('ios') || this.platform.is('android') ) {
+			
+			this.webWiew.AppCenter.Analytics.trackEvent('QC app.component.ts');		
+		}
 		
 		this.pages = [
 			{ title: 'Home', component: HomePage },
@@ -59,10 +62,26 @@ export class MyApp {
 	initializeApp(AlertController) {
 
 		this.platform.ready().then(() => {
-			this.statusBar.styleDefault();
+/* 			this.statusBar.styleDefault();
 			this.statusBar.overlaysWebView(false); //adding padding for iOS
 			this.statusBar.backgroundColorByHexString('#ffffff');
-			this.splashScreen.hide();
+			this.splashScreen.hide(); */
+
+			if (this.platform.is('android') ) {
+			
+				this.statusBar.styleLightContent();
+				this.statusBar.overlaysWebView(true);
+				this.statusBar.backgroundColorByHexString('#000000');
+				this.splashScreen.hide();
+		
+			}
+			if (this.platform.is('ios') ) {
+			
+				this.statusBar.styleDefault();
+				this.statusBar.overlaysWebView(false); //adding padding for iOS
+				this.statusBar.backgroundColorByHexString('#ffffff');
+				this.splashScreen.hide();	
+			}
 
 
 			console.log("queercon codepush next"),
