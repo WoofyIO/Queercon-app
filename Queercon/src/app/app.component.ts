@@ -34,13 +34,13 @@ export class MyApp {
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, AlertController: AlertController) {
 
-/* 		console.log("queercon Starting..");
+ 		console.log("queercon Starting..");
 		console.log("queercon aaccaa " + this.platform.platforms());
 
 		if (!this.platform.is('mobileweb')) {
 			console.log("queercon aaccaa loading not mobileweb");
 			this.webWiew.AppCenter.Analytics.trackEvent('QC app.component.ts');		
-		} */
+		} 
 
 		this.initializeApp(AlertController);
 		
@@ -64,6 +64,7 @@ export class MyApp {
 	initializeApp(AlertController) {
 
 		this.platform.ready().then(() => {
+			
 			this.statusBar.styleDefault();
 			this.statusBar.overlaysWebView(false); //adding padding for iOS
 			this.statusBar.backgroundColorByHexString('#ffffff');
