@@ -26,21 +26,13 @@ declare const InstallMode: any
 export class MyApp {
 	@ViewChild(Nav) nav: Nav;
 	
-	//private webWiew: any = window;
+	private webWiew: any = window;
 
 	rootPage:any = HomePage;
 	
 	pages: Array<{title: string, component: any}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, AlertController: AlertController) {
-
- 		console.log("queercon Starting..");
-		console.log("queercon aaccaa " + this.platform.platforms());
-
-/* 		if (!this.platform.is('mobileweb')) {
-			console.log("queercon aaccaa loading not mobileweb");
-			this.webWiew.AppCenter.Analytics.trackEvent('QC app.component.ts');		
-		}  */
 
 		this.initializeApp(AlertController);
 		
@@ -64,6 +56,14 @@ export class MyApp {
 	initializeApp(AlertController) {
 
 		this.platform.ready().then(() => {
+
+			console.log("queercon Starting..");
+			console.log("queercon aaccaa " + this.platform.platforms());
+	
+	 		if (!this.platform.is('mobileweb')) {
+				console.log("queercon aaccaa loading not mobileweb");
+				this.webWiew.AppCenter.Analytics.trackEvent('QC app.component.ts');		
+			}  
 			
 /* 			this.statusBar.styleDefault();
 			this.statusBar.overlaysWebView(false); //adding padding for iOS
