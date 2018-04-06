@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, Platform } from 'ionic-angular';
 
 import { Qc15Page } from '../qc15/qc15';
 import { ChatPage } from '../chat/chat';
@@ -21,9 +21,14 @@ templateUrl: 'home.html'
 
 export class HomePage {
 
+private webWiew: any = window;
 
+constructor(public platform: Platform, public navCtrl: NavController) {
 
-constructor(public navCtrl: NavController) {
+    if (!this.platform.is('mobileweb')) {
+        console.log("queercon aaccaa loading not mobileweb");
+        this.webWiew.AppCenter.Analytics.trackEvent('QC home.ts');		
+    }  
 
 
 }

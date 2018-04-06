@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, Platform } from 'ionic-angular';
 
 @Component({
   selector: 'page-contact',
@@ -7,10 +7,15 @@ import { NavController } from 'ionic-angular';
 })
 export class ContactPage {
 
-  /* Remove in staging *///private webWiew: any = window;
+  private webWiew: any = window;
 
-  constructor(public navCtrl: NavController) {
-    /* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('Contacts Loaded');
+  constructor(public platform: Platform, public navCtrl: NavController) {
+
+    if (!this.platform.is('mobileweb')) {
+      console.log("queercon aaccaa loading not mobileweb");
+      this.webWiew.AppCenter.Analytics.trackEvent('QC contact.ts');		
+    }  
+
 
   }
 

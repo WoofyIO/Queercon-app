@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
 
 /**
  * Generated class for the NewsPage page.
@@ -15,10 +15,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class NewsPage {
 
-  /* Remove in staging *///private webWiew: any = window;
+  private webWiew: any = window;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    /* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('News Loaded');
+  constructor(public platform: Platform, public navCtrl: NavController, public navParams: NavParams) {
+    
+
+    if (!this.platform.is('mobileweb')) {
+      console.log("queercon aaccaa loading not mobileweb");
+      this.webWiew.AppCenter.Analytics.trackEvent('QC news.ts');		
+    }  
+
   }
 
   ionViewDidLoad() {

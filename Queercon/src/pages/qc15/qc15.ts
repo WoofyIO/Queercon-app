@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
 
 import { EventsPage } from '../events/events';
@@ -18,10 +18,15 @@ import { EventsPage } from '../events/events';
 })
 export class Qc15Page {
 
-  /* Remove in staging *///private webWiew: any = window;
+  private webWiew: any = window;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController) {
-    /* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('QC15 Loaded');
+  constructor(public platform: Platform, public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController) {
+    
+    if (!this.platform.is('mobileweb')) {
+      console.log("queercon aaccaa loading not mobileweb");
+      this.webWiew.AppCenter.Analytics.trackEvent('QC qc15.ts');		
+    }  
+
 
   }
 

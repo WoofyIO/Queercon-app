@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
 
 /**
@@ -19,12 +19,17 @@ declare const InstallMode: any
 })
 export class SettingsPage {
 
-  /* Remove in staging *///private webWiew: any = window;
+  private webWiew: any = window;
 
   pushID: string;
   pushTags: string;
-  constructor(public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController) {
-    /* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('Settings Loaded');
+  constructor(public platform: Platform, public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController) {
+
+
+    if (!this.platform.is('mobileweb')) {
+      console.log("queercon aaccaa loading not mobileweb");
+      this.webWiew.AppCenter.Analytics.trackEvent('QC settings.ts');		
+    }  
   
     this.pushID = "";
     this.pushTags = "";

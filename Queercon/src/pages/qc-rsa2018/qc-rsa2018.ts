@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
 
 /*
  * Generated class for the QcRsa2018Page page.
@@ -15,10 +15,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class QcRsa2018Page {
 
-  /* Remove in staging *///rivate webWiew: any = window;
+  private webWiew: any = window;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public platform: Platform, public navCtrl: NavController, public navParams: NavParams) {
    /* Remove in staging */// this.webWiew.AppCenter.Analytics.trackEvent('QC RSA 18 Loaded');
+
+   if (!this.platform.is('mobileweb')) {
+    console.log("queercon aaccaa loading not mobileweb");
+    this.webWiew.AppCenter.Analytics.trackEvent('QC qc-rsa2018.ts');		
+  }  
+
   }
 
   ionViewDidLoad() {
