@@ -69,7 +69,7 @@ export class MyApp {
 
 			if (this.platform.is('android') ) {
 			
-				this.statusBar.styleLightContent();
+				this.statusBar.styleDefault();
 				this.statusBar.overlaysWebView(true);
 				this.statusBar.backgroundColorByHexString('#000000');
 				this.splashScreen.hide();
