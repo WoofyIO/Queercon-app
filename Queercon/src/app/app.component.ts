@@ -33,14 +33,14 @@ export class MyApp {
 	pages: Array<{title: string, component: any}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, AlertController: AlertController) {
-		
 
-		this.initializeApp(AlertController);
 
-		if (this.platform.is('ios') || this.platform.is('android') ) {
-			
+		if (!this.platform.is('mobileweb')) {
+			console.log("queercon aaccaa loading not mobileweb");
 			this.webWiew.AppCenter.Analytics.trackEvent('QC app.component.ts');		
 		}
+
+		this.initializeApp(AlertController);
 		
 		this.pages = [
 			{ title: 'Home', component: HomePage },
@@ -83,16 +83,19 @@ export class MyApp {
 			}
 
 
-			console.log("queercon codepush next"),
-			codePush.sync(null, {
-				updateDialog: {
-					appendReleaseDescription: true,
-					mandatoryUpdateMessage: "An important content update has been installed",
-					optionalUpdateMessage: "A content update is available. Install now?",
-					descriptionPrefix: "\n\nChange log:\n"
-				},
-				installMode: InstallMode.IMMEDIATE
-			});
+			console.log("queercon codepush next");
+			if (!this.platform.is('mobileweb')) {
+				console.log("queercon aaccaa loading not mobileweb");
+				codePush.sync(null, {
+					updateDialog: {
+						appendReleaseDescription: true,
+						mandatoryUpdateMessage: "An important content update has been installed",
+						optionalUpdateMessage: "A content update is available. Install now?",
+						descriptionPrefix: "\n\nChange log:\n"
+					},
+					installMode: InstallMode.IMMEDIATE
+				});	
+			}
 
 			// Optional OneSignal code for iOS to prompt users later
 			// Set your iOS Settings
@@ -126,7 +129,9 @@ export class MyApp {
 			\"i\\\":\\\"979db93c-48f3-4838-8df0-6b1834d8c6c0\\\"}\",\"oth_chnl\":\"\",\"pri\":\"5\",\"vis\":\"1\",\"from\":\"278964097998\",\"alert\":\"2\",\"title\":\"test\",\"grp_msg\":\"\",\"google.message_id\":\"0:1522785572045450%5a823b91f9fd7ecd\",\"notificationId\":-17953206
 			75}"}}} */
 
-			window["plugins"].OneSignal
+			if (!this.platform.is('mobileweb')) {
+				console.log("queercon aaccaa loading not mobileweb");
+				window["plugins"].OneSignal
 				.startInit('d149d10e-71d8-4243-8827-f45a72d2d2ac','278964097998')
 				.iOSSettings(iosSettings) // only needed if added Optional OneSignal code for iOS above
 				.inFocusDisplaying(window["plugins"].OneSignal.OSInFocusDisplayOption.Notification)
@@ -139,7 +144,9 @@ export class MyApp {
 					alertInWindow.present();
 					console.log('queercon Did I receive a notification: ' + JSON.stringify(jsonData));
 				  })
-				.endInit();
+				.endInit();	
+			}
+
 		});
 
 	}
