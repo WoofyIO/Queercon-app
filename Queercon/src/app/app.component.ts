@@ -35,6 +35,7 @@ export class MyApp {
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, AlertController: AlertController) {
 
 		console.log("queercon Starting..");
+		console.log("queercon aaccaa " + this.platform.platforms());
 
 		if (!this.platform.is('mobileweb')) {
 			console.log("queercon aaccaa loading not mobileweb");
@@ -68,21 +69,17 @@ export class MyApp {
 			this.statusBar.backgroundColorByHexString('#ffffff');
 			this.splashScreen.hide(); */
 
+			this.statusBar.styleDefault();
+
 			if (this.platform.is('android') ) {
-			
-				this.statusBar.styleDefault();
 				this.statusBar.backgroundColorByHexString('#d3d3d3');
-				this.splashScreen.hide();
-		
 			}
 			if (this.platform.is('ios') ) {
-			
-				this.statusBar.styleDefault();
 				this.statusBar.overlaysWebView(false); //adding padding for iOS
 				this.statusBar.backgroundColorByHexString('#ffffff');
-				this.splashScreen.hide();	
 			}
 
+			this.splashScreen.hide();
 
 			console.log("queercon codepush next");
 			if (!this.platform.is('mobileweb')) {
