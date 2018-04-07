@@ -21,14 +21,14 @@ templateUrl: 'home.html'
 
 export class HomePage {
 
-private webWiew: any = window;
+//private webWiew: any = window;
 
 constructor(public platform: Platform, public navCtrl: NavController) {
 
-    if (!this.platform.is('mobileweb')) {
+   /*  if (!this.platform.is('mobileweb')) {
         console.log("queercon aaccaa loading not mobileweb");
         this.webWiew.AppCenter.Analytics.trackEvent('QC home.ts');		
-    }  
+    }   */
 
 
 }
