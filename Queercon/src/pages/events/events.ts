@@ -15,12 +15,14 @@ export class EventsDetailsPage {
 
   constructor(public platform: Platform, params: NavParams) {
     
+    this.item = params.data.item;
+
     if (!this.platform.is('mobileweb')) {
       console.log("queercon aaccaa loading not mobileweb");
-      this.webWiew.AppCenter.Analytics.trackEvent('QC event-details.ts' + params.data.item);		
+      this.webWiew.AppCenter.Analytics.trackEvent('QC event-details.ts' + this.item.title);		
     }  
 
-    this.item = params.data.item;
+    
   }
 
   openEventReservation() {
