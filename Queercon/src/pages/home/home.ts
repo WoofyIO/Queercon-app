@@ -21,14 +21,11 @@ templateUrl: 'home.html'
 
 export class HomePage {
 
-//private webWiew: any = window;
+//No analytics on this page... it fucks with iOS
 
 constructor(public platform: Platform, public navCtrl: NavController) {
 
-   /*  if (!this.platform.is('mobileweb')) {
-        console.log("queercon aaccaa loading not mobileweb");
-        this.webWiew.AppCenter.Analytics.trackEvent('QC home.ts');		
-    }   */
+
 
 
 }

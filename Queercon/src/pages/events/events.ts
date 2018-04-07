@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, Platform } from 'ionic-angular';
 
 /* import { Http } from '@angular/http';
 import 'rxjs/add/operator/map'; */
@@ -11,9 +11,15 @@ import 'rxjs/add/operator/map'; */
 
 export class EventsDetailsPage {
   item;
-  /* Remove in staging *///private webWiew: any = window;
-  constructor(params: NavParams) {
-    /* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('EventsPage Detail Loaded');
+  private webWiew: any = window;
+
+  constructor(public platform: Platform, params: NavParams) {
+    
+    if (!this.platform.is('mobileweb')) {
+      console.log("queercon aaccaa loading not mobileweb");
+      this.webWiew.AppCenter.Analytics.trackEvent('QC event-details.ts' + params.data.item);		
+    }  
+
     this.item = params.data.item;
   }
 
@@ -31,10 +37,17 @@ export class EventsDetailsPage {
  templateUrl: 'events.html',
 })
 export class EventsPage {
-  /* Remove in staging *///private webWiew: any = window;
+
+private webWiew: any = window;
+
   items = [];
-  constructor(public nav: NavController, /* public http: Http */) {
+  constructor(public platform: Platform, public nav: NavController, /* public http: Http */) {
     console.log('QC Events constructor loaded');
+    
+    if (!this.platform.is('mobileweb')) {
+      console.log("queercon aaccaa loading not mobileweb");
+      this.webWiew.AppCenter.Analytics.trackEvent('QC events.ts');		
+    }  
 
 /*     let localData = this.http.get('events.json').map(res => res.json().events);
     localData.subscribe(data => {
@@ -150,12 +163,7 @@ export class EventsPage {
         "reservation": "https://www.facebook.com/events/397972780636546/",
         "host": "QC"
       }
-    ]
-
-  
-
-
-    /* Remove in staging *///this.webWiew.AppCenter.Analytics.trackEvent('EventsPage Loaded');
+    ];
    
     /* let localData = http.get('assets/js/events.json').map(res => res.json().events);
     localData.subscribe(data => {
