@@ -19,7 +19,7 @@ export class EventsDetailsPage {
 
     if (!this.platform.is('mobileweb')) {
       console.log("queercon aaccaa loading not mobileweb");
-      this.webWiew.AppCenter.Analytics.trackEvent('QC event-details.ts' + this.item.title);		
+      this.webWiew.AppCenter.Analytics.trackEvent('QC event-details.ts page:' + this.item.title);		
     }  
 
     
