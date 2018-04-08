@@ -136,7 +136,7 @@ private webWiew: any = window;
         "date": "SUN 20 MAY",
         "hours": "08:00 - 14:00",
         "icon1": "",
-        "description": "This year, we are going to participate in AIDS Walk New York as a team. Come join us for the walk in Central Park. Join our team, or donate to the cause here: <a onclick=\"window.open('https://ny.aidswalk.net/queerconnyc', '_system', 'location=yes');\">https://ny.aidswalk.net/queerconnyc</a>",
+        "description": "This year, we are going to participate in AIDS Walk New York as a team. Come join us for the walk in Central Park. Join our team, or donate to the cause here: https://ny.aidswalk.net/queerconnyc",
         "map": "https://goo.gl/maps/DojAxHfdZ8B2",
         "reservation": "https://www.facebook.com/events/1610945689031296/",
         "host": "NYC"
