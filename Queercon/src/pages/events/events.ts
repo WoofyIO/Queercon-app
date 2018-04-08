@@ -136,9 +136,9 @@ private webWiew: any = window;
         "date": "SUN 20 MAY",
         "hours": "08:00 - 14:00",
         "icon1": "",
-        "description": "This year, we are going to participate in AIDS Walk New York as a team. Come join us for the walk in Central Park. Join our team, or donate to the cause here: https://ny.aidswalk.net/queerconnyc",
-        "map": "https://goo.gl/maps/DojAxHfdZ8B2",
-        "reservation": "https://www.facebook.com/events/1610945689031296/",
+        "description": "This year, we are going to participate in AIDS Walk New York as a team. Come join us for the walk in Central Park. Join our team, or donate to the cause here: https://ny.aidswalk.net/queerconnyc We will meet at Southeast corner of Central Park at 59th St & 5th Ave. Stay tuned to our Telegram channel for updates.",
+        "map": "https://goo.gl/maps/ZdJd18aJwgz",
+        "reservation": "https://ny.aidswalk.net/queerconnyc",
         "host": "NYC"
       },
       {
