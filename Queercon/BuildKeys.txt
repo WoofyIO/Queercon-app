@@ -6,3 +6,6 @@ iOS Staging
 <preference name="CodePushDeploymentKey" value="Vfe7GWkriXItBozGs16cj3OAk_MYryWNgXzIz" />
 iOS Production
 <preference name="CodePushDeploymentKey" value="TIpaV2ZUghgyX250gk_zZ3hTo5KKH1Z4xmz8G" />
+
+Location on OSX to get UUID of profiles:
+~/Library/MobileDevice/Provisioning\ Profiles/
