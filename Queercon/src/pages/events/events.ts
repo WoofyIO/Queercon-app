@@ -119,7 +119,7 @@ private webWiew: any = window;
       },
       {
         "title": "TOOOL DC",
-        "location": "The Board Room DC",
+        "location": "The Board Room, DC",
         "summary": "Bring your concentration and a bite to eat to this QC lockpicking session.",
         "date": "WED 02 MAY",
         "hours": "18:30 - 20:30",
@@ -155,7 +155,7 @@ private webWiew: any = window;
       },
       {
         "title": "TOOOL DC",
-        "location": "The Board Room DC",
+        "location": "The Board Room, DC",
         "summary": "Bring your concentration and a bite to eat to this QC lockpicking session.",
         "date": "WED 06 JUN",
         "hours": "18:30 - 20:30",
@@ -167,7 +167,7 @@ private webWiew: any = window;
       },
       {
         "title": "SaintCON 2018",
-        "location": "Hushcon East",
+        "location": "Utah Valley Convention Center",
         "summary": "Join for a nonprofit conference in Salt Lake City, 17 years running.",
         "date": "15 - 19 OCT",
         "hours": "09:00 - 23:00",
