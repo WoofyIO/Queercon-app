@@ -118,6 +118,18 @@ private webWiew: any = window;
         "host": "QC"
       },
       {
+        "title": "Brunch & Bowie",
+        "location": "Brooklyn Museum",
+        "summary": "Bruch and check out the Bowie Is exhibition at Brooklyn Museum",
+        "date": "SAT 28 APR",
+        "hours": "12:00 - 18:00",
+        "icon1": "",
+        "description": "Mark your calendars! This month we will get together to check out the Bowie Is exhibition at Brooklyn Museum. We will meet for brunch before heading to the museum. Brunch spot is TBD and this event will be updated with the location soon.",
+        "map": "https://goo.gl/maps/BY1Z6qHKfEt",
+        "reservation": "https://www.eventbrite.com/e/brunch-bowie-tickets-45102312230",
+        "host": "NYC"
+      },
+      {
         "title": "TOOOL DC",
         "location": "The Board Room, DC",
         "summary": "Bring your concentration and a bite to eat to this QC lockpicking session.",
