@@ -70,30 +70,6 @@ private webWiew: any = window;
         "host": "SEA"
       },
       {
-        "title": "Hackers & Cherry Blossoms",
-        "location": "Chinatown Express, DC",
-        "summary": "Take two on viewing the finest blossoms in the nation.",
-        "date": "SAT 07 APR",
-        "hours": "12:00 - 15:00",
-        "icon1": "",
-        "description": "Weather has been finicky pushing back the peak cherry blossom bloom dates, here's our second attempt! Meetup for lunch at Chinatown Express (Gallery Place/Chinatown Metro on Red/Green/Yellow lines) then we'll decide as a group whether to walk or Metro to the Tidal Basin to see the cherry blossoms!",
-        "map": "https://goo.gl/maps/cFw4RFTpLVn",
-        "reservation": "https://www.facebook.com/events/409616126110553/",
-        "host": "DC"
-      },
-      {
-        "title": "Gayme Night At The RayGun Lounge",
-        "location": "Raygun Lounge, Seattle",
-        "summary": "Come play gaymes with other LGBTQ+ people.",
-        "date": "MON 09 APR",
-        "hours": "19:00 - 23:00",
-        "icon1": "",
-        "description": "Come play gaymes with other LGBTQ+ people.",
-        "map": "https://goo.gl/maps/HmUVm62oVgD2",
-        "reservation": "https://www.facebook.com/events/155539011791446/",
-        "host": "SEA"
-      },
-      {
         "title": "Cram For HAM Exam + Exam",
         "location": "Ada's Technical Books, Seattle",
         "summary": "Want to get your ham radio license? We're here to help!",
