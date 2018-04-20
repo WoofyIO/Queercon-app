@@ -94,6 +94,18 @@ private webWiew: any = window;
         "host": "QC"
       },
       {
+        "title": "Dinner and an Arcade Bar (21+)",
+        "location": "Dinner TBD, Quarters Arcade bar",
+        "summary": "Dinner (TBD) then head over to the new bar for drinks and play some arcade games.",
+        "date": "SAT 21 APR",
+        "hours": "18:00 - 21:00",
+        "icon1": "[21+]",
+        "description": "Dinner hasn't been decided on yet, join us on Facebook and help us decide.",
+        "map": "https://goo.gl/maps/pphKFef2JhF2",
+        "reservation": "https://www.facebook.com/events/1386991288112841/",
+        "host": "SLC"
+      },
+      {
         "title": "Brunch & Bowie",
         "location": "Brooklyn Museum",
         "summary": "Bruch and check out the Bowie Is exhibition at Brooklyn Museum",
@@ -116,6 +128,18 @@ private webWiew: any = window;
         "map": "https://goo.gl/maps/C2sdfY9AnKw",
         "reservation": "https://www.facebook.com/events/1903929682981325/",
         "host": "DC"
+      },
+      {
+        "title": "Let's take a hike - Ensign Peak",
+        "location": "Ensign Peak trailhead",
+        "summary": "Let's go hike Ensign Peak and take a group picture overlooking the valley.",
+        "date": "SAT 19 MAY",
+        "hours": "11:00 - 13:00",
+        "icon1": "",
+        "description": "The hike is fairly easy, though it little steep in sections, but offers an amazing view of the valley. Afterwards we can grab a bite to eat or something else.",
+        "map": "https://goo.gl/maps/36wXDtDSvTz",
+        "reservation": "https://www.facebook.com/events/2164708526889022/",
+        "host": "SLC"
       },
       {
         "title": "AIDS Walk NY",
