@@ -110,10 +110,10 @@ private webWiew: any = window;
         "location": "Brooklyn Museum",
         "summary": "Bruch and check out the Bowie Is exhibition at Brooklyn Museum",
         "date": "SAT 28 APR",
-        "hours": "12:00 - 18:00",
+        "hours": "13:00 - 18:00",
         "icon1": "",
-        "description": "Mark your calendars! This month we will get together to check out the Bowie Is exhibition at Brooklyn Museum. We will meet for brunch before heading to the museum. Brunch spot is TBD and this event will be updated with the location soon.",
-        "map": "https://goo.gl/maps/BY1Z6qHKfEt",
+        "description": "Mark your calendars! This month we will get together to check out the Bowie Is exhibition at Brooklyn Museum. We will meet for brunch at Miriam (79 5th Ave, Brooklyn, NY 11217) before heading to the museum.",
+        "map": "https://goo.gl/maps/JB5TjefSr6T2",
         "reservation": "https://www.eventbrite.com/e/brunch-bowie-tickets-45102312230",
         "host": "NYC"
       },
