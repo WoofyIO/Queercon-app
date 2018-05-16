@@ -4,7 +4,7 @@ import { NavController, Platform } from 'ionic-angular';
 import { Qc15Page } from '../qc15/qc15';
 import { ChatPage } from '../chat/chat';
 import { LocalPage } from '../local/local';
-import { QcRsa2018Page } from '../qc-rsa2018/qc-rsa2018';
+//import { QcRsa2018Page } from '../qc-rsa2018/qc-rsa2018';
 import { EventsPage } from '../events/events';
 import { ContactPage } from '../contact/contact';
 import { SupportersPage } from '../supporters/supporters';
@@ -38,6 +38,6 @@ goToSupportersPage(){ this.navCtrl.push(SupportersPage); }
 goToChatPage(){ this.navCtrl.push(ChatPage); }
 goToEventsPage(){ this.navCtrl.push(EventsPage); }
 goToQc15Page(){ this.navCtrl.push(Qc15Page); }
-goToQcRsaPage(){ this.navCtrl.push(QcRsa2018Page); }
+// goToQcRsaPage(){ this.navCtrl.push(QcRsa2018Page); }
 
 }

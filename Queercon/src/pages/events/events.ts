@@ -70,66 +70,6 @@ private webWiew: any = window;
         "host": "SEA"
       },
       {
-        "title": "Cram For HAM Exam + Exam",
-        "location": "Ada's Technical Books, Seattle",
-        "summary": "Want to get your ham radio license? We're here to help!",
-        "date": "MON 16 APR",
-        "hours": "18:00 - 22:00",
-        "icon1": "",
-        "description": "Come do a cram session with me to pass your HAM radio technician exam. The exam is at 7pm. Afterwards, let's head to some place to get ice cream, like Sugar Plum or Full Tilt. I might add an additional event for studying if anyone else is down.",
-        "map": "https://goo.gl/maps/4ysYJrJYzkM2",
-        "reservation": "https://www.facebook.com/events/119610972217619/",
-        "host": "SEA"
-      },
-      {
-        "title": "Queercon RSA Mixer",
-        "location": "Hamburger Mary's San Francisco",
-        "summary": "Come join us for a low key evening at the new Hamburger Mary’s in the Castro at the end of RSA this year.",
-        "date": "THU 19 APR",
-        "hours": "19:30 - 23:00",
-        "icon1": "",
-        "description": "Come join us for a low key evening at the new Hamburger Mary’s in the Castro at the end of RSA this year.",
-        "map": "https://goo.gl/maps/EknU1Wg7P7A2",
-        "reservation": "https://www.facebook.com/events/189231201695228/",
-        "host": "QC"
-      },
-      {
-        "title": "Dinner and an Arcade Bar (21+)",
-        "location": "Dinner TBD, Quarters Arcade bar",
-        "summary": "Dinner (TBD) then head over to the new bar for drinks and play some arcade games.",
-        "date": "SAT 21 APR",
-        "hours": "18:00 - 21:00",
-        "icon1": "[21+]",
-        "description": "Dinner hasn't been decided on yet, join us on Facebook and help us decide.",
-        "map": "https://goo.gl/maps/pphKFef2JhF2",
-        "reservation": "https://www.facebook.com/events/1386991288112841/",
-        "host": "SLC"
-      },
-      {
-        "title": "Brunch & Bowie",
-        "location": "Brooklyn Museum",
-        "summary": "Bruch and check out the Bowie Is exhibition at Brooklyn Museum",
-        "date": "SAT 28 APR",
-        "hours": "13:00 - 18:00",
-        "icon1": "",
-        "description": "Mark your calendars! This month we will get together to check out the Bowie Is exhibition at Brooklyn Museum. We will meet for brunch at Miriam (79 5th Ave, Brooklyn, NY 11217) before heading to the museum.",
-        "map": "https://goo.gl/maps/JB5TjefSr6T2",
-        "reservation": "https://www.eventbrite.com/e/brunch-bowie-tickets-45102312230",
-        "host": "NYC"
-      },
-      {
-        "title": "TOOOL DC",
-        "location": "The Board Room, DC",
-        "summary": "Bring your concentration and a bite to eat to this QC lockpicking session.",
-        "date": "WED 02 MAY",
-        "hours": "18:30 - 20:30",
-        "icon1": "",
-        "description": "Come lockpick and drink with us! Lockpicks and locks are provided, just bring yourself! (They don't serve food so it's Bring Your Own Food).",
-        "map": "https://goo.gl/maps/C2sdfY9AnKw",
-        "reservation": "https://www.facebook.com/events/1903929682981325/",
-        "host": "DC"
-      },
-      {
         "title": "Let's take a hike - Ensign Peak",
         "location": "Ensign Peak trailhead",
         "summary": "Let's go hike Ensign Peak and take a group picture overlooking the valley.",

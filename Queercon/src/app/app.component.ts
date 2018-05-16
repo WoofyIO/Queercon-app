@@ -8,7 +8,7 @@ import { HomePage } from '../pages/home/home';
 import { Qc15Page } from '../pages/qc15/qc15';
 import { ChatPage } from '../pages/chat/chat';
 import { LocalPage } from '../pages/local/local';
-import { QcRsa2018Page } from '../pages/qc-rsa2018/qc-rsa2018';
+//import { QcRsa2018Page } from '../pages/qc-rsa2018/qc-rsa2018';
 import { EventsPage } from '../pages/events/events';
 import { SupportersPage } from '../pages/supporters/supporters';
 import { AboutPage } from '../pages/about/about';
@@ -40,7 +40,7 @@ export class MyApp {
 			{ title: 'Home', component: HomePage },
 			{ title: 'Latest News', component: NewsPage },
 			{ title: 'Queercon 15 @ Defcon', component: Qc15Page },
-			{ title: 'Queercon @ RSA', component: QcRsa2018Page },
+			//{ title: 'Queercon @ RSA', component: QcRsa2018Page },
 			{ title: 'Events Calendar', component: EventsPage },
 			{ title: 'Queercon Locals', component: LocalPage },
 			{ title: 'Chat Room', component: ChatPage },
