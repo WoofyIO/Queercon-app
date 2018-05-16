@@ -94,14 +94,26 @@ private webWiew: any = window;
         "host": "NYC"
       },
       {
-        "title": "Queercon @ Hushcon East",
-        "location": "Hushcon East",
-        "summary": "Coming soon, we'll be there with mixers and/or evening social events!",
+        "title": "Queercon @ HushCon NY Friday",
+        "location": "Club Cumming",
+        "summary": "Join us for drinks at Club Cumming after talks end at HushCon NY",
         "date": "FRI 01 JUN",
-        "hours": "09:00 - 23:00",
-        "icon1": "",
-        "description": "Coming soon, we'll be there with mixers and/or evening social events!",
-        "map": "https://goo.gl/maps/HrMPUB3Uqy32",
+        "hours": "17:00 - 19:30",
+        "icon1": "[21+]",
+        "description": "Join us for drinks at Club Cumming after talks end at HushCon NY. Come hang out, get a drink, and chat.",
+        "map": "https://goo.gl/maps/24i5vhNVxxN2",
+        "reservation": "https://www.facebook.com/events/170631757064102/",
+        "host": "QC"
+      },
+      {
+        "title": "Queercon @ HushCon NY Saturday",
+        "location": "Phoenix Bar",
+        "summary": "Join us for drinks at Phoenix Bar after talks end at HushCon NY",
+        "date": "FRI 01 JUN",
+        "hours": "17:00 - 19:30",
+        "icon1": "[21+]",
+        "description": "Join us for drinks at Phoenix Bar after talks end at HushCon NY. Come hang out, get a drink, and chat.",
+        "map": "https://goo.gl/maps/jQWkBd9ACVk",
         "reservation": "https://www.facebook.com/events/170631757064102/",
         "host": "QC"
       },
