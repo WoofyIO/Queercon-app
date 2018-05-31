@@ -1,7 +1,6 @@
 # Queercon ionic app
 The NG app, linked to appcenter.ms
 
-
 Now using native ionic + cordova.
 
 Please look at the issues for things to work on if your looking for something to keep you busy ;)
