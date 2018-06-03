@@ -10,6 +10,7 @@ import { ContactPage } from '../contact/contact';
 import { SupportersPage } from '../supporters/supporters';
 import { AboutPage } from '../about/about';
 import { NewsPage } from '../news/news';
+import { SettingsPage } from '../settings/settings';
 
 
 
@@ -38,6 +39,7 @@ goToSupportersPage(){ this.navCtrl.push(SupportersPage); }
 goToChatPage(){ this.navCtrl.push(ChatPage); }
 goToEventsPage(){ this.navCtrl.push(EventsPage); }
 goToQc15Page(){ this.navCtrl.push(Qc15Page); }
+goToSettingsPage(){ this.navCtrl.push(SettingsPage); }
 // goToQcRsaPage(){ this.navCtrl.push(QcRsa2018Page); }
 
 }
