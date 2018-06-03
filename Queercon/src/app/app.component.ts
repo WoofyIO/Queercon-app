@@ -88,11 +88,15 @@ export class MyApp {
 				codePush.sync(null, {
 					updateDialog: {
 						appendReleaseDescription: true,
-						mandatoryUpdateMessage: "An important content update has been installed",
+						mandatoryUpdateMessage: "An important content update is about to be installed",
 						optionalUpdateMessage: "A content update is available. Install now?",
-						descriptionPrefix: "\n\nChange log:\n"
+						descriptionPrefix: "\n\nChange log:\n",
+						mandatoryContinueButtonLabel: "OK",
+						updateTitle: "Content Update available"
+
 					},
-					installMode: InstallMode.IMMEDIATE
+					installMode: InstallMode.IMMEDIATE,
+					ignoreFailedUpdates: false
 				});	
 			}
 

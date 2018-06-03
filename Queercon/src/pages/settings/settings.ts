@@ -23,6 +23,12 @@ export class SettingsPage {
 
   pushID: string;
   pushTags: string;
+  appVer: string;
+  codeVer: string;
+  verDesc: string;
+  verSize: Number;
+
+
   constructor(public platform: Platform, public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController) {
 
 
@@ -51,12 +57,16 @@ export class SettingsPage {
     codePush.sync(null, {
       updateDialog: {
         appendReleaseDescription: true,
-        mandatoryUpdateMessage: "An important content update has been installed",
+        mandatoryUpdateMessage: "An important content update is about to be installed",
         optionalUpdateMessage: "A content update is available. Install now?",
-        descriptionPrefix: "\n\nChange log:\n"
+        descriptionPrefix: "\n\nChange log:\n",
+        mandatoryContinueButtonLabel: "OK",
+        updateTitle: "Content Update available"
+
       },
-      installMode: InstallMode.IMMEDIATE
-    });
+      installMode: InstallMode.IMMEDIATE,
+      ignoreFailedUpdates: false
+    });	
 
   }
 
@@ -92,6 +102,16 @@ export class SettingsPage {
       console.log("queercon pushsub pushid set: " +  self.pushID);
     });
 
+  }
+
+  getVerData() {
+    let self = this;
+
+    self.appVer = codePush.getCurrentPackage.appVersion();
+    self.codeVer = codePush.getCurrentPackage.label();
+    self.verDesc = codePush.getCurrentPackage.description();
+    self.verSize = codePush.getCurrentPackage.packageSize();
+    
   }
 
 

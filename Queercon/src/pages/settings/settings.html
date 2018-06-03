@@ -27,6 +27,39 @@
 	  </ion-card-content>
   </ion-card>
 
+  <ion-card>
+      <ion-card-header>
+        Get App and Code Version
+      </ion-card-header>
+      <ion-card-content>
+        Get your App Version, and Code version for debug purposes.
+      </ion-card-content>
+      <ion-row no-padding>
+        <ion-col>
+          <ion-item>
+            <ion-input type="text" placeholder="App Version" value="{{ appVer }}"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="text" placeholder="Code Version" value="{{ codeVer }}"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="text" placeholder="Version Description" value="{{ verDesc }}"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="text" placeholder="Version Size" value="{{ verSize }}"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row no-padding>
+        <ion-col>
+          <button ion-button clear small color="danger" icon-start (click)="getVerData()">
+            <ion-icon name='cloud-download'></ion-icon>
+            Get Data
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
 
   <ion-card>
 		<ion-card-header>
