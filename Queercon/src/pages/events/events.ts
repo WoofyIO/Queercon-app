@@ -56,6 +56,18 @@ private webWiew: any = window;
       this.items = data;
     }) */
 
+
+    //
+    //
+    //
+    //
+    //
+    // QC LOCALS!! This bellow is the bit to edit and add what you need to :)
+    //
+    //
+    //
+    //
+
     this.items = [
       {
         "title": "Poco Social Hour",
@@ -94,6 +106,8 @@ private webWiew: any = window;
         "host": "SLC"
       }
     ];
+
+    //Nothing more for you bellow.. unless you want to do coding for me
    
     /* let localData = http.get('assets/js/events.json').map(res => res.json().events);
     localData.subscribe(data => {
