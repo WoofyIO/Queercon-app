@@ -24,14 +24,34 @@
 	</ion-card>
 
 	<ion-card>
+		<ion-card-header>
+			Wed Aug 8 - Sun Aug 12
+		</ion-card-header>
 		<ion-card-content>
-			The main event is back for our fifteenth year! Everything you need to know is here.  
+			The main event is back for our fifteenth year! Everything you need to know will be here as the information comes avalible. In the mean time we have made an important anouncement as to how we will be running events this year. Check out the full anouncement bellow, but here is the TL;DR:
+			<ul>
+				<li>
+					Queercon will have two different types of Badges this year: Our usual (and fantastic) Electronic Badge, as well as a Non-Electronic Badge.
+				</li>
+				<li>
+					A Queercon Badge (Electronic or Non) will be required for attendance to many of our evening events. 
+				</li>
+				<li>
+					In continuing tradition, a portion of the limited-edition Queercon Electronic Badges will be available for reservation by a one-time donation in the upcoming weeks. 
+				</li>
+				<li>
+					We are also making Non-Electronic Badges available by donation this year. 
+				</li>
+				<li>
+						There will NOT be any method to reserve, or donate for, Electronic Badges onsite in Las Vegas. However, Non-Electronic Badges will be available for donation onsite. 
+				</li>
+			</ul>
 		</ion-card-content>
 		<ion-row no-padding>
 			<ion-col>
-				<button ion-button clear small color="danger" icon-start>
-					<ion-icon name='clock'></ion-icon>
-					Wed Aug 8 - Sun Aug 12
+				<button ion-button clear small color="danger" icon-start onclick="window.open('icon-start https://queercon.org/blog/2018/06/01/queercon-15-announcement/', '_system', 'location=yes');">
+					<ion-icon name='alert'></ion-icon>
+					QC 15 Announcement
 				</button>
 			</ion-col>
 		</ion-row>
@@ -47,7 +67,7 @@
 		<ion-row no-padding>
 			<ion-col>
 				<button ion-button clear small color="danger" icon-start onclick="window.open('https://www.defcon.org/', '_system', 'location=yes');">
-					<ion-icon name='clock'></ion-icon>
+					<ion-icon name='alert'></ion-icon>
 					Defcon Homepage
 				</button>
 			</ion-col>
@@ -91,7 +111,7 @@
 		<ion-row no-padding>
 			<ion-col>
 				<button ion-button clear small color="danger" icon-start (click)="presentBadgeViewToast('middle')">
-					<ion-icon name='clock'></ion-icon>
+					<ion-icon name='alert'></ion-icon>
 					See the Badge
 				</button>
 			</ion-col>
@@ -99,7 +119,7 @@
 		<ion-row no-padding>
 			<ion-col>
 				<button ion-button clear small color="danger" icon-start (click)="presentBadgeReserveToast('middle')">
-					<ion-icon name='clock'></ion-icon>
+					<ion-icon name='alert'></ion-icon>
 					Reserve Your Own!
 				</button>
 			</ion-col>
