@@ -70,54 +70,6 @@ private webWiew: any = window;
         "host": "SEA"
       },
       {
-        "title": "Let's take a hike - Ensign Peak",
-        "location": "Ensign Peak trailhead",
-        "summary": "Let's go hike Ensign Peak and take a group picture overlooking the valley.",
-        "date": "SAT 19 MAY",
-        "hours": "11:00 - 13:00",
-        "icon1": "",
-        "description": "The hike is fairly easy, though it little steep in sections, but offers an amazing view of the valley. Afterwards we can grab a bite to eat or something else.",
-        "map": "https://goo.gl/maps/36wXDtDSvTz",
-        "reservation": "https://www.facebook.com/events/2164708526889022/",
-        "host": "SLC"
-      },
-      {
-        "title": "AIDS Walk NY",
-        "location": "Central Park, NYC",
-        "summary": "Join Team Queercon NYC in fundraising to combat HIV/AIDS",
-        "date": "SUN 20 MAY",
-        "hours": "08:00 - 14:00",
-        "icon1": "",
-        "description": "This year, we are going to participate in AIDS Walk New York as a team. Come join us for the walk in Central Park. Join our team, or donate to the cause here: https://ny.aidswalk.net/queerconnyc We will meet at Southeast corner of Central Park at 59th St & 5th Ave. Stay tuned to our Telegram channel for updates.",
-        "map": "https://goo.gl/maps/ZdJd18aJwgz",
-        "reservation": "https://ny.aidswalk.net/queerconnyc",
-        "host": "NYC"
-      },
-      {
-        "title": "Queercon @ HushCon NY Friday",
-        "location": "Club Cumming",
-        "summary": "Join us for drinks at Club Cumming after talks end at HushCon NY",
-        "date": "FRI 01 JUN",
-        "hours": "17:00 - 19:30",
-        "icon1": "[21+]",
-        "description": "Join us for drinks at Club Cumming after talks end at HushCon NY. Come hang out, get a drink, and chat.",
-        "map": "https://goo.gl/maps/24i5vhNVxxN2",
-        "reservation": "https://www.facebook.com/events/170631757064102/",
-        "host": "QC"
-      },
-      {
-        "title": "Queercon @ HushCon NY Saturday",
-        "location": "Phoenix Bar",
-        "summary": "Join us for drinks at Phoenix Bar after talks end at HushCon NY",
-        "date": "FRI 01 JUN",
-        "hours": "17:00 - 19:30",
-        "icon1": "[21+]",
-        "description": "Join us for drinks at Phoenix Bar after talks end at HushCon NY. Come hang out, get a drink, and chat.",
-        "map": "https://goo.gl/maps/jQWkBd9ACVk",
-        "reservation": "https://www.facebook.com/events/170631757064102/",
-        "host": "QC"
-      },
-      {
         "title": "TOOOL DC",
         "location": "The Board Room, DC",
         "summary": "Bring your concentration and a bite to eat to this QC lockpicking session.",
@@ -139,7 +91,7 @@ private webWiew: any = window;
         "description": "SAINTCON is a nonprofit conference devoted to security training and awareness, and presented by the UtahSAINT Organization. SAINTCON was founded in 2001, originally designed to provide security training to Utah based public entities. Today the conference has grown into a large gathering of security professionals, students, and interested individuals. From security to community, we focus on working together to promote security in all areas of technology. Many of the attendees of SAINTCON include computer security professionals, IT professionals, security researchers, students, or anyone with a general interst in technology security related topics.",
         "map": "https://goo.gl/maps/ktY91xHjxPM2",
         "reservation": "https://www.facebook.com/events/397972780636546/",
-        "host": "QC"
+        "host": "SLC"
       }
     ];
    
