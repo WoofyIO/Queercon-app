@@ -37,29 +37,20 @@
       <ion-row no-padding>
         <ion-col>
           <ion-item>
-            <ion-input type="text" placeholder="App Version" value="{{ appVer }}"></ion-input>
+            <ion-label color="primary" stacked>App Version</ion-label>
+            <ion-input type="text" readonly=true placeholder="App Version Loads Here" value="{{ appVer }}"></ion-input>
           </ion-item>
           <ion-item>
-            <ion-input type="text" placeholder="Code Version" value="{{ codeVer }}"></ion-input>
+            <ion-label color="primary" stacked>Code Version</ion-label>
+            <ion-input type="text" readonly=true placeholder="Code Version Loads Here" value="{{ codeVer }}"></ion-input>
           </ion-item>
           <ion-item>
-            <ion-input type="text" placeholder="Version Description" value="{{ verDesc }}"></ion-input>
+            <ion-label color="primary" stacked>Version Description</ion-label>
+            <ion-textarea type="text" readonly=true placeholder="Version Description Loads Here" value="{{ verDesc }}"></ion-textarea>
           </ion-item>
-          <ion-item>
-            <ion-input type="text" placeholder="Version Size" value="{{ verSize }}"></ion-input>
-          </ion-item>
-        </ion-col>
-      </ion-row>
-      <ion-row no-padding>
-        <ion-col>
-          <button ion-button clear small color="danger" icon-start (click)="getVerData()">
-            <ion-icon name='cloud-download'></ion-icon>
-            Get Data
-          </button>
         </ion-col>
       </ion-row>
     </ion-card>
-
 
   <ion-card>
 		<ion-card-header>
@@ -88,16 +79,9 @@
     <ion-row no-padding>
 			<ion-col>
         <ion-item>
-          <ion-input type="text" placeholder="PushID" value="{{ pushID }}"></ion-input>
+          <ion-label color="primary" stacked>PushID</ion-label>
+          <ion-input type="text" readonly=true placeholder="PushID Loads Here" value="{{ pushID }}"></ion-input>
         </ion-item>
-      </ion-col>
-    </ion-row>
-    <ion-row no-padding>
-      <ion-col>
-        <button ion-button clear small color="danger" icon-start (click)="getPushID()">
-          <ion-icon name='cloud-download'></ion-icon>
-          Get PushID
-        </button>
       </ion-col>
     </ion-row>
   </ion-card>
@@ -112,16 +96,9 @@
     <ion-row no-padding>
 			<ion-col>
         <ion-item>
-          <ion-input type="text" placeholder="PushTags" value="{{ pushTags }}"></ion-input>
+          <ion-label color="primary" stacked>Push Tags</ion-label>
+          <ion-input type="text" readonly=true placeholder="PushTags Loads Here" value="{{ pushTags }}"></ion-input>
         </ion-item>
-      </ion-col>
-    </ion-row>
-    <ion-row no-padding>
-      <ion-col>
-        <button ion-button clear small color="danger" icon-start (click)="getPushTags()">
-          <ion-icon name='cloud-download'></ion-icon>
-          Get PushTags
-        </button>
       </ion-col>
     </ion-row>
 	</ion-card>

@@ -26,7 +26,6 @@ export class SettingsPage {
   appVer: string;
   codeVer: string;
   verDesc: string;
-  verSize: Number;
 
 
   constructor(public platform: Platform, public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController) {
@@ -43,8 +42,15 @@ export class SettingsPage {
 
   }
 
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad SettingsPage');
+
+    if (!this.platform.is('mobileweb')) {
+      this.platform.ready().then(()=>this.getPushTags());
+      this.platform.ready().then(()=>this.getPushID());
+      this.platform.ready().then(()=>this.getVerData());
+    }
   }
 
   checkUpdates() {
@@ -61,7 +67,7 @@ export class SettingsPage {
         optionalUpdateMessage: "A content update is available. Install now?",
         descriptionPrefix: "\n\nChange log:\n",
         mandatoryContinueButtonLabel: "OK",
-        updateTitle: "Content Update available"
+        updateTitle: "Content Update Available"
 
       },
       installMode: InstallMode.IMMEDIATE,
@@ -107,12 +113,16 @@ export class SettingsPage {
   getVerData() {
     let self = this;
 
-    codePush.getCurrentPackage().then((codeData)=> {
-      self.appVer = codeData.appVersion();
-      self.codeVer = codeData.label();
-      self.verDesc = codeData.description();
-      self.verSize = codeData.packageSize();
-   });
+    if (!this.platform.is('mobileweb')) {
+      codePush.getCurrentPackage(function (localPackage) {
+
+        self.appVer = localPackage.appVersion;
+        self.codeVer = localPackage.label;
+        self.verDesc = localPackage.description;
+
+      });
+  
+    }
   }
 
 

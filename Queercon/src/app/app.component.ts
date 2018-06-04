@@ -92,7 +92,7 @@ export class MyApp {
 						optionalUpdateMessage: "A content update is available. Install now?",
 						descriptionPrefix: "\n\nChange log:\n",
 						mandatoryContinueButtonLabel: "OK",
-						updateTitle: "Content Update available"
+						updateTitle: "Content Update Available"
 
 					},
 					installMode: InstallMode.IMMEDIATE,
