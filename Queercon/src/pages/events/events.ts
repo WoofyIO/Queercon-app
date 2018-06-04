@@ -94,6 +94,18 @@ private webWiew: any = window;
         "host": "DC"
       },
       {
+        "title": "Northwest Pinball & Arcade Show",
+        "location": "Greater Tacoma Convention Center",
+        "summary": "Queercon SEA goes to the Northwest Pinball & Arcade Show",
+        "date": "SAT 09 JUN",
+        "hours": "13:30 - 20:30",
+        "icon1": "",
+        "description": "Queercon Seattle is going to the Northwest Pinball & Arcade show on Saturday! Tickets to the show can be bought at the door for $30, and all games are on free play once you're inside. Come play hundreds of arcade and pinball games with us. More info on the show at http://www.nwpinballshow.com/",
+        "map": "https://goo.gl/maps/mKqSMsBNEYR2",
+        "reservation": "https://www.facebook.com/events/212871739325873/",
+        "host": "SEA"
+      },
+      {
         "title": "SaintCON 2018",
         "location": "Utah Valley Convention Center",
         "summary": "Join for a nonprofit conference in Salt Lake City, 17 years running.",
