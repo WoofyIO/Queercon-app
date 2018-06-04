@@ -107,11 +107,12 @@ export class SettingsPage {
   getVerData() {
     let self = this;
 
-    self.appVer = codePush.getCurrentPackage.appVersion();
-    self.codeVer = codePush.getCurrentPackage.label();
-    self.verDesc = codePush.getCurrentPackage.description();
-    self.verSize = codePush.getCurrentPackage.packageSize();
-    
+    codePush.getCurrentPackage().then((codeData)=> {
+      self.appVer = codeData.appVersion();
+      self.codeVer = codeData.label();
+      self.verDesc = codeData.description();
+      self.verSize = codeData.packageSize();
+   });
   }
 
 
