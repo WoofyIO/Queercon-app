@@ -59,6 +59,8 @@ export class MyApp {
 
 			console.log("queercon Starting..");
 			console.log("queercon aaccaa " + this.platform.platforms());
+
+			var key = "";
 	
 	 		if (!this.platform.is('mobileweb')) {
 				console.log("queercon aaccaa loading not mobileweb");
@@ -85,19 +87,57 @@ export class MyApp {
 			console.log("queercon codepush next");
 			if (!this.platform.is('mobileweb')) {
 				console.log("queercon aaccaa loading not mobileweb, codepush");
-				codePush.sync(null, {
-					updateDialog: {
-						appendReleaseDescription: true,
-						mandatoryUpdateMessage: "An important content update is about to be installed",
-						optionalUpdateMessage: "A content update is available. Install now?",
-						descriptionPrefix: "\n\nChange log:\n",
-						mandatoryContinueButtonLabel: "OK",
-						updateTitle: "Content Update Available"
 
-					},
-					installMode: InstallMode.IMMEDIATE,
-					ignoreFailedUpdates: false
-				});	
+
+				if (this.platform.is('android'))
+				{
+				  key = "ek1YEsrSrNY6MMroICfOL-k_yA7Cry87dPT4G";
+				}
+				if (this.platform.is('ios'))
+				{
+				  key = "TIpaV2ZUghgyX250gk_zZ3hTo5KKH1Z4xmz8G";
+				}
+
+				codePush.getCurrentPackage(function (localPackage) {
+			
+					if(localPackage.deploymentKey == "qLWMZpKH2vSiODwb1-qHLte__0tyHJLmdPT4M") 
+					{
+					   //Android Staging
+					   key = localPackage.deploymentKey;
+					}
+					if(localPackage.deploymentKey == "ek1YEsrSrNY6MMroICfOL-k_yA7Cry87dPT4G") 
+					{
+					   //Android Production
+					   key = localPackage.deploymentKey;
+					}
+					if(localPackage.deploymentKey == "Vfe7GWkriXItBozGs16cj3OAk_MYryWNgXzIz") 
+					{
+					   //iOS Staging
+					   key = localPackage.deploymentKey;
+					}
+					if(localPackage.deploymentKey == "TIpaV2ZUghgyX250gk_zZ3hTo5KKH1Z4xmz8G") 
+					{
+					   //iOS Production
+					   key = localPackage.deploymentKey;
+					}
+
+					console.log("queercon aaccaa key update to: " + key);
+					codePush.sync(null, {
+					   updateDialog: {
+						   appendReleaseDescription: true,
+						   mandatoryUpdateMessage: "An important content update is about to be installed",
+						   optionalUpdateMessage: "A content update is available. Install now?",
+						   descriptionPrefix: "\n\nChange log:\n",
+						   mandatoryContinueButtonLabel: "OK",
+						   updateTitle: "Content Update Available"
+   
+					   },
+					   installMode: InstallMode.IMMEDIATE,
+					   deploymentKey: key,
+					   ignoreFailedUpdates: false
+					});	
+
+				}); 
 			}
 
 			// Optional OneSignal code for iOS to prompt users later

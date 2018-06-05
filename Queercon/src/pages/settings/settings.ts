@@ -26,6 +26,7 @@ export class SettingsPage {
   appVer: string;
   codeVer: string;
   verDesc: string;
+  codeBr: string;
 
 
   constructor(public platform: Platform, public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController) {
@@ -42,7 +43,6 @@ export class SettingsPage {
 
   }
 
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad SettingsPage');
 
@@ -54,8 +54,23 @@ export class SettingsPage {
   }
 
   checkUpdates() {
+
+    var msg = "";
+    var key = "";
+
+    if (this.platform.is('android'))
+    {
+      key = "ek1YEsrSrNY6MMroICfOL-k_yA7Cry87dPT4G";
+      msg = "Checking for Android Production Updates......";
+    }
+    if (this.platform.is('ios'))
+    {
+      key = "TIpaV2ZUghgyX250gk_zZ3hTo5KKH1Z4xmz8G";
+      msg = "Checking for iOS Production Updates......";
+    }
+
     let toast = this.toastCtrl.create({
-      message: 'Checking for Updates......',
+      message: msg,
       duration: 3000,
       position: 'bottom'
     });
@@ -71,6 +86,46 @@ export class SettingsPage {
 
       },
       installMode: InstallMode.IMMEDIATE,
+      deploymentKey: key,
+      ignoreFailedUpdates: false
+    });	
+
+  }
+
+  checkUpdatesStaging() {
+
+    var msg = "";
+    var key = "";
+
+    if (this.platform.is('android'))
+    {
+      key = "qLWMZpKH2vSiODwb1-qHLte__0tyHJLmdPT4M";
+      msg = "Checking for Android Staging Updates......";
+    }
+    if (this.platform.is('ios'))
+    {
+      key = "Vfe7GWkriXItBozGs16cj3OAk_MYryWNgXzIz";
+      msg = "Checking for iOS Staging Updates......";
+    }
+
+    let toast = this.toastCtrl.create({
+      message: msg,
+      duration: 3000,
+      position: 'bottom'
+    });
+    toast.present(toast);
+    codePush.sync(null, {
+      updateDialog: {
+        appendReleaseDescription: true,
+        mandatoryUpdateMessage: "An important content update is about to be installed",
+        optionalUpdateMessage: "A content update is available. Install now?",
+        descriptionPrefix: "\n\nChange log:\n",
+        mandatoryContinueButtonLabel: "OK",
+        updateTitle: "Content Update Available"
+
+      },
+      installMode: InstallMode.IMMEDIATE,
+      deploymentKey: key,
       ignoreFailedUpdates: false
     });	
 
@@ -118,6 +173,24 @@ export class SettingsPage {
 
         self.appVer = localPackage.appVersion;
         self.codeVer = localPackage.label;
+
+        if(localPackage.deploymentKey == "qLWMZpKH2vSiODwb1-qHLte__0tyHJLmdPT4M") 
+        {
+           self.codeBr = "Android Staging"; 
+        }
+        if(localPackage.deploymentKey == "ek1YEsrSrNY6MMroICfOL-k_yA7Cry87dPT4G") 
+        {
+           self.codeBr = "Android Production"; 
+        }
+        if(localPackage.deploymentKey == "Vfe7GWkriXItBozGs16cj3OAk_MYryWNgXzIz") 
+        {
+           self.codeBr = "iOS Staging"; 
+        }
+        if(localPackage.deploymentKey == "TIpaV2ZUghgyX250gk_zZ3hTo5KKH1Z4xmz8G") 
+        {
+           self.codeBr = "iOS Production"; 
+        }
+
         self.verDesc = localPackage.description;
 
       });

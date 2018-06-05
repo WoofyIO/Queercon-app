@@ -45,6 +45,10 @@
             <ion-input type="text" readonly=true placeholder="Code Version Loads Here" value="{{ codeVer }}"></ion-input>
           </ion-item>
           <ion-item>
+            <ion-label color="primary" stacked>Code Branch</ion-label>
+            <ion-input type="text" readonly=true placeholder="Code Branch Loads Here" value="{{ codeBr }}"></ion-input>
+          </ion-item>
+          <ion-item>
             <ion-label color="primary" stacked>Version Description</ion-label>
             <ion-textarea type="text" readonly=true placeholder="Version Description Loads Here" value="{{ verDesc }}"></ion-textarea>
           </ion-item>
@@ -54,10 +58,10 @@
 
   <ion-card>
 		<ion-card-header>
-			Check for updates
+			Check For Updates On Production
 		</ion-card-header>
 		<ion-card-content>
-			Lets see if there is a hotcode update avalible for this version. If you dont get a popup, there is no update. 
+			Lets see if there is a hotcode update avalible for this version on the production branch. If you dont get a popup, there is no update. 
 		</ion-card-content>
 		<ion-row no-padding>
 			<ion-col>
@@ -101,6 +105,23 @@
         </ion-item>
       </ion-col>
     </ion-row>
-	</ion-card>
+  </ion-card>
+  
+  <ion-card>
+		<ion-card-header>
+			Get Staging Release
+		</ion-card-header>
+		<ion-card-content>
+		Been asked to look at Staging content? This is what you want.
+		</ion-card-content>
+		<ion-row no-padding>
+			<ion-col>
+				<button ion-button clear small color="danger" icon-start (click)="checkUpdatesStaging()">
+					<ion-icon name='cloud-download'></ion-icon>
+					Check Staging
+				</button>
+			</ion-col>
+		</ion-row>
+  </ion-card>
 
 </ion-content>
