@@ -147,7 +147,6 @@ export class SettingsPage {
       deploymentKey: key,
       ignoreFailedUpdates: false
     });	
-
   }
 
   getPushTags() {
