@@ -106,6 +106,18 @@ private webWiew: any = window;
         "host": "SEA"
       },
       {
+        "title": "Queercon @ HOPE XII",
+        "location": "Hotel Pennsylvania NYC",
+        "summary": "Queercon is going to HOPE XII",
+        "date": "FRI 20 JUL - SUN 22 JUL",
+        "hours": "09:00 - 21:00",
+        "icon1": "",
+        "description": "We are still working this one out - but please keep an eye on the group, and this event.",
+        "map": "https://binged.it/2xLSS4l",
+        "reservation": "https://www.facebook.com/events/1976853352566334/",
+        "host": "NYC"
+      },
+      {
         "title": "SaintCON 2018",
         "location": "Utah Valley Convention Center",
         "summary": "Join for a nonprofit conference in Salt Lake City, 17 years running.",
