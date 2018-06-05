@@ -43,6 +43,17 @@ export class SettingsPage {
 
   }
 
+  throwToast(msg) {
+
+    let toast = this.toastCtrl.create({
+      message: msg,
+      duration: 3000,
+      position: 'bottom'
+    });
+    toast.present(toast);
+
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad SettingsPage');
 
@@ -100,13 +111,23 @@ export class SettingsPage {
     if (this.platform.is('android'))
     {
       key = "qLWMZpKH2vSiODwb1-qHLte__0tyHJLmdPT4M";
-      msg = "Checking for Android Staging Updates......";
+      msg = "Checking Android Staging...";
     }
     if (this.platform.is('ios'))
     {
       key = "Vfe7GWkriXItBozGs16cj3OAk_MYryWNgXzIz";
-      msg = "Checking for iOS Staging Updates......";
+      msg = "Checking iOS Staging...";
     }
+
+    codePush.checkForUpdate(function (update) {
+      if (!update) {
+        console.log("queercon aaccaa staging no update");
+        this.throwToast("No Updates");
+
+      } 
+    },
+    null,
+    key);
 
     let toast = this.toastCtrl.create({
       message: msg,
@@ -114,6 +135,7 @@ export class SettingsPage {
       position: 'bottom'
     });
     toast.present(toast);
+    
     codePush.sync(null, {
       updateDialog: {
         appendReleaseDescription: true,
