@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
-import { ToastController } from 'ionic-angular';
 
 /**
  * Generated class for the SettingsPage page.
@@ -29,7 +28,7 @@ export class SettingsPage {
   codeBr: string;
 
 
-  constructor(public platform: Platform, public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController) {
+  constructor(public platform: Platform, public navCtrl: NavController, public navParams: NavParams) {
 
 
     if (!this.platform.is('mobileweb')) {
@@ -40,17 +39,6 @@ export class SettingsPage {
     this.pushID = "";
     this.pushTags = "";
     console.log("queercon const userId: " + this.pushID);
-
-  }
-
-  throwToast(msg) {
-
-    let toast = this.toastCtrl.create({
-      message: msg,
-      duration: 3000,
-      position: 'bottom'
-    });
-    toast.present(toast);
 
   }
 
@@ -72,20 +60,29 @@ export class SettingsPage {
     if (this.platform.is('android'))
     {
       key = "ek1YEsrSrNY6MMroICfOL-k_yA7Cry87dPT4G";
-      msg = "Checking for Android Production Updates......";
+      msg = "Checking Android Production......";
     }
     if (this.platform.is('ios'))
     {
       key = "TIpaV2ZUghgyX250gk_zZ3hTo5KKH1Z4xmz8G";
-      msg = "Checking for iOS Production Updates......";
+      msg = "Checking iOS Production......";
     }
 
-    let toast = this.toastCtrl.create({
+    codePush.checkForUpdate(function (update) {
+      if (!update) {
+        console.log("queercon aaccaa staging no update");
+        alert("No Update Avalible");
+      } 
+    },
+    null,
+    key);
+
+/*     let toast = this.toastCtrl.create({
       message: msg,
       duration: 3000,
       position: 'bottom'
     });
-    toast.present(toast);
+    toast.present(toast); */
     codePush.sync(null, {
       updateDialog: {
         appendReleaseDescription: true,
@@ -122,19 +119,19 @@ export class SettingsPage {
     codePush.checkForUpdate(function (update) {
       if (!update) {
         console.log("queercon aaccaa staging no update");
-        this.throwToast("No Updates");
+        alert("No Update Avalible");
 
       } 
     },
     null,
     key);
 
-    let toast = this.toastCtrl.create({
+/*     let toast = this.toastCtrl.create({
       message: msg,
       duration: 3000,
       position: 'bottom'
     });
-    toast.present(toast);
+    toast.present(toast); */
     
     codePush.sync(null, {
       updateDialog: {
