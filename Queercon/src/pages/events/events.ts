@@ -109,7 +109,7 @@ private webWiew: any = window;
         "title": "Queercon @ HOPE XII",
         "location": "Hotel Pennsylvania NYC",
         "summary": "Queercon is going to HOPE XII",
-        "date": "FRI 20 JUL - SUN 22 JUL",
+        "date": "20 - 22 JUL",
         "hours": "09:00 - 21:00",
         "icon1": "",
         "description": "We are still working this one out - but please keep an eye on the group, and this event.",
