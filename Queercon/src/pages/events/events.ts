@@ -106,6 +106,18 @@ private webWiew: any = window;
         "host": "SEA"
       },
       {
+        "title": "Drag Brunch - Pre-Baltimore Pride",
+        "location": "El Bufalo Tequila Bar and Kitchen (Baltimore, MD)",
+        "summary": "QC DC goes to Baltimore Pride!",
+        "date": "SAT 16 JUN",
+        "hours": "12:00 - 14:00",
+        "icon1": "",
+        "description": "We're avoiding the rain and lightning during DC Pride by going to Baltimore Pride with brunch beforehand! $20 at the door. If it's too full we'll migrate elsewhere. Stay up to date on what's happening in Telegram the day of.",
+        "map": "https://goo.gl/maps/tjw39xBjqXU2",
+        "reservation": "https://www.facebook.com/events/1876164739349004/",
+        "host": "DC"
+      },
+      {
         "title": "Queercon @ HOPE XII",
         "location": "Hotel Pennsylvania NYC",
         "summary": "Queercon is going to HOPE XII",
