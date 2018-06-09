@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="2000009" id="org.queercon.app" version="2.0.9" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="2000010" id="org.queercon.app" version="2.0.10" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Queercon</name>
     <description>The Official Queercon App</description>
     <author email="appdev@queercon.org" href="http://www.queercon.org">Queercon Handlers</author>
@@ -50,11 +50,11 @@
         <preference name="FIREBASE_SENDER_ID" value="'278964097998'" />
         <preference name="CodePushDeploymentKey" value="qLWMZpKH2vSiODwb1-qHLte__0tyHJLmdPT4M" />
         <resource-file src="google-services.json" target="google-services.json" />
-        <resource-file src="resources/android/notification/drawable-hdpi/ic_stat_onesignal_default.png" target="res/drawable-hdpi/ic_stat_onesignal_default.png" />
-        <resource-file src="resources/android/notification/drawable-mdpi/ic_stat_onesignal_default.png" target="res/drawable-mdpi/ic_stat_onesignal_default.png" />
-        <resource-file src="resources/android/notification/drawable-xhdpi/ic_stat_onesignal_default.png" target="res/drawable-xhdpi/ic_stat_onesignal_default.png" />
-        <resource-file src="resources/android/notification/drawable-xxhdpi/ic_stat_onesignal_default.png" target="res/drawable-xxhdpi/ic_stat_onesignal_default.png" />
-        <resource-file src="resources/android/notification/drawable-xxxhdpi/ic_stat_onesignal_default.png" target="res/drawable-xxxhdpi/ic_stat_onesignal_default.png" />
+        <resource-file src="resources/android/notification/drawable-hdpi/ic_stat_onesignal_default.png" target="app/src/main/res/drawable-hdpi/ic_stat_onesignal_default.png" />
+        <resource-file src="resources/android/notification/drawable-mdpi/ic_stat_onesignal_default.png" target="app/src/main/res/drawable-mdpi/ic_stat_onesignal_default.png" />
+        <resource-file src="resources/android/notification/drawable-xhdpi/ic_stat_onesignal_default.png" target="app/src/main/res/drawable-xhdpi/ic_stat_onesignal_default.png" />
+        <resource-file src="resources/android/notification/drawable-xxhdpi/ic_stat_onesignal_default.png" target="app/src/main/res/drawable-xxhdpi/ic_stat_onesignal_default.png" />
+        <resource-file src="resources/android/notification/drawable-xxxhdpi/ic_stat_onesignal_default.png" target="app/src/main/res/drawable-xxxhdpi/ic_stat_onesignal_default.png" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
@@ -96,22 +96,23 @@
         <preference name="APPCENTER_APP_SECRET" value="f6e72d5a-91ec-4386-854d-13f73fdf5faa" />
         <preference name="CodePushDeploymentKey" value="Vfe7GWkriXItBozGs16cj3OAk_MYryWNgXzIz" />
     </platform>
-    <plugin name="cordova-plugin-device" spec="^2.0.1" />
+    <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
-    <plugin name="cordova-plugin-ionic-webview" spec="^1.1.16" />
-    <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <plugin name="cordova-plugin-file-transfer" spec="^1.7.1" />
     <plugin name="cordova-plugin-zip" spec="^3.1.0" />
-    <plugin name="cordova-plugin-appcenter-analytics" spec="^0.1.3" />
-    <plugin name="cordova-plugin-appcenter-crashes" spec="^0.1.3" />
-    <plugin name="cordova-plugin-code-push" spec="^1.11.7" />
-    <plugin name="cordova-plugin-inappbrowser" spec="^2.0.2" />
-    <plugin name="cordova-plugin-calendar" spec="^5.0.0">
+    <plugin name="cordova-plugin-device" spec="^2.0.2" />
+    <plugin name="cordova-plugin-ionic-webview" spec="^1.2.1" />
+    <plugin name="cordova-plugin-ionic-keyboard" spec="^2.1.2" />
+    <plugin name="cordova-plugin-appcenter-analytics" spec="^0.1.5" />
+    <plugin name="cordova-plugin-appcenter-crashes" spec="^0.1.5" />
+    <plugin name="cordova-plugin-code-push" spec="^1.11.11" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
+    <plugin name="cordova-plugin-calendar" spec="^5.1.0">
         <variable name="CALENDAR_USAGE_DESCRIPTION" value="This app will add events to your calendar is you want it" />
     </plugin>
-    <plugin name="cordova-plugin-statusbar" spec="^2.4.1" />
-    <plugin name="onesignal-cordova-plugin" spec="^2.3.3" />
-    <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
+    <plugin name="cordova-plugin-statusbar" spec="^2.4.2" />
+    <plugin name="onesignal-cordova-plugin" spec="^2.4.1" />
+    <plugin name="cordova-plugin-x-toast" spec="^2.6.2" />
     <engine name="ios" spec="4.5.4" />
-    <engine name="android" spec="6.4.0" />
+    <engine name="android" spec="7.0.0" />
 </widget>

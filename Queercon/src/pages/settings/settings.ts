@@ -212,6 +212,11 @@ export class SettingsPage {
         self.verDesc = localPackage.description;
 
       });
+
+      if(self.verDesc == null) { self.verDesc = "No Codepush Update Yet"; }
+      if(self.codeBr == null) { self.codeBr = "No Codepush Update Yet"; }
+      if(self.codeVer == null) { self.codeVer = "No Codepush Update Yet"; }
+      if(self.appVer == null) { self.appVer = "No Codepush Update Yet"; }
   
     }
   }
