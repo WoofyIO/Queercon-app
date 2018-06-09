@@ -82,18 +82,6 @@ private webWiew: any = window;
         "host": "SEA"
       },
       {
-        "title": "TOOOL DC",
-        "location": "The Board Room, DC",
-        "summary": "Bring your concentration and a bite to eat to this QC lockpicking session.",
-        "date": "WED 06 JUN",
-        "hours": "18:30 - 20:30",
-        "icon1": "",
-        "description": "Come lockpick and drink with us! Lockpicks and locks are provided, just bring yourself! (They don't serve food so it's Bring Your Own Food).",
-        "map": "https://goo.gl/maps/C2sdfY9AnKw",
-        "reservation": "https://www.facebook.com/events/1903929682981325/",
-        "host": "DC"
-      },
-      {
         "title": "Northwest Pinball & Arcade Show",
         "location": "Greater Tacoma Convention Center",
         "summary": "Queercon SEA goes to the Northwest Pinball & Arcade Show",
@@ -104,6 +92,30 @@ private webWiew: any = window;
         "map": "https://goo.gl/maps/mKqSMsBNEYR2",
         "reservation": "https://www.facebook.com/events/212871739325873/",
         "host": "SEA"
+      },
+      {
+        "title": "Gay Skate Night Redux!",
+        "location": "Southgate Roller Rink",
+        "summary": "RESCHEDULED! Since last week's attempt was cancelled due to a power outage, we're going to try again next week",
+        "date": "WED 13 JUN",
+        "hours": "20:30 - 23:30",
+        "icon1": "",
+        "description": "RESCHEDULED! Since last week's attempt was cancelled due to a power outage, we're going to try again next week. Feel free to use this space to coordinate with other queercon folks and be sure to check the official event ( https://www.facebook.com/events/1374660279301139/ ) for updates! Costs $8 per person. So much skate! Come discover the wonders of counter-clockwise at the monthly gay skate night. And yes, there is a bar with beer and cider. :) Skate rentals onsite, a fun crowd every time. Pup hoods or other gear ok (I think?), just nothing too provocative (short shorts yes, underwear no, sorry y'all). Can wander to a bar after, for those still upright. :)",
+        "map": "https://binged.it/2sPANN2",
+        "reservation": "https://www.facebook.com/events/210664696212509/",
+        "host": "SEA"
+      },
+      {
+        "title": "Drag Brunch - Pre-Baltimore Pride",
+        "location": "El Bufalo Tequila Bar and Kitchen (Baltimore, MD)",
+        "summary": "QC DC goes to Baltimore Pride!",
+        "date": "SAT 16 JUN",
+        "hours": "12:00 - 14:00",
+        "icon1": "",
+        "description": "We're avoiding the rain and lightning during DC Pride by going to Baltimore Pride with brunch beforehand! $20 at the door. If it's too full we'll migrate elsewhere. Stay up to date on what's happening in Telegram the day of.",
+        "map": "https://goo.gl/maps/tjw39xBjqXU2",
+        "reservation": "https://www.facebook.com/events/1876164739349004/",
+        "host": "DC"
       },
       {
         "title": "Queercon @ HOPE XII",
