@@ -82,18 +82,6 @@ private webWiew: any = window;
         "host": "SEA"
       },
       {
-        "title": "TOOOL DC",
-        "location": "The Board Room, DC",
-        "summary": "Bring your concentration and a bite to eat to this QC lockpicking session.",
-        "date": "WED 06 JUN",
-        "hours": "18:30 - 20:30",
-        "icon1": "",
-        "description": "Come lockpick and drink with us! Lockpicks and locks are provided, just bring yourself! (They don't serve food so it's Bring Your Own Food).",
-        "map": "https://goo.gl/maps/C2sdfY9AnKw",
-        "reservation": "https://www.facebook.com/events/1903929682981325/",
-        "host": "DC"
-      },
-      {
         "title": "Northwest Pinball & Arcade Show",
         "location": "Greater Tacoma Convention Center",
         "summary": "Queercon SEA goes to the Northwest Pinball & Arcade Show",
