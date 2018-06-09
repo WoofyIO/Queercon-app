@@ -106,6 +106,18 @@ private webWiew: any = window;
         "host": "SEA"
       },
       {
+        "title": "Gay Skate Night Redux!",
+        "location": "Southgate Roller Rink",
+        "summary": "RESCHEDULED! Since last week's attempt was cancelled due to a power outage, we're going to try again next week",
+        "date": "WED 13 JUN",
+        "hours": "20:30 - 23:30",
+        "icon1": "",
+        "description": "RESCHEDULED! Since last week's attempt was cancelled due to a power outage, we're going to try again next week. Feel free to use this space to coordinate with other queercon folks and be sure to check the official event ( https://www.facebook.com/events/1374660279301139/ ) for updates! Costs $8 per person. So much skate! Come discover the wonders of counter-clockwise at the monthly gay skate night. And yes, there is a bar with beer and cider. :) Skate rentals onsite, a fun crowd every time. Pup hoods or other gear ok (I think?), just nothing too provocative (short shorts yes, underwear no, sorry y'all). Can wander to a bar after, for those still upright. :)",
+        "map": "https://binged.it/2sPANN2",
+        "reservation": "https://www.facebook.com/events/210664696212509/",
+        "host": "SEA"
+      },
+      {
         "title": "Drag Brunch - Pre-Baltimore Pride",
         "location": "El Bufalo Tequila Bar and Kitchen (Baltimore, MD)",
         "summary": "QC DC goes to Baltimore Pride!",
