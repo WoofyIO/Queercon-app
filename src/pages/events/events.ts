@@ -118,6 +118,18 @@ private webWiew: any = window;
         "host": "NYC"
       },
       {
+        "title": "BlackHat Queercon Mixer",
+        "location": "Mandalay Bay, South Pacific G",
+        "summary": "Queercon is going to HOPE XII",
+        "date": "WED 08 AUG",
+        "hours": "16:00 - 18:00",
+        "icon1": "[18+][Blackhat Pass Req]",
+        "description": "BlackHat welcomes Queercon back for an afternoon Mixer.  Swing by the Mandalay Bay and trek down to South Pacific G to meet and mingle with other LGBTQ BlackHat goers. We may even bring a few surprise passes to the Queercon VIP Reception - Come by for your chance to win.",
+        "map": "https://goo.gl/maps/AtsRDsxhoH12",
+        "reservation": "",
+        "host": "Queercon"
+      },
+      {
         "title": "SaintCON 2018",
         "location": "Utah Valley Convention Center",
         "summary": "Join for a nonprofit conference in Salt Lake City, 17 years running.",
