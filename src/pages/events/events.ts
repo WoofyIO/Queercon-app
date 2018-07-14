@@ -94,18 +94,6 @@ private webWiew: any = window;
         "host": "DC"
       },
       {
-        "title": "Pride NYC Brunch",
-        "location": "The Grey Dog - Nolita",
-        "summary": "Brunch, Pride Fest and March",
-        "date": "SUN 24 JUN",
-        "hours": "10:30 - ?",
-        "icon1": "",
-        "description": "Join us for brunch at The Grey Dog Nolita (244 Mulberry St). We'll head to Pride Fest and March afterwards.",
-        "map": "https://goo.gl/maps/24AZCUyXtQt",
-        "reservation": "https://www.facebook.com/events/404162203432413/",
-        "host": "NYC"
-      },
-      {
         "title": "Queercon @ HOPE XII",
         "location": "Hotel Pennsylvania NYC",
         "summary": "Queercon is going to HOPE XII",
