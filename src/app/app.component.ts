@@ -46,7 +46,7 @@ export class MyApp {
 			{ title: 'Chat Room', component: ChatPage },
 			{ title: 'Support Us', component: SupportersPage },
 			{ title: 'About Queercon', component: AboutPage },
-			{ title: 'Settings', component: SettingsPage }
+			{ title: 'The App & Settings', component: SettingsPage }
 		];
 
 

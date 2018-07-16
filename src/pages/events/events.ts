@@ -82,18 +82,6 @@ private webWiew: any = window;
         "host": "SEA"
       },
       {
-        "title": "Drag Brunch - Pre-Baltimore Pride",
-        "location": "El Bufalo Tequila Bar and Kitchen (Baltimore, MD)",
-        "summary": "QC DC goes to Baltimore Pride!",
-        "date": "SAT 16 JUN",
-        "hours": "12:00 - 14:00",
-        "icon1": "",
-        "description": "We're avoiding the rain and lightning during DC Pride by going to Baltimore Pride with brunch beforehand! $20 at the door. If it's too full we'll migrate elsewhere. Stay up to date on what's happening in Telegram the day of.",
-        "map": "https://goo.gl/maps/tjw39xBjqXU2",
-        "reservation": "https://www.facebook.com/events/1876164739349004/",
-        "host": "DC"
-      },
-      {
         "title": "Queercon @ HOPE - Friday Social",
         "location": "Flatiron Hall",
         "summary": "Queercon Friday Social",
@@ -352,8 +340,7 @@ private webWiew: any = window;
         "date": "FRI 10 AUG",
         "hours": "20:00 - 03:00",
         "icon1": "[21+]",
-        "description": "Break out your speedo and get your unicorns ready. Come join us for our epic pool party at Palms Place rooftop pool. Once again the amazing Queercon DJ’s will be keeping us going as we celebrate 15 years of LGBTQ+ Hacking in the way that Queercon knows best - a massive pool party. Featuring: DJ Pumpkin Spice, Skittish & Bus, and Bret Law. Sponsored by Bugcrowd
-",
+        "description": "Break out your speedo and get your unicorns ready. Come join us for our epic pool party at Palms Place rooftop pool. Once again the amazing Queercon DJ’s will be keeping us going as we celebrate 15 years of LGBTQ+ Hacking in the way that Queercon knows best - a massive pool party. Featuring: DJ Pumpkin Spice, Skittish & Bus, and Bret Law. Sponsored by Bugcrowd",
         "map": "https://goo.gl/maps/LEZwDAzN8et",
         "reservation": "",
         "host": "Queercon"
@@ -545,8 +532,7 @@ private webWiew: any = window;
         "date": "SUN 12 AUG",
         "hours": "QC Chill 2",
         "icon1": "",
-        "description": "Do you want to get more involved with Queercon? Have some skills that could help us 
-grow? Stop in and learn how to get involved after the show in Vegas ends.",
+        "description": "Do you want to get more involved with Queercon? Have some skills that could help us grow? Stop in and learn how to get involved after the show in Vegas ends.",
         "map": "https://goo.gl/maps/6HBxjv7obZv",
         "reservation": "",
         "host": "Queercon"
