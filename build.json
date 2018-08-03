@@ -38,14 +38,14 @@
             "codeSignIdentity": "iPhone Developer",
             "developmentTeam": "YSP3NTS66E",
             "packageType": "development",
-            "provisioningProfile": "bad0315d-20c0-440c-8dac-8ac83d1fad8d",
+            "provisioningProfile": "9de228bf-2c51-41f4-83e1-7088b9ffb783",
             "iCloudContainerEnvironment": "Development"
         },
         "release": {
             "codeSignIdentity": "iPhone Distribution",
             "developmentTeam": "YSP3NTS66E",
             "packageType": "app-store",
-            "provisioningProfile": "9249c0a8-14e7-499a-a1d5-4d74ebef04de",
+            "provisioningProfile": "d68b97e0-651c-4ba5-8464-be4b51f738c5",
             "iCloudContainerEnvironment": "Production"
         }
     }
