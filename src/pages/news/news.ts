@@ -20,8 +20,9 @@ export class NewsPage {
   constructor(public platform: Platform, public navCtrl: NavController, public navParams: NavParams) {
     
 
-    if (!this.platform.is('mobileweb')) {
-      console.log("queercon aaccaa loading not mobileweb");
+    if (!this.platform.is('core')) {
+      console.log("queercon aaccaa loading not core");
+      console.log(this.platform);
       this.webWiew.AppCenter.Analytics.trackEvent('QC news.ts');		
     }  
 

@@ -11,8 +11,8 @@ export class ContactPage {
 
   constructor(public platform: Platform, public navCtrl: NavController) {
 
-    if (!this.platform.is('mobileweb')) {
-      console.log("queercon aaccaa loading not mobileweb");
+    if (!this.platform.is('core')) {
+      console.log("queercon aaccaa loading not core");
       this.webWiew.AppCenter.Analytics.trackEvent('QC contact.ts');		
     }  
 

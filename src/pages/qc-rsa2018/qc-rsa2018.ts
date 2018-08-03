@@ -20,8 +20,8 @@ export class QcRsa2018Page {
   constructor(public platform: Platform, public navCtrl: NavController, public navParams: NavParams) {
    /* Remove in staging */// this.webWiew.AppCenter.Analytics.trackEvent('QC RSA 18 Loaded');
 
-   if (!this.platform.is('mobileweb')) {
-    console.log("queercon aaccaa loading not mobileweb");
+   if (!this.platform.is('core')) {
+    console.log("queercon aaccaa loading not core");
     this.webWiew.AppCenter.Analytics.trackEvent('QC qc-rsa2018.ts');		
   }  
 

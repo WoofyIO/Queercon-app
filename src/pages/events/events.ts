@@ -17,8 +17,8 @@ export class EventsDetailsPage {
     
     this.item = params.data.item;
 
-    if (!this.platform.is('mobileweb')) {
-      console.log("queercon aaccaa loading not mobileweb");
+    if (!this.platform.is('core')) {
+      console.log("queercon aaccaa loading not core");
       this.webWiew.AppCenter.Analytics.trackEvent('QC event-details.ts: ' + this.item.title);		
     }  
 
@@ -46,8 +46,8 @@ private webWiew: any = window;
   constructor(public platform: Platform, public nav: NavController, /* public http: Http */) {
     console.log('QC Events constructor loaded');
     
-    if (!this.platform.is('mobileweb')) {
-      console.log("queercon aaccaa loading not mobileweb");
+    if (!this.platform.is('core')) {
+      console.log("queercon aaccaa loading not core");
       this.webWiew.AppCenter.Analytics.trackEvent('QC events.ts');		
     }  
 

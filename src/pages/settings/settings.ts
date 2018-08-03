@@ -31,8 +31,8 @@ export class SettingsPage {
   constructor(public platform: Platform, public navCtrl: NavController, public navParams: NavParams) {
 
 
-    if (!this.platform.is('mobileweb')) {
-      console.log("queercon aaccaa loading not mobileweb");
+    if (!this.platform.is('core')) {
+      console.log("queercon aaccaa loading not core");
       this.webWiew.AppCenter.Analytics.trackEvent('QC settings.ts');		
     }  
   
@@ -45,7 +45,7 @@ export class SettingsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad SettingsPage');
 
-    if (!this.platform.is('mobileweb')) {
+    if (!this.platform.is('core')) {
       this.platform.ready().then(()=>this.getPushTags());
       this.platform.ready().then(()=>this.getPushID());
       this.platform.ready().then(()=>this.getVerData());
@@ -186,7 +186,7 @@ export class SettingsPage {
   getVerData() {
     let self = this;
 
-    if (!this.platform.is('mobileweb')) {
+    if (!this.platform.is('core')) {
       codePush.getCurrentPackage(function (localPackage) {
 
         self.appVer = localPackage.appVersion;

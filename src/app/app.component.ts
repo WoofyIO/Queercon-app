@@ -62,8 +62,8 @@ export class MyApp {
 
 			var key = "";
 	
-	 		if (!this.platform.is('mobileweb')) {
-				console.log("queercon aaccaa loading not mobileweb");
+	 		if (!this.platform.is('core')) {
+				console.log("queercon aaccaa loading not core");
 				this.webWiew.AppCenter.Analytics.trackEvent('QC app.component.ts');		
 			}  
 			
@@ -85,8 +85,8 @@ export class MyApp {
 			this.splashScreen.hide();
 
 			console.log("queercon codepush next");
-			if (!this.platform.is('mobileweb')) {
-				console.log("queercon aaccaa loading not mobileweb, codepush");
+			if (!this.platform.is('core')) {
+				console.log("queercon aaccaa loading not core, codepush");
 
 
 				if (this.platform.is('android'))
@@ -172,8 +172,8 @@ export class MyApp {
 			\"i\\\":\\\"979db93c-48f3-4838-8df0-6b1834d8c6c0\\\"}\",\"oth_chnl\":\"\",\"pri\":\"5\",\"vis\":\"1\",\"from\":\"278964097998\",\"alert\":\"2\",\"title\":\"test\",\"grp_msg\":\"\",\"google.message_id\":\"0:1522785572045450%5a823b91f9fd7ecd\",\"notificationId\":-17953206
 			75}"}}} */
 
-			if (!this.platform.is('mobileweb')) {
-				console.log("queercon aaccaa loading not mobileweb, onesignal");
+			if (!this.platform.is('core')) {
+				console.log("queercon aaccaa loading not core, onesignal");
 				window["plugins"].OneSignal
 				.startInit('d149d10e-71d8-4243-8827-f45a72d2d2ac','278964097998')
 				.iOSSettings(iosSettings) // only needed if added Optional OneSignal code for iOS above
