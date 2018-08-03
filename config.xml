@@ -110,9 +110,9 @@
     <plugin name="cordova-plugin-appcenter-analytics" spec="^0.1.7" />
     <plugin name="cordova-plugin-code-push" spec="^1.11.12" />
     <plugin name="onesignal-cordova-plugin" spec="^2.4.1" />
-    <engine name="ios" spec="4.5.4" />
-    <engine name="android" spec="7.0.0" />
     <plugin name="cordova-plugin-calendar" spec="^5.1.2">
         <variable name="CALENDAR_USAGE_DESCRIPTION" value="This app uses your calendar" />
     </plugin>
+    <engine name="ios" spec="4.5.4" />
+    <engine name="android" spec="7.0.0" />
 </widget>
