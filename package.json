@@ -32,7 +32,7 @@
     "cordova-android": "7.0.0",
     "cordova-ios": "4.5.4",
     "cordova-plugin-appcenter-analytics": "^0.1.7",
-    "cordova-plugin-appcenter-shared": "^0.1.7",
+    "cordova-plugin-appcenter-shared": "^0.1.6",
     "cordova-plugin-calendar": "^5.1.2",
     "cordova-plugin-code-push": "^1.11.12",
     "cordova-plugin-device": "^2.0.2",

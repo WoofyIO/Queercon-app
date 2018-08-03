@@ -113,5 +113,5 @@
     <plugin name="cordova-plugin-code-push" spec="^1.11.11" />
     <plugin name="cordova-plugin-appcenter-analytics" spec="^0.1.5" />
     <engine name="ios" spec="4.5.4" />
-    <engine name="android" spec="~7.0.0" />
+    <engine name="android" spec="7.0.0" />
 </widget>
