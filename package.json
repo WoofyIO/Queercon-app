@@ -72,7 +72,7 @@
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-inappbrowser": {},
       "cordova-plugin-calendar": {
-        "CALENDAR_USAGE_DESCRIPTION": " "
+        "CALENDAR_USAGE_DESCRIPTION": "This app uses your calendar"
       },
       "cordova-plugin-statusbar": {},
       "onesignal-cordova-plugin": {},
