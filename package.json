@@ -32,6 +32,7 @@
     "cordova-android": "7.0.0",
     "cordova-ios": "4.5.4",
     "cordova-plugin-appcenter-analytics": "^0.1.7",
+    "cordova-plugin-appcenter-crashes": "^0.1.7",
     "cordova-plugin-appcenter-shared": "^0.1.6",
     "cordova-plugin-calendar": "^5.1.2",
     "cordova-plugin-code-push": "^1.11.12",
@@ -77,7 +78,8 @@
       "onesignal-cordova-plugin": {},
       "cordova-plugin-x-toast": {},
       "cordova-plugin-code-push": {},
-      "cordova-plugin-appcenter-analytics": {}
+      "cordova-plugin-appcenter-analytics": {},
+      "cordova-plugin-appcenter-crashes": {}
     },
     "platforms": [
       "ios",
